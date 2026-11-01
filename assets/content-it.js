@@ -95,13 +95,13 @@ const CONTENT = {
   `},
   {t:'🛟 Se esiste già una richiesta di rimborso', html:`
    <div class="card"><p>Tutto ciò che hai letto finora serve a intercettare il problema per tempo. Ma potresti aprire questa formazione proprio perché una famiglia ha <strong>già</strong> chiesto un rimborso. Le regole qui sotto valgono qualunque sia il motivo: leggile per prime, poi usa il resto della formazione per capire cosa ha portato a questo punto e cosa puoi ancora fare durante la lezione.</p></div>
-   ${co('co-idea','💡',`<p><strong>La richiesta viene creata dal Client Service, non da te</strong> — quella parte non dipende da te. Ciò che resta nelle tue mani è tutto quello che succede in lezione da qui in avanti, e non è poco.</p>`)}
+   ${co('co-idea','💡',`<p><strong>La richiesta viene creata dal Client Service, non da te</strong> — quella parte non dipende da te. Ciò che resta nelle tue mani è tutto quello che succede a lezione da qui in avanti, e non è poco.</p>`)}
    ${co('co-danger','🤐',`<p><strong>Non dire nulla sulla richiesta in sé</strong> — né al bambino, né alla famiglia — a meno che il Client Service non ti chieda esplicitamente di dire qualcosa di specifico. Il tuo compito ora è la lezione, non la conversazione.</p>`)}
   `},
   {t:'🎯 La prossima lezione è il tentativo di recupero', html:`
    <div class="card"><p>Potresti non avere altre occasioni per cambiare le cose. Considera la prossima lezione con questo bambino come il momento decisivo.</p></div>
    ${iconGrid([
-     {ic:'🙋', html:`<strong>Dagli un vero turno.</strong> Non una domanda di circostanza, ma un momento autentico in cui si sente visto e ci riesce.`},
+     {ic:'🙋', html:`<strong>Dagli un vero turno.</strong> Non una domanda di circostanza, ma un momento autentico in cui si senta visto e ci riesca.`},
      {ic:'🏆', html:`<strong>Prevedi un successo rapido e visibile.</strong> Deve uscire dalla lezione sentendosi capace, non indietro.`},
      {ic:'👀', html:`<strong>Attenzione mirata</strong> — fagli sentire che hai notato qualcosa di concreto, invece di lodarlo in modo generico.`},
      {ic:'🤐', html:`<strong>Nessun accenno alla richiesta</strong> — anche se è il bambino a parlarne, riporta con gentilezza l’attenzione sulla lezione e continua.`}
@@ -110,7 +110,7 @@ const CONTENT = {
   {t:'📮 Avvisa subito, e conosci l’unica frase sicura', html:`
    <div class="card"><p>Puoi scoprire che esiste una richiesta dai commenti del Client Service sul profilo del bambino in BO: non c’è un sistema automatico che ti avvisa. Una volta che lo sai, ciò che hai osservato nelle tue lezioni è un’informazione che il Client Service non può avere in nessun altro modo.</p></div>
    ${numlist([
-     'Lascia un commento in BO il giorno stesso con esattamente ciò che hai osservato: date e dettagli concreti, non impressioni',
+     'Lascia un commento in BO il giorno stesso riportando esattamente ciò che hai osservato: date e dettagli concreti, non impressioni',
      'Includi le parole della famiglia, testuali, se le hai',
      'Coinvolgi il tuo Team Leader il giorno stesso',
      'Non confermare mai che un rimborso è stato approvato e non parlare mai di importi'
@@ -143,7 +143,7 @@ const CONTENT = {
       intro:'I più piccoli rispondono meglio con faccine, immagini e scelte, non con spiegazioni.',
       tips:[
        {ic:'😀', html:`<strong>Il sondaggio delle faccine.</strong> <em>«Mostrami con la mano o con un’emoji com’è andata la lezione di oggi: felice, così così o assonnato?»</em>`},
-       {ic:'🌟', html:`<strong>Il meglio e il meno bello.</strong> <em>«Qual è stata la parte più divertente di oggi? E quella più noiosa?»</em>`},
+       {ic:'🌟', html:`<strong>La parte migliore e quella meno bella.</strong> <em>«Qual è stata la parte più divertente di oggi? E quella più noiosa?»</em>`},
        {ic:'🎁', html:`<strong>La bacchetta magica.</strong> <em>«Se potessi cambiare una cosa della nostra lezione online, quale sarebbe?»</em>`},
        {ic:'👂', html:`<strong>Ascolta, non correggere.</strong> Ripeti ciò che ha detto e ringrazialo, poi cambia una piccola cosa nella lezione successiva, così vede che l’hai ascoltato.`}
       ]},
@@ -249,7 +249,7 @@ const CONTENT = {
        '<em>«Mostra al tuo compagno la parte che ti è venuta meglio, poi dimmi cosa ti è piaciuto nella sua.»</em>'
      ]},
      {ic:'🏁', label:'Chiudi con un successo', items:[
-       '<strong>Un mostra e racconta di ciò che hanno creato,</strong> un complimento specifico e un’anticipazione di cosa verrà dopo.',
+       '<strong>Un momento per mostrare e raccontare ciò che hanno creato,</strong> un complimento specifico e un’anticipazione di cosa verrà dopo.',
        '<em>«Guardate cosa avete costruito oggi: la prossima volta avrà anche un punteggio.»</em>'
      ]}
    ])}
@@ -293,7 +293,7 @@ const CONTENT = {
    ],'✅ Ecco le tre fasce d’età.')}
   `},
   {t:'🙋 Domande dirette — senza pressione', html:`
-   <div class="card"><p>Chiamare uno studente per nome funziona, se è sicuro che non sarà imbarazzante. Preparalo, inizia con domande facili e fai in modo che sembri equo.</p></div>
+   <div class="card"><p>Chiamare uno studente per nome funziona, se lo studente sa che non verrà messo in imbarazzo. Preparalo, inizia con domande facili e fai in modo che sembri equo.</p></div>
    ${doavoid(
      ['Avvisa il gruppo che prima o poi farai una domanda a tutti, e che <em>«Non lo so»</em> è una risposta accettabile','Inizia con una domanda facile per creare fiducia','Usa un sorteggio casuale, così sembra equo e non personale','Apprezza ogni contributo: <em>«Grazie, questo ci aiuta a ragionare.»</em>'],
      ['Interpellare a sorpresa lo studente più silenzioso con una domanda difficile','Correggere in modo brusco davanti al gruppo','Chiedere sempre agli stessi studenti più veloci','Fare una domanda difficile senza preavviso. Prova invece: <em>«Questa è difficile, ma qualcuno vuole provarci?»</em>']
@@ -328,16 +328,16 @@ const CONTENT = {
   `},
   {t:'🌱 In ogni lezione', html:`
    ${numlist([
-     'Prima di provare qualsiasi tecnica, scopro cosa, esattamente, non va nelle lezioni online per questo studente',
+     'Prima di provare qualsiasi tecnica, scopro esattamente cosa non va nelle lezioni online per questo studente',
      'Prima valido l’emozione («ha senso») e solo dopo riformulo: non sostengo mai che l’online sia «altrettanto valido»',
      'Faccio domande adatte all’età: il sondaggio delle faccine per i più piccoli, la scala da 1 a 5 per i 9–11 anni, un sondaggio privato o anonimo per i 12+',
-     'Inizio ogni lezione in modo forte: una sorpresa, una storia o una domanda legata al progetto di oggi',
+     'Inizio ogni lezione in modo coinvolgente: una sorpresa, una storia o una domanda legata al progetto di oggi',
      'Cambio attività circa ogni 10 minuti (più spesso con i più piccoli): spiega → prova → condividi',
      'Uso la chat, le reazioni, i sondaggi e la condivisione dello schermo a turno, così tutti hanno un modo comodo per partecipare',
      'Do un’istruzione alla volta e verifico che sia stata capita',
-     'Faccio domande dirette senza pressione: prima quelle facili, un modo equo di scegliere chi risponde e un riscontro positivo per ogni risposta',
+     'Faccio domande dirette senza pressione: faccio prima quelle facili, uso un metodo equo per scegliere chi risponde e un riscontro positivo per ogni risposta',
      'Creo legami tra i compagni con brevi momenti in coppia o in piccoli gruppi',
-     'Segnalo in BO il giorno stesso che a uno studente non piace il formato online: cosa ha detto, cosa ho osservato, cosa ho provato',
+     'Segnalo in BO il giorno stesso che a uno studente non piace il formato online: cosa ha detto, cosa ho osservato, cosa ho provato a fare',
      'Non prometto mai un cambio di formato o di gruppo: lo propongo in BO e dico «Ne parlo con il mio team»'
    ])}
   `},

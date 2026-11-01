@@ -66,11 +66,11 @@ const CONTENT = {
   buildModules(){
     return [
 {id:'intro', numLabel:'Pendahuluan', emoji:'🧩', color:'var(--coral)',
- title:'Mengapa Kamu di Sini',
- desc:'Mengapa “aku nggak suka pelajaran online” masih bisa dibalikkan — dan aturan yang berlaku jika permintaan refund sudah masuk.',
+ title:'Kenapa Penting Memahaminya',
+ desc:'Mengapa siswa yang bilang “aku tidak suka belajar online” masih bisa berubah pikiran, hingga do and don’ts jika permintaan refund sudah masuk',
  obj:'Memahami apa sebenarnya arti “aku nggak suka format online”, mengapa laporan di hari yang sama itu penting, dan apa persisnya yang harus (dan tidak boleh) dilakukan jika permintaan refund sudah ada.',
  sections:[
-  {t:'💻 Apa sebenarnya arti “aku nggak suka online”', html:`
+  {t:'Apa maksud sebenarnya dari “aku tidak suka belajar online”', html:`
    <div class="card"><p>Hampir tidak ada yang bilang “fokusku buyar setelah seharian menatap layar”. Mereka bilang <em>“online itu membosankan”</em>, <em>“aku nggak suka”</em> — lalu keluarganya meminta refund. Di balik satu kalimat itu biasanya ada hal-hal yang sangat berbeda:</p></div>
    ${iconGrid([
      {ic:'🥱', html:`<strong>Lelah menatap layar.</strong> Pelajarannya datang setelah seharian sekolah di depan layar, dan anaknya sudah kehabisan tenaga.`},
@@ -91,10 +91,10 @@ const CONTENT = {
      {ic:'🔄', label:'Percakapan motivasi, grup atau format lain yang cocok untuknya (jika tersedia), atau kursus lain'}
    ])}
    ${co('co-danger','🚨',`<p><strong>Laporan yang terlambat menutup pintu.</strong> Begitu keluarga sudah memutuskan, sebagian besar pilihan sudah hilang. Laporan yang sama, jika ditulis di minggu-minggu pertama, bisa membuat seorang anak tetap di Kodland.</p>`)}
-   ${co('co-ok','✅',`<p><strong>Selagi tim meninjau pilihannya, pelajarannya tetap milikmu.</strong> Modul 1 dan 2 menunjukkan cara mencari tahu apa yang mengganggu siswa, dan cara membangun pelajaran online yang dia nikmati.</p>`)}
+   ${co('co-ok','✅',`<p><strong>Selagi tim meninjau pilihannya, kelas tetap menjadi tanggung jawabmu.</strong> Modul 1 dan 2 menunjukkan cara mencari tahu apa yang mengganggu siswa, dan cara membangun pelajaran online yang dia nikmati.</p>`)}
   `},
   {t:'🛟 Jika permintaan refund sudah ada', html:`
-   <div class="card"><p>Semua hal di atas adalah tentang menangkap tanda ini sejak dini. Tapi mungkin kamu membuka pelatihan ini karena sebuah keluarga <strong>sudah</strong> mengajukan refund. Aturan di bawah ini berlaku apa pun alasannya — baca dulu, lalu gunakan sisa pelatihan ini untuk memahami apa yang menyebabkannya dan apa yang masih bisa kamu lakukan di kelas.</p></div>
+   <div class="card"><p>Semua hal di atas adalah cara menyadari tanda ini sejak dini. Tapi mungkin kamu membuka pelatihan ini karena ada keluarga yang <strong>sudah</strong> mengajukan refund. Aturan di bawah ini berlaku apa pun alasannya. Baca dulu, lalu gunakan materi selanjutnya di pelatihan ini untuk memahami apa yang menyebabkannya dan apa yang masih bisa kamu lakukan di kelas.</p></div>
    ${co('co-idea','💡',`<p><strong>Permintaannya sendiri dibuat oleh Client Service, bukan oleh kamu</strong> — bagian itu bukan wewenangmu. Yang masih menjadi bagianmu adalah semua yang terjadi di kelas mulai sekarang, dan itu bukan hal kecil.</p>`)}
    ${co('co-danger','🤐',`<p><strong>Jangan membicarakan permintaan refund itu sama sekali</strong> — tidak kepada anak, tidak kepada keluarga — kecuali Client Service secara jelas memintamu menyampaikan sesuatu yang spesifik. Tugasmu sekarang adalah pelajarannya, bukan percakapan itu.</p>`)}
   `},
@@ -128,7 +128,7 @@ const CONTENT = {
  obj:'Mengidentifikasi apa yang sebenarnya tidak disukai siswa dari format online, menanyakannya dengan cara yang sesuai usianya, memvalidasi lalu membingkai ulang perasaannya, dan melaporkan kasusnya di BO di hari yang sama.',
  sections:[
   {t:'🔍 Tanyakan dulu: apa persisnya yang terasa tidak cocok?', html:`
-   <div class="card"><p>Sebelum mencoba teknik untuk meningkatkan keterlibatan, cari tahu <strong>bagian mana dari format online yang tidak cocok</strong>. Teknik yang mengatasi rasa sendirian tidak ada gunanya untuk kelelahan menatap layar. Anak-anak jarang mengatakannya dengan jelas, jadi pelajari seperti apa tanda-tanda masing-masing terlihat dan terdengar:</p></div>
+   <div class="card"><p>Sebelum mencoba teknik untuk meningkatkan keterlibatan, cari tahu <strong>bagian mana dari format online yang tidak cocok</strong>. Teknik untuk mengatasi rasa sendirian tidak akan membantu siswa yang lelah menatap layar. Anak-anak jarang mengatakannya dengan jelas, jadi kenali tanda-tandanya dari apa yang terlihat dan terdengar:</p></div>
    ${patternCards([
      {ic:'🥱', title:'Lelah dan terdistraksi', desc:'“Aku capek.” “Kelamaan.” Pandangan ke mana-mana, berganti-ganti tab, menguap.', note:'Masalah energi dan fokus. <strong>Ronde yang lebih singkat, gerakan, pergantian aktivitas.</strong>'},
      {ic:'🫥', title:'Sendirian, tidak terhubung', desc:'“Nggak ada yang bisa diajak ngobrol.” Kamera mati, diam, tidak ada reaksi.', note:'Masalah keterhubungan. <strong>Libatkan teman sekelas: berpasangan, show-and-tell, reaksi.</strong>'},
@@ -136,35 +136,35 @@ const CONTENT = {
      {ic:'🔌', title:'Frustrasi dengan alatnya', desc:'“Selalu lag.” “Aku nggak bisa dengar.” Menyerah setelah ada gangguan teknis.', note:'Masalah alat. <strong>Perbaiki dengan cepat, atau ikuti protokol masalah teknis (10 menit, lalu komunikasikan, dokumentasikan, eskalasikan).</strong>'}
    ],2)}
   `},
-  {t:'❓ Pertanyaan yang bisa mengungkapnya — sesuai usia', html:`
+  {t:'Pertanyaan untuk menggali penyebabnya — sesuai usia', html:`
    <div class="card"><p>Ajukan <strong>pertanyaan terbuka, tanpa tekanan</strong>, dan beri siswa cara menjawab yang tidak membuatnya merasa disorot. Apa yang berhasil tergantung usianya:</p></div>
    ${dimTabs([
      {ic:'🧒', title:'Usia 6–8',
       intro:'Anak-anak kecil paling mudah menjawab lewat ekspresi wajah, gambar, dan pilihan — bukan lewat penjelasan.',
       tips:[
        {ic:'😀', html:`<strong>Polling pilih wajah.</strong> <em>“Tunjukkan dengan tanganmu atau emoji, gimana rasanya pelajaran hari ini — senang, biasa aja, atau ngantuk?”</em>`},
-       {ic:'🌟', html:`<strong>Paling seru dan kurang seru.</strong> <em>“Bagian paling seru hari ini apa? Terus bagian yang paling membosankan apa?”</em>`},
+       {ic:'🌟', html:`<strong>Paling seru dan kurang seru.</strong> <em>“Bagian paling seru hari ini apa? Lalu bagian yang paling membosankan apa?”</em>`},
        {ic:'🎁', html:`<strong>Tongkat ajaib.</strong> <em>“Kalau kamu bisa mengubah satu hal dari kelas online kita, kamu mau ubah apa?”</em>`},
        {ic:'👂', html:`<strong>Dengarkan, jangan langsung memperbaiki.</strong> Ulangi apa yang dia katakan dan ucapkan terima kasih — lalu ubah satu hal kecil di pelajaran berikutnya, supaya dia melihat bahwa kamu mendengarkan.`}
       ]},
      {ic:'🧑', title:'Usia 9–11',
       intro:'Mereka bisa memberi nilai dan menjelaskan — asalkan terasa aman dan singkat.',
       tips:[
-       {ic:'🔢', html:`<strong>Skala 1–5.</strong> <em>“Dari 1 sampai 5, seberapa kamu menikmati pelajaran online kita? Apa yang bikin jadi 5?”</em>`},
+       {ic:'🔢', html:`<strong>Skala 1–5.</strong> <em>“Dari 1 sampai 5, seberapa kamu menikmati pelajaran online kita? Apa yang bisa membuatnya jadi 5?”</em>`},
        {ic:'🌟', html:`<strong>Bagian paling keren.</strong> <em>“Bagian paling keren dari kelas hari ini apa?”</em> Jika dia tidak bisa menyebutkan apa pun, itu sebuah tanda.`},
        {ic:'🔧', html:`<strong>Satu perubahan.</strong> <em>“Kalau kamu bisa mengubah satu hal dari pelajaran kita, kamu mau ubah apa?”</em>`},
-       {ic:'🗳️', html:`<strong>Polling cepat di chat.</strong> <em>“Ketik A kalau kamu mau lebih banyak waktu untuk membuat sesuatu, B kalau kamu mau lebih banyak waktu bareng teman.”</em>`}
+       {ic:'🗳️', html:`<strong>Polling cepat di chat.</strong> <em>“Ketik A kalau kamu mau lebih banyak waktu untuk membuat sesuatu, B kalau kamu mau lebih banyak waktu bersama teman.”</em>`}
       ]},
      {ic:'🧑‍🎓', title:'Usia 12+',
       intro:`Siswa yang lebih besar tidak mau mengatakannya di depan semua orang. Beri mereka cara yang pribadi atau anonim.`,
       tips:[
-       {ic:'🔒', html:`<strong>Pesan pribadi.</strong> <em>“Aku perhatikan kamu lebih pendiam akhir-akhir ini. Ada nggak sesuatu dari pelajaran online yang mengganggumu? Cuma antara kita aja.”</em>`},
+       {ic:'🔒', html:`<strong>Pesan pribadi.</strong> <em>“Saya perhatikan kamu lebih pendiam akhir-akhir ini. Apakah ada hal dari pelajaran online yang mengganggumu? Ini cukup antara kita berdua saja.”</em>`},
        {ic:'🗳️', html:`<strong>Polling anonim.</strong> Minta seluruh grup melengkapi kalimat <em>“Aku akan lebih aktif ikut serta kalau…”</em> — ini menghilangkan rasa takut dihakimi.`},
-       {ic:'🤝', html:`<strong>Tanyakan ide mereka,</strong> bukan keluhan mereka: <em>“Apa yang bisa bikin pelajaran kita lebih baik buatmu?”</em>`},
+       {ic:'🤝', html:`<strong>Tanyakan ide mereka,</strong> bukan keluhan mereka: <em>“Apa yang bisa membuat pelajaran kita lebih baik untukmu?”</em>`},
        {ic:'🙏', html:`<strong>Hargai jawabannya.</strong> Jangan pernah membantahnya — ucapkan terima kasih, dan tindak lanjuti satu hal.`}
       ]}
    ],'✅ Itu dia ketiga kelompok usia. Berikutnya: cara mengubah persepsinya.')}
-   ${co('co-idea','🧠',`<p><strong>Mengapa ini berhasil.</strong> Pertanyaan terbuka dan format anonim menghilangkan tekanan sosial untuk menjawab di depan teman sekelas. Memberi masukan lewat kalimat “Aku akan lebih banyak bicara kalau…” sering kali lebih mudah daripada menyampaikannya secara langsung.</p>`)}
+   ${co('co-idea','🧠',`<p><strong>Mengapa ini berhasil.</strong> Pertanyaan terbuka dan format anonim menghilangkan tekanan sosial untuk menjawab di depan teman sekelas. Memberi masukan lewat kalimat “Aku akan lebih aktif ikut serta kalau…” sering kali lebih mudah daripada menyampaikannya secara langsung.</p>`)}
   `},
   {t:'🔁 Ubah persepsinya — validasi dulu, lalu bingkai ulang', html:`
    <div class="card"><p>Kamu tidak bisa membujuk seseorang untuk berhenti merasakan sesuatu. Urutan yang berhasil adalah: <strong>1. validasi</strong> (“itu masuk akal”), <strong>2. bingkai ulang</strong> (tunjukkan sisi lainnya, dengan jujur), <strong>3. coba sesuatu yang kecil</strong> di pelajaran berikutnya. Buka masing-masing:</p></div>
@@ -199,17 +199,17 @@ const CONTENT = {
    <strong>Yang sudah saya coba:</strong> [mis. ronde singkat, tugas berpasangan, partisipasi lewat chat terlebih dahulu]<br>
    <strong>Yang bisa membantu — rekomendasi saya, keputusan Anda:</strong> [mis. grup yang lebih kecil, percakapan motivasi, kursus lain]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Laporkan kasus</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Laporkan kasus" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Dengan keluarga:</strong> bicarakan proses belajarnya, jangan pengaturannya. <em>“Halo Bapak/Ibu [nama orang tua], saya perhatikan [siswa] kadang kesulitan untuk tetap bersemangat di pelajaran online. Saya sudah mulai membuat ronde-ronde singkat untuk membuat sesuatu dan membiarkannya memilih, dan saya sudah menyampaikannya kepada tim saya agar kami bisa mendukungnya dengan cara terbaik.”</em> Jangan menjanjikan apa pun soal grup atau format.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Dengan keluarga:</strong> fokus pada proses belajarnya, bukan soal pindah grup atau format. <em>“Halo Bapak/Ibu [nama orang tua], saya perhatikan [siswa] kadang kesulitan untuk tetap bersemangat di pelajaran online. Saya sudah mulai membagi kegiatan di kelas menjadi sesi-sesi singkat dan memberinya kesempatan untuk memilih, serta sudah menyampaikan hal ini kepada tim saya agar kami bisa mendukungnya dengan cara terbaik.”</em> Jangan menjanjikan apa pun soal grup atau format.</p>`)}
   `}
  ],
  ix:{
-  title:'Apa yang mengganggunya — dan apa yang dilakukan pertama kali',
+  title:'Apa yang mengganggunya — dan apa yang perlu dilakukan pertama kali',
   instr:'Kelompokkan kutipannya dan pilih langkah terbaik. 70% untuk membuka modul berikutnya.',
   items:[
    {type:'sort', prompt:'Apa yang mengganggu siswa ini?', card:`“Nggak ada yang bisa diajak ngobrol.”`, zones:[{label:'🥱 Lelah dan terdistraksi', fb:'Belum tepat — siswa ini menggambarkan rasa sendirian, bukan rasa lelah.'},{label:'🫥 Sendirian, tidak terhubung', fb:'Benar — ini masalah keterhubungan. Libatkan teman sekelas lewat tugas berpasangan, show-and-tell, dan reaksi.'},{label:'🙈 Tidak nyaman di depan kamera', fb:'Belum tepat — ini tentang tidak adanya orang untuk berbagi, bukan tentang dilihat orang lain.'},{label:'🔌 Frustrasi dengan alatnya', fb:'Belum tepat — tidak ada yang berkaitan dengan alat di sini.'}], correctZone:1},
    {type:'sort', prompt:'Apa yang mengganggu siswa ini?', card:`Kameranya mati, dia tidak pernah bicara, dan hanya mengetik di chat.`, zones:[{label:'🥱 Lelah dan terdistraksi', fb:'Belum tepat — mengetik di chat menunjukkan dia terlibat, hanya saja tidak bersuara.'},{label:'🫥 Sendirian, tidak terhubung', fb:'Belum tepat — dia ikut serta lewat chat.'},{label:'🙈 Tidak nyaman di depan kamera', fb:'Benar — masalah rasa aman. Mulailah dengan cara ikut serta yang tidak menekan: chat dulu, lalu berbagi layar, dan kamera saat dia sudah siap.'},{label:'🔌 Frustrasi dengan alatnya', fb:'Belum tepat — tidak ada tanda masalah teknis.'}], correctZone:2},
    {type:'choice', prompt:`Seorang siswa bilang: “Pelajaran online itu membosankan.” Apa langkah pertama yang terbaik?`, opts:[`Menjelaskan bahwa pelajaran online sama bagusnya dengan pelajaran tatap muka`,`Memperpanjang penjelasanmu supaya pelajarannya lebih menarik`,`Menanyakan apa persisnya yang terasa membosankan — durasinya, tugasnya, layarnya, atau rasa sendirian?`], correct:2, fb:`Sebelum teknik apa pun, cari tahu bagian mana yang tidak cocok. “Membosankan” bisa berarti lelah, kesepian, malu, atau frustrasi — dan masing-masing punya solusi yang berbeda.`},
-   {type:'sort', prompt:'Harta karun atau sampah? Apakah ini respons yang baik?', card:`“Itu masuk akal — layar memang bisa terasa pasif. Di sini, semua yang ada di layarmu adalah sesuatu yang kamu buat.”`, zones:[{label:'💎 Harta karun — memvalidasi dan membingkai ulang', fb:'Benar — respons ini memvalidasi perasaannya terlebih dahulu, lalu menawarkan bingkai ulang yang jujur.'},{label:'🗑️ Sampah — mengabaikan', fb:'Belum tepat — respons ini memvalidasi dulu, lalu membingkai ulang. Itulah urutan yang benar.'}], correctZone:0},
+   {type:'sort', prompt:'Tepat atau kurang tepat? Apakah ini umpan balik yang respons yang baik?', card:`🔁 Bingkai ulang: “Di sini kamu tidak hanya menonton — semua yang ada di layarmu adalah hasil buatanmu sendiri.”`, zones:[{label:'💎 Harta karun — memvalidasi dan membingkai ulang', fb:'Benar — respons ini memvalidasi perasaannya terlebih dahulu, lalu menawarkan bingkai ulang yang jujur.'},{label:'🗑️ Sampah — mengabaikan', fb:'Belum tepat — respons ini memvalidasi dulu, lalu membingkai ulang. Itulah urutan yang benar.'}], correctZone:0},
    {type:'choice', prompt:`Seorang anak berusia 12 tahun tampak tidak terhubung. Cara bertanya mana yang membuatnya bisa menjawab dengan jujur?`, opts:[`Bertanya dengan lantang kepada seluruh grup: “Siapa yang merasa pelajaran online membosankan?”`,`Meminta orang tuanya untuk berbicara dengannya`,`Pesan pribadi, atau polling anonim: “Aku akan lebih aktif ikut serta kalau…”`], correct:2, fb:`Siswa yang lebih besar jarang mengatakannya di depan teman sebaya. Pesan pribadi atau polling anonim menghilangkan tekanan sosial.`},
    {type:'choice', prompt:`Kapan kamu melaporkan ketidaksukaan siswa terhadap format online di BO?`, opts:[`Di hari yang sama — berisi apa yang dia katakan, apa yang kamu lihat, dan apa yang sudah kamu coba`,`Setelah sebulan, jika tidak ada perbaikan`,`Hanya jika orang tuanya mengeluh`], correct:0, fb:`Pilihan seperti grup atau format lain hanya bisa dipertimbangkan selagi keluarga masih menimbang keputusannya. Fakta, kata-kata siswa, dan apa yang sudah kamu coba membuat tim bisa bertindak cepat.`}
   ]
@@ -220,7 +220,7 @@ const CONTENT = {
  desc:'Teknik-teknik yang menjaga perhatian dan membuat layar terasa seperti ruang bersama: pembukaan yang kuat, bekerja dalam ronde-ronde singkat, interaksi, keterhubungan, pertanyaan langsung, dan keberhasilan di akhir.',
  obj:'Menjalankan pelajaran online yang menjaga perhatian, memberi setiap siswa cara yang nyaman untuk ikut serta, menghubungkan teman sekelas, dan diakhiri dengan keberhasilan — disesuaikan dengan usia grupnya.',
  sections:[
-  {t:'🧠 Empat hal yang dimiliki setiap pelajaran yang memotivasi', html:`
+  {t:'Empat hal yang membuat pelajaran terasa memotivasi', html:`
    <div class="card"><p>Di kelas online, tidak ada yang membantumu menjaga perhatian: tidak ada ruang fisik, tidak ada teman sekelas di samping mereka, dan setiap gangguan hanya berjarak satu klik. Penelitian tentang motivasi memberikan checklist sederhana — <strong>model ARCS</strong> dari John Keller (1987). Tanyakan pada dirimu sendiri, sebelum setiap pelajaran, apakah keempatnya sudah ada:</p></div>
    ${iconGrid([
      {ic:'👀', html:`<strong>Attention (Perhatian).</strong> Kejutan, pertanyaan, tantangan singkat, dan pergantian format. <em>“Ada bug yang kabur dari game — siapa yang bisa bantu aku menangkapnya?”</em>`},
@@ -242,15 +242,15 @@ const CONTENT = {
      ]},
      {ic:'🙋', label:'Berinteraksi — setiap beberapa menit', items:[
        '<strong>Beri semua orang cara untuk ikut serta:</strong> chat, reaksi, polling cepat, atau berbagi layar secara bergiliran.',
-       '<em>“Ketik tebakanmu di chat — nanti aku bacakan semuanya!”</em>'
+       '<em>“Ketik tebakanmu di chat — nanti saya bacakan semuanya!”</em>'
      ]},
      {ic:'👥', label:'Hubungkan teman sekelas', items:[
        '<strong>Momen berpasangan selama dua menit</strong> atau tugas kelompok kecil, supaya layar terasa seperti ruang bersama.',
-       '<em>“Tunjukkan bagian terbaikmu ke pasanganmu — lalu ceritakan ke aku apa yang kamu suka dari punya dia.”</em>'
+       '<em>Tunjukkan bagian terbaik proyekmu ke pasanganmu — lalu ceritakan ke saya apa yang kamu suka dari proyek temanmu.”</em>'
      ]},
      {ic:'🏁', label:'Tutup dengan keberhasilan', items:[
        '<strong>Show-and-tell dari apa yang mereka buat,</strong> pujian yang spesifik, dan sedikit bocoran tentang apa yang akan datang.',
-       '<em>“Lihat apa yang sudah kalian buat hari ini — pertemuan berikutnya, ini akan punya skor.”</em>'
+       '<em>Lihat apa yang sudah kalian buat hari ini! Di pertemuan berikutnya, kita akan menambahkan skor ke game ini.”</em>'
      ]}
    ])}
   `},
@@ -270,16 +270,16 @@ const CONTENT = {
       intro:'Ronde singkat, gerakan, dan kejutan. Energi mereka adalah pelajarannya.',
       tips:[
        {ic:'🤸', html:`<strong>Jeda untuk bergerak.</strong> <em>“Ayo berdiri dan tunjukkan gaya robot terbaikmu!”</em> — lalu kembali ke keyboard.`},
-       {ic:'⏲️', html:`<strong>Ronde yang lebih singkat dari 10 menit,</strong> dengan “sekarang kita melakukan ini” yang jelas di setiap pergantian.`},
+       {ic:'⏲️', html:`<strong>Ronde yang lebih singkat dari 10 menit,</strong> dan sampaikan dengan jelas “sekarang kita akan…” setiap kali berganti aktivitas.`},
        {ic:'🎁', html:`<strong>Stiker, poin, maskot</strong> — hadiah kecil dan langsung karena sudah ikut serta.`},
        {ic:'🧸', html:`<strong>Show-and-tell.</strong> <em>“Tunjukkan mainan atau gambar favoritmu, lalu kita buat bersama.”</em>`}
       ]},
      {ic:'🧑', title:'Usia 9–11',
-      intro:'Misi, penghitung waktu, dan tim membuat layar terasa seperti permainan.',
+      intro:'Ronde singkat, gerakan, dan kejutan. Manfaatkan energi mereka dalam pelajaran.',
       tips:[
        {ic:'🎯', html:`<strong>Misi mini dengan penghitung waktu.</strong> <em>“Kalian punya 8 menit untuk membuat karakternya melompat. Siap?”</em>`},
        {ic:'🏁', html:`<strong>Tantangan tim.</strong> Pasangan berlomba menemukan bug lebih dulu — bersahabat dan singkat.`},
-       {ic:'🧩', html:`<strong>Pilihan tema</strong> di dalam tugas yang sama — tujuannya tetap, kostumnya milik mereka.`},
+       {ic:'🧩', html:`<strong>Pilihan tema</strong> di dalam tugas yang sama — tujuannya tetap sama, tapi temanya bebas mereka pilih.`},
        {ic:'🗳️', html:`<strong>Polling cepat</strong> untuk memutuskan ronde berikutnya.`}
       ]},
      {ic:'🧑‍🎓', title:'Usia 12+',
@@ -287,13 +287,13 @@ const CONTENT = {
       tips:[
        {ic:'🧭', html:`<strong>Beri mereka suara dalam rencananya.</strong> <em>“Kita punya 15 menit untuk bagian ini — mau mulai dengan A atau B?”</em>`},
        {ic:'🌍', html:`<strong>Tunjukkan penggunaan nyata</strong> dari keterampilan itu, dalam hal-hal yang mereka kenal.`},
-       {ic:'🔒', html:`<strong>Hargai soal kamera.</strong> Tawarkan partisipasi lewat chat terlebih dahulu; jangan pernah memaksa menyalakan kamera.`},
-       {ic:'🗳️', html:`<strong>Polling anonim</strong> untuk mengumpulkan pendapat, dan saling mengulas hasil kerja satu sama lain.`}
+       {ic:'🔒', html:`<strong>Hargai pilihan mereka soal kamera.</strong> Tawarkan partisipasi lewat chat terlebih dahulu; jangan pernah memaksa menyalakan kamera.`},
+       {ic:'🗳️', html:`<strong>Polling anonim</strong> untuk mengumpulkan pendapat, dan saling mengulas hasil kerja.`}
       ]}
    ],'✅ Itu dia ketiga kelompok usia.')}
   `},
   {t:'🙋 Pertanyaan langsung — tanpa tekanan', html:`
-   <div class="card"><p>Bertanya kepada siswa dengan menyebut namanya itu berhasil — jika mereka percaya bahwa itu tidak akan memalukan. Siapkan mereka, mulai dari yang mudah, dan buat terasa adil.</p></div>
+   <div class="card"><p>Menunjuk siswa dengan menyebut namanya bisa efektif — asalkan mereka yakin tidak akan dipermalukan. Siapkan mereka, mulai dari yang mudah, dan buat terasa adil.</p></div>
    ${doavoid(
      ['Beri tahu grup bahwa kamu akan bertanya kepada semua orang suatu saat nanti — dan bahwa <em>“aku nggak tahu”</em> adalah jawaban yang tidak apa-apa','Mulailah dengan pertanyaan mudah untuk membangun rasa percaya diri','Gunakan pemilih acak supaya terasa adil, bukan personal','Puji setiap kontribusi: <em>“Terima kasih — itu membantu kita berpikir.”</em>'],
      ['Tiba-tiba menunjuk siswa yang paling pendiam dengan pertanyaan sulit','Mengoreksi dengan keras di depan grup','Hanya bertanya kepada siswa yang sama-sama cepat setiap kali','Melontarkan pertanyaan sulit tanpa peringatan — coba: <em>“Yang ini agak susah, tapi ada yang mau mencoba?”</em>']

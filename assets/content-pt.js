@@ -9,7 +9,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Minitreinamento",
     heroTitle:"Aulas <span class=\"h-pill\">Online</span> que Funcionam de Verdade",
     heroIntro:"Você recebeu este treinamento porque tem alunos que pediram reembolso por não gostarem do formato online. Aqui, vamos mostrar o que você pode fazer como tutor e como lidar com essas situações.",
-    heroWork:"Faça 4 módulos curtos. Cada verificação de módulo exige 70% ou mais para liberar o próximo. Cerca de 20 a 25 minutos no total.",
+    heroWork:"Complete 4 módulos curtos. Acerte pelo menos 70% em cada verificação para liberar o próximo módulo. Levará cerca de 25 a 35 minutos.",
     startBtn:"🚀 Começar o treinamento",
     pathLabel:'Seu caminho de aprendizado',
     devTitle:'Dev: desbloquear todos os módulos para revisão',
@@ -26,7 +26,7 @@ const CONTENT = {
     startCheck:'▶ Iniciar a verificação do módulo',
     finishBtn:'▶ Concluir o minitreinamento',
     doneBack:'✓ Pronto — voltar ao caminho',
-    ixBadge:'📋 Verificação do módulo — 70% para liberar o próximo módulo',
+    ixBadge:'📋 Verificação do módulo — Acerte 70% do quiz para liberar o próximo módulo',
     ixItemBadge:'📋 Verificação do módulo — item {i} de {n}',
     scoreSoFar:'Pontuação até agora: {c} / {t}',
     continue:'Continuar →',
@@ -35,7 +35,7 @@ const CONTENT = {
     resFailed:'Ainda não foi dessa vez',
     resUnlocked:"Você liberou o próximo módulo.",
     resDone:"Você concluiu este minitreinamento.",
-    resNeed:'Você precisa de 70% para liberar o próximo módulo. Revise a seção acima e faça a verificação novamente.',
+    resNeed:'Você precisa de Acerte 70% do quiz para liberar o próximo módulo. Revise a seção acima e faça a verificação novamente.',
     resContinue:'Continuar para o caminho de aprendizado',
     resFinish:'Continuar',
     resBack:'Voltar ao caminho',
@@ -80,9 +80,9 @@ const CONTENT = {
      {ic:'🔌', html:`<strong>Frustração com as ferramentas.</strong> Travamentos, áudio que não funciona, botões que não respondem.`},
      {ic:'👨‍👩‍👧', html:`<strong>A família esperava aulas presenciais.</strong> Para eles, o online parece “menos de verdade” — não importa o que a criança pense.`}
    ])}
-   ${co('co-idea','💡',`<p><strong>Você não pode mudar o formato — mas pode mudar como a aula é vivida dentro dele.</strong> A maior parte do que os alunos não gostam nas aulas online vem de como a aula é conduzida, e essa parte é sua.</p>`)}
+   ${co('co-idea','💡',`<p><strong>Você não pode mudar o formato, mas pode transformar a experiência dos alunos dentro dele.</strong> A maior parte do que os alunos não gostam nas aulas online está relacionada à maneira como elas são conduzidas — e isso está nas suas mãos.</p>`)}
   `},
-  {t:'⏱️ A chave é a rapidez — e o seu relato', html:`
+  {t:'⏱️ O segredo está na rapidez e no seu relato.', html:`
    <div class="card"><p>Não é você quem decide se um aluno pode mudar de grupo ou de formato. Mas o seu relato é o que inicia essa conversa, e ele só funciona se chegar às pessoas certas <strong>cedo</strong>.</p></div>
    ${stepFlow([
      {ic:'👀', label:'Você percebe o desgosto em uma aula'},
@@ -108,14 +108,14 @@ const CONTENT = {
    ])}
   `},
   {t:'📮 Avise rápido e conheça a única frase segura', html:`
-   <div class="card"><p>Você pode descobrir que existe um pedido pelos comentários do Client Service no perfil da criança no BO — não há nenhum sistema automático que avise você. Quando você souber, o que viu nas suas aulas é uma informação que o Client Service não tem de nenhum outro jeito.</p></div>
+   <div class="card"><p>Você pode descobrir se há um pedido de reembolso por meio dos comentários do Client Service no perfil do aluno, no BO. Não há nenhum sistema automático que envie esse aviso. Quando ficar sabendo, lembre-se de que as informações que você obteve durante as aulas são algo que o Client Service não tem como conseguir de outra forma.</p></div>
    ${numlist([
      'Deixe um comentário no BO no mesmo dia com exatamente o que você viu — datas e detalhes, não impressões',
      'Inclua as palavras da própria família, literalmente, se você as tiver',
      'Avise seu Team Leader no mesmo dia',
      'Nunca confirme que um reembolso foi aprovado nem comente qualquer valor'
    ])}
-   ${co('co-ok','✅',`<p><strong>A mensagem que é sempre segura dizer:</strong> <em>“O Client Service vai ajudar você com isso.”</em> É aí que termina a sua parte da conversa — o Client Service assume a partir dali.</p>`)}
+   ${co('co-ok','✅',`<p><strong>A mensagem que você sempre pode usar:</strong> <em>“O departamento de Atendimento ao Cliente vai ajudar você com isso.”</em> É nesse ponto que termina a sua participação na conversa e o Client Service assume o atendimento.</p>`)}
   `},
   {t:'🌱 Continue com o cuidado depois', html:`
    <div class="card"><p>Quer o pedido seja retirado, quer a criança continue no seu grupo, quer passe para outro tutor ou formato, continue dando atenção extra nas próximas aulas. Uma reversão que se sustenta por uma aula e depois volta discretamente ao normal muitas vezes não se sustenta de jeito nenhum.</p></div>
@@ -130,7 +130,7 @@ const CONTENT = {
   {t:'🔍 Pergunte primeiro: o que exatamente incomoda?', html:`
    <div class="card"><p>Antes de tentar técnicas de engajamento, descubra <strong>qual parte do formato online não funciona para o aluno</strong>. Uma técnica que resolve a solidão não faz nada pelo cansaço de tela. As crianças raramente dizem isso com clareza, então aprenda como cada caso aparece e soa:</p></div>
    ${patternCards([
-     {ic:'🥱', title:'Cansado e distraído', desc:'“Estou cansado.” “É muito longo.” O olhar vaga, as abas mudam, há bocejos.', note:'Um problema de energia e atenção. <strong>Rodadas mais curtas, movimento, mudança de atividade.</strong>'},
+     {ic:'🥱', title:'Cansado e distraído', desc:'“Estou cansado.” “Está demorando muito.” O olhar se dispersa, as abas mudam, surgem bocejos.', note:'Um problema de energia e atenção. <strong>Rodadas mais curtas, movimento, mudança de atividade.</strong>'},
      {ic:'🫥', title:'Sozinho, sem conexão', desc:'“Não tem ninguém para conversar.” Câmera desligada, em silêncio, sem reações.', note:'Um problema de conexão. <strong>Traga os colegas para dentro: duplas, mostre e conte, reações.</strong>'},
      {ic:'🙈', title:'Desconfortável diante da câmera', desc:'Não fala nem mostra o rosto; responde no chat, ou não responde.', note:'Um problema de segurança. <strong>Formas de participar sem pressão.</strong>'},
      {ic:'🔌', title:'Frustrado com as ferramentas', desc:'“Sempre trava.” “Não consegui ouvir.” Desiste depois de um problema técnico.', note:'Um problema de ferramenta. <strong>Resolva rápido ou siga o protocolo de problemas técnicos (10 minutos, depois comunicar, documentar, escalar).</strong>'}
@@ -204,7 +204,7 @@ const CONTENT = {
  ],
  ix:{
   title:'O que incomoda — e o que fazer primeiro',
-  instr:'Classifique as falas e escolha a melhor atitude. 70% para liberar o próximo módulo.',
+  instr:'Classifique as falas e escolha a melhor atitude. Acerte 70% do quiz para liberar o próximo módulo.',
   items:[
    {type:'sort', prompt:'O que está incomodando este aluno?', card:`“Não tem ninguém para conversar.”`, zones:[{label:'🥱 Cansado e distraído', fb:'Não foi dessa vez — o aluno está falando de estar sozinho, não de cansaço.'},{label:'🫥 Sozinho, sem conexão', fb:'Correto — é um problema de conexão. Traga os colegas para dentro com duplas, mostre e conte e reações.'},{label:'🙈 Desconfortável diante da câmera', fb:'Não foi dessa vez — aqui se trata de faltar gente para compartilhar, não de ser visto.'},{label:'🔌 Frustrado com as ferramentas', fb:'Não foi dessa vez — nada aqui tem a ver com as ferramentas.'}], correctZone:1},
    {type:'sort', prompt:'O que está incomodando esta aluna?', card:`Ela está com a câmera desligada, nunca fala e só digita no chat.`, zones:[{label:'🥱 Cansada e distraída', fb:'Não foi dessa vez — digitar no chat mostra que ela está engajada, só não em voz alta.'},{label:'🫥 Sozinha, sem conexão', fb:'Não foi dessa vez — ela está participando pelo chat.'},{label:'🙈 Desconfortável diante da câmera', fb:'Correto — um problema de segurança. Comece com formas de participar sem pressão: primeiro o chat, depois o compartilhamento de tela e, por fim, a câmera quando ela estiver pronta.'},{label:'🔌 Frustrada com as ferramentas', fb:'Não foi dessa vez — nada indica um problema técnico.'}], correctZone:2},
@@ -293,7 +293,7 @@ const CONTENT = {
    ],'✅ Essas são as três faixas etárias.')}
   `},
   {t:'🙋 Perguntas diretas — sem pressão', html:`
-   <div class="card"><p>Perguntar a um aluno pelo nome funciona — se ele confiar que não será constrangedor. Prepare-o, comece fácil e faça com que pareça justo.</p></div>
+   <div class="card"><p>Chamar um aluno pelo nome para responder funciona, desde que ele confie que não vai passar por uma situação constrangedora. Prepare-o antes, comece com perguntas fáceis e faça com que a abordagem pareça justa.</p></div>
    ${doavoid(
      ['Avise ao grupo que você vai perguntar a todos em algum momento — e que <em>“não sei”</em> é uma ótima resposta','Comece com uma pergunta fácil para criar confiança','Use um sorteador aleatório para que pareça justo, não pessoal','Elogie qualquer contribuição: <em>“Obrigado — isso nos ajuda a pensar.”</em>'],
      ['Chamar de surpresa o aluno mais quieto com uma pergunta difícil','Corrigir com dureza na frente do grupo','Perguntar sempre apenas aos mesmos alunos rápidos','Apresentar uma pergunta difícil sem aviso — tente: <em>“Esta é complicada, mas alguém quer tentar?”</em>']
@@ -303,7 +303,7 @@ const CONTENT = {
  ],
  ix:{
   title:'Construa a aula de que eles gostam',
-  instr:'Escolha a melhor atitude ou classifique cada hábito. 70% para liberar o checklist final.',
+  instr:'Escolha a melhor atitude ou classifique cada hábito. Acerte 70% do quiz para liberar o checklist final.',
   items:[
    {type:'choice', prompt:`No meio da aula, um aluno de 9 anos parece cansado e começa a trocar de aba. Qual é a melhor atitude?`, opts:[`Continuar explicando — ele vai acompanhar depois`,`Mudar a atividade: uma enquete rápida ou uma missão curta com cronômetro, e depois uma nova rodada`,`Mandar que ele preste atenção`], correct:1, fb:`Uma mudança de atividade renova a atenção. Mandar focar não dá a ele um motivo para isso.`},
    {type:'sort', prompt:'Este hábito ajuda ou atrapalha uma aula online?', card:`Mudar a atividade a cada 10 minutos, mais ou menos: explicar, tentar, compartilhar.`, zones:[{label:'💎 Ajuda', fb:'Correto — rodadas curtas são uma das formas mais confiáveis de manter a atenção no online.'},{label:'🗑️ Atrapalha', fb:'Não foi dessa vez — rodadas curtas ajudam; trechos longos com uma única atividade fazem os alunos se perderem.'}], correctZone:0},
