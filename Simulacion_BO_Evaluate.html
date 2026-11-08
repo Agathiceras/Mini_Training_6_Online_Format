@@ -1392,7 +1392,9 @@ function applyTourHighlights(){
     if(!sel) return;
     document.querySelectorAll(sel).forEach(el=>el.classList.add('tour-hl'));
   });
-  if(st.sel){ const el=document.querySelector(st.sel); if(el) el.scrollIntoView({behavior:'smooth',block:'center'}); }
+  // Inside the training page, scroll only after the tutor has used the simulation: scrolling on load would also move the training page to the simulation.
+  if(!window.__simActedInit){ window.__simActedInit=true; ['pointerdown','keydown'].forEach(function(ev){ document.addEventListener(ev,function(){ window.__simActed=true; },true); }); }
+  if(st.sel && (window.parent===window || window.__simActed)){ const el=document.querySelector(st.sel); if(el) el.scrollIntoView({behavior:'smooth',block:'center'}); }
 }
 
 render();
