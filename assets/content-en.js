@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-Training",
     heroTitle:"Making <span class=\"h-pill\">Online</span> Lessons Feel Right",
     heroIntro:"You've received this training because you have students who have requested a refund because they don't like the online format. Here, we'll show you what you can do as a tutor and how to handle these situations.",
-    heroWork:"Work through 4 short modules. Each module check needs 70%+ to unlock the next. About 20–25 minutes total.",
+    heroWork:"Work through 4 short modules. Each module check needs 70%+ to unlock the next. About 30–35 minutes total.",
     startBtn:"🚀 Start Training",
     pathLabel:'Your learning path',
     devTitle:'Dev: unlock all modules for review',
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Module 2', emoji:'🎬', color:'var(--coral)',
  title:'Build an Online Lesson They Enjoy',
- desc:'Techniques that keep attention and make the screen feel like a shared room: opening strong, working in short rounds, interaction, connection, direct questions and a win at the end.',
- obj:'Run an online lesson that keeps attention, gives every student a comfortable way to take part, connects classmates, and ends on a win — adapted to the age of the group.',
+ desc:'Techniques that keep attention and make the screen feel like a shared room — plus support for students with attention difficulties, the home environment, weak computer skills and slow computers.',
+ obj:'Run an online lesson that keeps attention, gives every student a comfortable way to take part, connects classmates, and ends on a win — adapted to the age of the group — and support students with attention difficulties, a distracting home, weak computer skills or a slow computer.',
  sections:[
   {t:'🧠 Four things every motivating lesson has', html:`
    <div class="card"><p>Online, nothing holds attention for you: no physical room, no classmates next to them, and every distraction one click away. Motivation research gives a simple checklist — John Keller's <strong>ARCS model</strong> (1987). Ask yourself, before every lesson, whether it has all four:</p></div>
@@ -312,6 +312,52 @@ const CONTENT = {
      ['Cold-calling the quietest student with a hard question','Correcting harshly in front of the group','Asking only the same fast students every time','Introducing a hard question without warning — try: <em>"This one is tricky, but does anyone want to try?"</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Why it works:</strong> students take part when they feel safe. Preparing them, starting easy and keeping it fair turns a question from a risk into an invitation.</p>`)}
+  `},
+  {t:'🧠 Students with attention difficulties, ADHD or anxiety', html:`
+   <div class="card"><p>For some students, "I can't do online" really means <em>"I can't keep my attention on a screen this long"</em>. ADHD, autism or anxiety make that harder — and the family may not have told you, or the child may never have been assessed. <strong>You don't need a diagnosis to adapt</strong>, and you never give one. What you need is a lesson built in small pieces, with a clear structure and room to move.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Micro-tasks with a visible finish.</strong> <em>"Just the background for now — tell me when it's ready."</em> Every small finish is a real win.`},
+     {ic:'1️⃣', html:`<strong>Short, one-step instructions,</strong> and repeat the goal before each activity.`},
+     {ic:'✅', html:`<strong>A visible checklist</strong> on screen or in the chat: what's done, what's next. It replaces memory when attention slips.`},
+     {ic:'⏲️', html:`<strong>A timer as a game</strong> — <em>"beat the clock!"</em> — if the student enjoys it. If the pressure frustrates them, show it only as a visual reference.`},
+     {ic:'🤸', html:`<strong>Movement instead of "sit still".</strong> <em>"Want to stand up for 10 seconds, and then we'll carry on?"</em> Short breaks help attention more than asking for calm.`},
+     {ic:'↩️', html:`<strong>Redirect gently.</strong> When they go off topic: <em>"I love that idea — let's save it for later."</em> Then give a concrete next step, not "focus".`},
+     {ic:'🔁', html:`<strong>Same structure, changes announced.</strong> <em>"In 5 minutes we'll switch to…"</em> Predictability lowers anxiety, especially for autistic students.`},
+     {ic:'👀', html:`<strong>Screen breaks for tired eyes.</strong> A short look away from the screen between rounds helps students who find long screen time uncomfortable.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>When it boils over</strong> — frustration, tears or a student who shuts down: lower your voice and pace, name the feeling without judging (<em>"I can see this is hard right now"</em>), offer a concrete action instead of "calm down", and go back to a step they managed. The content can wait until they've settled.</p>`)}
+  `},
+  {t:'🏠 The home environment — work with the family', html:`
+   <div class="card"><p>Online, the classroom is the child's home. A phone on the desk, a TV in the background or a sibling playing next to them can defeat the best lesson. You can't control the home — but you can <strong>ask the family for help</strong>, kindly and concretely.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'Same quiet spot', desc:'The same place for every lesson, away from the TV and the busiest room.', note:'Routine helps attention.'},
+     {ic:'🎧', title:'Headphones', desc:'They block background noise and make the tutor easier to hear.', note:'Any simple headset works.'},
+     {ic:'📱', title:'Phone away', desc:'Out of reach during the lesson, and other apps and tabs closed.', note:'One click away is too close.'},
+     {ic:'👋', title:'A parent nearby — at first', desc:'For the youngest, someone close by in the first minutes to help with the setup.', note:'For the setup — not for the tasks.'}
+   ],2)}
+   <div class="card" style="background:var(--surface2)"><h4>📨 A message to the family — copy and adapt</h4>
+   <p style="font-size:13.5px;line-height:1.75"><em>"Hi [parent's name]! [Student] has great ideas in our lessons, and I'd love to help them stay focused for the whole hour. A few small things at home can make a big difference: the same quiet spot for each lesson, headphones if you have them, and the phone out of reach. I'm also working in short rounds in class so the time feels lighter. What usually helps [student] concentrate at home?"</em></p></div>
+   ${co('co-idea','👪',`<p><strong>Share observations, not judgments.</strong> <em>"Today I noticed he concentrated much better in the second half, after a short break"</em> opens a conversation. <em>"He never pays attention"</em> closes it.</p>`)}
+  `},
+  {t:'⌨️ Weak computer skills — and slow computers', html:`
+   <div class="card"><p>Online lessons ask a child to manage the computer and the content at the same time. A student who is still learning to type, drag, copy or switch windows — or whose computer is slow — spends the lesson fighting the machine, and the family concludes that <em>"online doesn't work for him"</em>.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Signs to look for', sub:'In the first lessons',
+      see:`Searches the keyboard for every key · can't drag, right-click, copy or paste · gets lost when switching windows or tabs · struggles to share their screen · understands the idea but never finishes because of the <em>how</em>.`,
+      tip:`Ask them to share their screen and watch <em>how</em> they work. It often looks like disinterest when it's really the computer.`},
+     {ic:'🧑‍🏫', title:'What you do in the lesson',
+      do:`<ul><li><strong>Model slowly, with your cursor visible,</strong> narrating each click, and zoom in when you share.</li><li><strong>One step, then check:</strong> <em>"Show me your screen — where are you now?"</em></li><li><strong>A two-minute skills warm-up:</strong> copy and paste, drag, save, switch windows.</li><li><strong>Shortcuts in the chat:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S, Alt+Tab (Cmd on a Mac).</li><li><strong>Celebrate computer wins too:</strong> <em>"You shared your screen on your own!"</em></li></ul>`,
+      avoid:`Taking control of their screen or doing the task for them.`},
+     {ic:'👪', title:'Involve the parent in the setup',
+      do:`Ask the family to check before the lesson: Chrome installed and up to date, the course tools installed if the course needs them, the login saved, and the lesson link easy to find. With the youngest, a parent nearby in the first minutes helps with the setup.`,
+      say:`<em>"Hi [parent's name]! To make the start of each lesson smoother, could you check that [Chrome / the course program] is ready and the login is saved? It helps if you're nearby for the first few minutes — the tasks themselves are [student]'s to do."</em>`},
+     {ic:'🐢', title:'When the computer is slow',
+      do:`<ul><li><strong>Close other programs and tabs</strong> before the lesson, use Google Chrome, and ask that nobody else at home uses the Wi-Fi heavily during the lesson.</li><li><strong>Blender running slowly?</strong> The wiki has guides to configure Blender for better performance — use them to help the student set it up. The course also includes a performance guide in its first lessons.</li><li><strong>Can't run the course tool at all?</strong> Keep the lesson useful — your demo on a shared screen, verbal answers — and tell your Team Leader: Teaching and Sales decide how the student continues.</li></ul>`,
+      avoid:`Asking the family to buy a new computer, or promising a course change.`},
+     {ic:'📝', title:'When it\'s more than you can fix in the group',
+      do:`Leave a comment in BO with what you saw and what you tried, and tell your Team Leader. You can request an extra lesson to practise the basics — your Team Leader decides.`,
+      avoid:`Offering an extra lesson or a different format to the family yourself.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +369,11 @@ const CONTENT = {
    {type:'choice', prompt:`How do you give instructions in an online lesson?`, opts:[`All the steps at once, so nobody has to wait`,`One instruction at a time, then check it: "What are you going to do first?"`,`Say it once, quickly, and move on`], correct:1, fb:`Stacked instructions get lost online. One step plus a check question catches confusion early.`},
    {type:'choice', prompt:`A shy 13-year-old never answers aloud. What helps most?`, opts:[`Call on them by name every lesson until they speak`,`Let them take part through the chat first, and praise their contributions`,`Ask them to turn on their camera in front of everyone`], correct:1, fb:`Give them a comfortable way in — the chat first. The camera can come later, when they want.`},
    {type:'sort', prompt:'Does this habit help or hurt an online lesson?', card:`Cold-calling the quietest student with the hardest question.`, zones:[{label:'💎 Helps', fb:'Not quite — it puts the student on the spot and makes the next question harder to answer.'},{label:'🗑️ Hurts', fb:'Correct — start easy, prepare them, and make the choice feel fair.'}], correctZone:1},
-   {type:'choice', prompt:`Which opening works best for a 7-year-old?`, opts:[`"Today we're going to learn about variables."`,`"Today a robot lost its voice — by the end of the lesson you'll have given it one. Who's in?"`,`"Open the lesson and start exercise 1."`], correct:1, fb:`A story with a mission gives attention and a reason to take part. Jumping straight into content wastes the most attentive minutes.`}
+   {type:'choice', prompt:`Which opening works best for a 7-year-old?`, opts:[`"Today we're going to learn about variables."`,`"Today a robot lost its voice — by the end of the lesson you'll have given it one. Who's in?"`,`"Open the lesson and start exercise 1."`], correct:1, fb:`A story with a mission gives attention and a reason to take part. Jumping straight into content wastes the most attentive minutes.`},
+   {type:'choice', prompt:`A student with ADHD keeps wandering off topic to talk about a TV show. What do you say?`, opts:[`"Stop talking about that, we're in class."`,`"I love that idea — let's save it for later. Now: just the background, tell me when it's ready."`,`Nothing — you ignore it and keep explaining to the others`], correct:1, fb:`Redirect gently, then give one concrete, small task with a visible finish. "Stop" gives them nothing to do instead.`},
+   {type:'sort', prompt:'Does this help or hurt?', card:`You message the family suggesting a quiet spot, headphones and the phone out of reach during lessons — and ask what helps their child concentrate.`, zones:[{label:'💎 Helps', fb:'Correct — online, the home is the classroom. Concrete, kind suggestions and a question about what works turn the family into allies.'},{label:'🗑️ Hurts', fb:'Not quite — it\'s kind, concrete and asks for their experience. That\'s exactly how to work with the family.'}], correctZone:0},
+   {type:'choice', prompt:`A 7-year-old can't find the keys or copy and paste, and the family says "online isn't for him". What do you do first?`, opts:[`Tell the family he's too young for online lessons`,`Take control of his screen so he keeps up with the group`,`Model slowly with your cursor visible, add a short skills warm-up, and ask the parent to help with the setup`], correct:2, fb:`Weak computer skills can be trained. Showing the steps slowly and involving the parent in the setup — not the tasks — builds confidence lesson by lesson.`},
+   {type:'sort', prompt:'Does this help or hurt?', card:`Blender runs very slowly on a student's computer, so you tell the family they need to buy a better one.`, zones:[{label:'💎 Helps', fb:'Not quite — never ask a family to buy equipment. Close other programs, use the wiki\'s Blender performance guides, and tell your Team Leader if it still can\'t run.'},{label:'🗑️ Hurts', fb:'Correct — help with the wiki\'s Blender performance guides first; if the computer can\'t run the course, your Team Leader takes it from there.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +401,12 @@ const CONTENT = {
      'I ask direct questions without pressure: easy first, a fair way to choose, and positive feedback for any answer',
      'I connect classmates with short pair or small-group moments',
      'I report a student\'s dislike of the online format in BO the same day: what they said, what I saw, what I tried',
-     'I never promise a format or group change — I recommend in BO and say "I\'ll check with my team"'
+     'I never promise a format or group change — I recommend in BO and say "I\'ll check with my team"',
+     'For students with attention difficulties, ADHD or anxiety, I use micro-tasks with a visible finish, one-step instructions, a visible checklist and short movement breaks',
+     'I redirect gently ("let\'s save that idea for later") and announce changes before they happen — and I never label or diagnose a child',
+     'I ask the family, kindly and concretely, for help with the home environment: a quiet spot, headphones, the phone out of reach',
+     'When a student is still learning to use the computer, I model slowly with my cursor visible, give one step at a time, and ask the parent to help with the setup — not the tasks',
+     'If the computer is slow, I help close other programs and use the wiki\'s Blender performance guides; if it can\'t run the course, I tell my Team Leader'
    ])}
   `},
   {t:'', html:`
