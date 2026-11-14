@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Minitreinamento",
     heroTitle:"Aulas <span class=\"h-pill\">Online</span> que Funcionam de Verdade",
     heroIntro:"Você recebeu este treinamento porque tem alunos que pediram reembolso por não gostarem do formato online. Aqui, vamos mostrar o que você pode fazer como tutor e como lidar com essas situações.",
-    heroWork:"Complete 4 módulos curtos. Acerte pelo menos 70% em cada verificação para liberar o próximo módulo. Levará cerca de 25 a 35 minutos.",
+    heroWork:"Conclua os 4 módulos curtos. Para desbloquear o próximo módulo, é necessário obter pelo menos 70% de acerto na avaliação de cada etapa. Duração total aproximada: 30–35 minutos.",
     startBtn:"🚀 Começar o treinamento",
     pathLabel:'Seu caminho de aprendizado',
     devTitle:'Dev: desbloquear todos os módulos para revisão',
@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>O que já tentei:</strong> [ex.: rodadas curtas, tarefa em dupla, participação primeiro pelo chat]<br>
    <strong>O que poderia ajudar — minha recomendação, a decisão é de vocês:</strong> [ex.: um grupo menor, uma conversa motivacional, outro curso]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Relatar um caso</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Relatar um caso" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Com a família:</strong> fale sobre o aprendizado, nunca sobre o acordo. <em>“Olá, [nome do responsável], percebi que [aluno] às vezes tem dificuldade para manter a energia nas aulas online. Comecei a fazer rodadas curtas de construção e a deixá-lo escolher, e compartilhei isso com a minha equipe para que possamos apoiá-lo da melhor forma.”</em> Sem promessas sobre grupos ou formatos.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Com a família:</strong> fale sobre o aprendizado, nunca sobre o acordo. Sem promessas sobre grupos ou formatos.</p>`)}
   `}
  ],
  ix:{
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Módulo 2', emoji:'🎬', color:'var(--coral)',
  title:'Construa uma aula online de que eles gostem',
- desc:'Técnicas que mantêm a atenção e fazem a tela parecer uma sala compartilhada: abrir com força, trabalhar em rodadas curtas, interação, conexão, perguntas diretas e uma vitória no final.',
- obj:'Conduzir uma aula online que mantém a atenção, dá a cada aluno um jeito confortável de participar, conecta os colegas e termina com uma vitória — adaptada à idade do grupo.',
+ desc:'Técnicas para manter a atenção dos alunos e fazer com que a tela pareça um espaço compartilhado, além de estratégias de apoio para alunos com dificuldades de foco, ambientes domésticos com distrações, falta de habilidades básicas de informática e computadores lentos.',
+ obj:'Conduzir uma aula online que prenda a atenção dos alunos, ofereça a cada um uma maneira confortável de participar, incentive a interação com os colegas e termine com uma sensação de conquista, adaptando a dinâmica à faixa etária do grupo. Além disso, aprender a apoiar alunos lidando com falta de atenção, distrações em casa, pouca familiaridade com o computador ou lentidão na máquina.',
  sections:[
   {t:'🧠 Quatro coisas que toda aula motivadora tem', html:`
    <div class="card"><p>No online, nada segura a atenção por você: não há sala física, nem colegas ao lado, e cada distração está a um clique. A pesquisa sobre motivação oferece uma lista simples — o <strong>modelo ARCS</strong> de John Keller (1987). Antes de cada aula, pergunte-se se ela tem os quatro:</p></div>
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Confiança.</strong> Passos pequenos, um próximo passo claro e apoio quando travarem — para que acreditem que conseguem.`},
      {ic:'🏆', html:`<strong>Satisfação.</strong> Elogios específicos e algo concluído para mostrar no final.`}
    ])}
-   ${bigStat('≈ 10 min', `<p>Uma regra prática muito citada na pesquisa sobre aprendizagem (popularizada por John Medina em <em>Brain Rules</em>): a atenção começa a se dispersar depois de cerca de <strong>dez minutos</strong>. Planeje uma mudança de atividade por volta desse momento — e deixe as rodadas ainda mais curtas com os menores.</p>`)}
+   ${bigStat('≈ 10 min', `<p>A atenção começa a se dispersar depois de cerca de <strong>dez minutos</strong>. Planeje uma mudança de atividade por volta desse momento — e deixe as rodadas ainda mais curtas com os menores.</p>`)}
   `},
   {t:'🎬 A aula, minuto a minuto', html:`
    ${timeline([
@@ -312,6 +312,49 @@ const CONTENT = {
      ['Chamar de surpresa o aluno mais quieto com uma pergunta difícil','Corrigir com dureza na frente do grupo','Perguntar sempre apenas aos mesmos alunos rápidos','Apresentar uma pergunta difícil sem aviso — tente: <em>“Esta é complicada, mas alguém quer tentar?”</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Por que funciona:</strong> os alunos participam quando se sentem seguros. Prepará-los, começar fácil e manter a justiça transforma uma pergunta de um risco em um convite.</p>`)}
+  `},
+  {t:'🧠 Alunos com dificuldades de atenção, TDAH ou ansiedade', html:`
+   <div class="card"><p>Para alguns alunos, dizer "não consigo estudar online" significa, na verdade, <em>"não consigo focar em uma tela por tanto tempo"</em>. O TDAH, o autismo ou a ansiedade podem tornar essa tarefa ainda mais difícil — e talvez a família não tenha compartilhado isso com você, ou a criança nunca tenha passado por uma avaliação médica. <strong>Você não precisa de um laudo para adaptar suas aulas</strong> e nunca deve tentar diagnosticar o aluno. O que você precisa é entregar uma aula dividida em microetapas, com uma estrutura previsível e espaço para movimentação.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Microtarefas com um resultado visível:</strong> <em>"Por enquanto, faça apenas o cenário de fundo e me avise quando terminar."</em> Cada pequena tarefa concluída representa uma conquista real.`},
+     {ic:'1️⃣', html:`<strong>Instruções curtas e com apenas uma etapa:</strong> Repita o objetivo antes de iniciar cada atividade.`},
+     {ic:'✅', html:`<strong>Uma lista de tarefas visível</strong> na tela ou no chat: o que já foi feito e o que vem a seguir. Isso ajuda o aluno a se reencontrar caso perca a concentração.`},
+     {ic:'⏲️', html:`<strong>Um cronômetro como parte de um jogo:</strong> <em>"Vamos ver se você consegue vencer o relógio!"</em>, caso o aluno goste da ideia. Se a pressão do tempo gerar frustração, deixe o cronômetro apenas como referência visual silenciosa.`},
+     {ic:'🤸', html:`<strong>Movimento em vez de exigir imobilidade:</strong> <em>"Quer se levantar e dar uma espreguiçada por 10 segundos antes de continuarmos?"</em>. Breves pausas para movimentação recuperam o foco muito mais do que pedir para a criança ficar quieta.`},
+     {ic:'↩️', html:`<strong>Redirecione a atenção com sutileza:</strong> Quando o aluno começar a falar sobre um assunto aleatório, você pode dizer: <em>"Adorei essa ideia! Vamos guardá-la para depois"</em>. Em seguida, passe uma instrução concreta para ele executar, em vez de dar uma bronca pedindo para "prestar atenção".`},
+     {ic:'🔁', html:`<strong>Mantenha a mesma estrutura e avise sobre as transições com antecedência:</strong> <em>"Daqui a 5 minutos, nós vamos passar para…"</em>. A previsibilidade ajuda a baixar a ansiedade, especialmente em alunos autistas.`},
+     {ic:'👀', html:`<strong>Pausas para descansar os olhos:</strong> Olhar por alguns segundos para longe da tela entre uma atividade e outra ajuda muito os alunos que sentem desconforto visual no computador.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>Quando a situação fugir do controle:</strong> seja por frustração, choro ou quando o aluno travar —, baixe o tom de voz e diminua o ritmo da aula. Valide o que ele está sentindo sem julgamentos (<em>"Percebo que isso está sendo difícil agora"</em>), proponha uma ação prática em vez de simplesmente dizer "se acalme" e retorne a uma etapa que ele já domina. O conteúdo novo pode esperar até que a criança esteja tranquila.</p>`)}
+  `},
+  {t:'🏠 O ambiente em casa: trabalhe em parceria com a família', html:`
+   <div class="card"><p>Nas aulas online, a casa da criança vira a sala de aula. Um celular sobre a mesa, uma TV ligada ao fundo ou um irmão brincando do lado podem sabotar até a melhor aula. Você não pode controlar a rotina da casa, mas pode <strong>pedir a colaboração da família</strong> de forma gentil e com sugestões práticas.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'Um lugar fixo e tranquilo', desc:'Utilizar o mesmo espaço em todas as aulas, longe da TV e da circulação da casa.', note:'A rotina espacial ajuda a manter o foco.'},
+     {ic:'🎧', title:'Fones de ouvido', desc:'Isolam os ruídos do ambiente e ajudam o aluno a ouvir as orientações com clareza.', note:'Qualquer fone de ouvido simples já resolve.'},
+     {ic:'📱', title:'Celular fora do alcance', desc:'O celular deve ficar fora de alcance durante a aula, e outras abas e aplicativos devem estar fechados.', note:'Ter o celular a um clique de distância é uma tentação muito próxima.'},
+     {ic:'👋', title:'Um responsável por perto — apenas no início', desc:'Para os alunos mais novos, é ideal que alguém fique por perto nos primeiros minutos da aula para auxiliar na organização digital.', note:'Apoio para a configuração inicial, não para fazer o projeto por eles.'}
+   ],2)}
+   ${co('co-idea','👪',`<p><strong>Compartilhe observações, não julgamentos.</strong> Dizer <em>"Hoje percebi que ele conseguiu se concentrar muito melhor na segunda metade da aula, depois de uma pequena pausa"</em> abre espaço para o diálogo. Já dizer <em>"Ele nunca presta atenção"</em> soa como um ataque e encerra a conversa.</p>`)}
+  `},
+  {t:'⌨️ Habilidades básicas de informática e computadores lentos', html:`
+   <div class="card"><p>As aulas online exigem que a criança manuseie o computador e absorva o conteúdo da aula simultaneamente. Um aluno que ainda está lutando para encontrar as letras, arrastar arquivos, copiar, colar ou alternar abas — ou que está usando uma máquina muito lenta — pode passar a aula inteira brigando com o teclado em vez de aprender. Como resultado, a família pode concluir precipitadamente que <em>"aulas online não funcionam para ele"</em>.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Sinais de alerta (o que observar)', sub:'Nas primeiras aulas',
+      see:`Demora procurando cada tecla antes de pressionar · Tem dificuldade mecânica para arrastar, usar o botão direito, copiar ou colar · Fica confuso ao alternar entre abas e janelas · Hesita ou não sabe como compartilhar a tela · Compreende a lógica da atividade, mas não consegue terminá-la por não saber executar os comandos.`,
+      tip:`Peça para o aluno compartilhar a tela e observe <em>como</em> ele trabalha. Muitas vezes, aquilo que parece falta de interesse é apenas um gargalo técnico com o computador.`},
+     {ic:'🧑‍🏫', title:'O que fazer durante a aula',
+      do:`<ul><li><strong>Demonstre os passos lentamente, mantenha o cursor do seu mouse bem visível</strong> enquanto explica cada clique e use o zoom quando compartilhar a sua tela.</li><li><strong>Dê uma instrução por vez e valide em seguida:</strong> <em>"Mostre a sua tela pra mim — em que etapa você está agora?"</em>.</li><li><strong>Separe os dois primeiros minutos para praticar comandos básicos:</strong> copiar/colar, arrastar elementos, salvar arquivos e alternar janelas.</li><li><strong>Deixe os atalhos visíveis no chat:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S e Alt+Tab (ou Cmd, no Mac).</li><li><strong>Celebre também as vitórias operacionais:</strong> <em>"Você conseguiu compartilhar a tela sozinho, muito bom!"</em>.</li></ul>`,
+      avoid:`Pedir o controle remoto da tela do aluno ou fazer a atividade por ele.`},
+     {ic:'👪', title:'Envolva os responsáveis na preparação inicial',
+      do:`Peça à família que garanta, antes da aula, que o Google Chrome e os softwares do curso estejam atualizados, que as senhas estejam salvas e que o link da sala esteja à mão. Para os mais novos, a presença de um responsável nos minutos iniciais pode facilitar muito a organização da tela.`},
+     {ic:'🐢', title:'Quando o computador está travando ou muito lento',
+      do:`<ul><li><strong>Peça para fecharem os outros programas e abas</strong> antes da aula, oriente o uso do Google Chrome e solicite que a família evite usar serviços pesados na conexão Wi-Fi durante o horário da aula.</li><li><strong>O Roblox Studio está rodando com lentidão?</strong> Reduza a qualidade gráfica nas configurações do Roblox Studio e ajude o aluno a fazer esse ajuste.</li><li><strong>O programa do curso não roda de jeito nenhum?</strong> Salve a aula: faça a demonstração na sua tela e proponha perguntas para o aluno responder a lógica verbalmente. Em seguida, acione o seu Team Leader. As equipes de Teaching e Sales decidirão como o aluno poderá prosseguir.</li></ul>`,
+      avoid:`Sugerir à família a compra de um computador novo (upgrade) ou prometer uma mudança de curso por conta própria.`},
+     {ic:'📝', title:'Quando o problema foge do escopo da aula em grupo',
+      do:`Registre um comentário no BO relatando o que você observou e quais alternativas tentou. Avise também o seu Team Leader. Você pode sugerir que a operação libere uma aula extra focada em fundamentos básicos, mas a aprovação disso depende do seu Team Leader.`,
+      avoid:`Oferecer diretamente à família uma aula de reforço ou mudança de formato antes de ter o aval da liderança.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +366,11 @@ const CONTENT = {
    {type:'choice', prompt:`Como você dá instruções em uma aula online?`, opts:[`Todos os passos de uma vez, para que ninguém precise esperar`,`Uma instrução de cada vez, e depois conferir: “O que você vai fazer primeiro?”`,`Dizer uma vez, rapidamente, e seguir em frente`], correct:1, fb:`Instruções empilhadas se perdem no online. Um passo mais uma pergunta de conferência identifica a confusão logo no início.`},
    {type:'choice', prompt:`Um aluno tímido de 13 anos nunca responde em voz alta. O que mais ajuda?`, opts:[`Chamá-lo pelo nome em toda aula até que ele fale`,`Deixar que ele participe primeiro pelo chat e elogiar as contribuições dele`,`Pedir que ele ligue a câmera na frente de todos`], correct:1, fb:`Dê a ele uma entrada confortável — primeiro o chat. A câmera pode vir depois, quando ele quiser.`},
    {type:'sort', prompt:'Este hábito ajuda ou atrapalha uma aula online?', card:`Chamar de surpresa o aluno mais quieto com a pergunta mais difícil.`, zones:[{label:'💎 Ajuda', fb:'Não foi dessa vez — isso coloca o aluno contra a parede e torna a próxima pergunta mais difícil de responder.'},{label:'🗑️ Atrapalha', fb:'Correto — comece fácil, prepare o aluno e faça com que a escolha pareça justa.'}], correctZone:1},
-   {type:'choice', prompt:`Qual abertura funciona melhor para uma criança de 7 anos?`, opts:[`“Hoje vamos aprender sobre variáveis.”`,`“Hoje um robô perdeu a voz — até o fim da aula você vai devolver a voz a ele. Quem topa?”`,`“Abra a aula e comece o exercício 1.”`], correct:1, fb:`Uma história com uma missão dá atenção e um motivo para participar. Ir direto ao conteúdo desperdiça os minutos mais atentos.`}
+   {type:'choice', prompt:`Qual abertura funciona melhor para uma criança de 7 anos?`, opts:[`“Hoje vamos aprender sobre variáveis.”`,`“Hoje um robô perdeu a voz — até o fim da aula você vai devolver a voz a ele. Quem topa?”`,`“Abra a aula e comece o exercício 1.”`], correct:1, fb:`Uma história com uma missão dá atenção e um motivo para participar. Ir direto ao conteúdo desperdiça os minutos mais atentos.`},
+   {type:'choice', prompt:`Um aluno com TDAH começa a mudar de assunto repetidamente para falar sobre um programa de TV. O que você diz?`, opts:[`"Pare de falar sobre isso, estamos na aula."`,`"Adorei essa ideia! Vamos guardá-la para depois. Agora, faça apenas o cenário de fundo e me avise quando estiver pronto."`,`Nada — você finge que não ouviu e continua a explicação para os outros alunos.`], correct:1, fb:`Redirecione a atenção com empatia e, no mesmo fôlego, entregue uma tarefa pequena e concreta com resultado visível. Apenas mandar "parar" não dá à criança um direcionamento do que ela deve fazer em seguida.`},
+   {type:'sort', prompt:'Isso ajuda ou atrapalha?', card:`Você envia uma mensagem à família sugerindo um lugar tranquilo, o uso de fones de ouvido e deixar o celular fora do alcance durante as aulas. Além disso, pergunta o que ajuda a criança a se concentrar em casa.`, zones:[{label:'💎 Ajuda', fb:'Correto! Na educação online, a casa se transforma na sala de aula. Sugestões práticas passadas com gentileza, somadas a uma escuta sobre a rotina da criança, transformam a família em aliada no processo.'},{label:'🗑️ Atrapalha', fb:'Incorreto. O tom da mensagem é consultivo, propõe melhorias fáceis e abre espaço para ouvir a experiência dos pais. Essa é exatamente a maneira correta de estabelecer uma parceria.'}], correctZone:0},
+   {type:'choice', prompt:`Um aluno de 7 anos não tem noção de onde ficam as teclas, não sabe usar copiar e colar, e a família logo decreta que "aulas online não são para ele". O que você faz primeiro?`, opts:[`Concorda com a família e diz que ele é muito novo para o formato digital.`,`Pede o controle da tela da criança e faz a tarefa por ela, para não atrasar a turma.`,`Demonstra os passos lentamente, com o mouse visível, inclui uma breve prática de comandos básicos e pede aos pais que auxiliem apenas na configuração inicial.`], correct:2, fb:`Destreza digital é treino. Mostrar os cliques na velocidade certa e colocar os responsáveis como apoio técnico para o setup (e não executores da tarefa) constrói a autonomia do aluno a cada semana.`},
+   {type:'sort', prompt:'Isso ajuda ou atrapalha?', card:`O Roblox Studio está travando severamente no computador de um aluno, então você diz à família que eles precisam comprar um equipamento melhor.`, zones:[{label:'💎 Ajuda', fb:'Incorreto. Um tutor nunca deve orientar compras para as famílias. Feche os processos paralelos, reduza a qualidade gráfica nas configurações do Roblox Studio e escale para o Team Leader se o software realmente não rodar.'},{label:'🗑️ Atrapalha', fb:'Correto! A sua primeira ação é fechar os outros programas e reduzir a qualidade gráfica nas configurações do Roblox Studio. Se o hardware não suportar o curso de forma alguma, a responsabilidade de gerenciar esse contrato é do seu Team Leader.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +398,12 @@ const CONTENT = {
      'Faço perguntas diretas sem pressão: primeiro as fáceis, um jeito justo de escolher e um retorno positivo para qualquer resposta',
      'Conecto os colegas com momentos curtos em dupla ou em pequenos grupos',
      'Relato no BO, no mesmo dia, quando um aluno não gosta do formato online: o que ele disse, o que eu vi, o que eu tentei',
-     'Nunca prometo mudança de formato ou de grupo — eu recomendo no BO e digo “vou verificar com a minha equipe”'
+     'Nunca prometo mudança de formato ou de grupo — eu recomendo no BO e digo “vou verificar com a minha equipe”',
+     'Quando leciono para alunos com dificuldades de atenção, TDAH ou ansiedade, divido o projeto em microtarefas visíveis, dou comandos de uma única etapa, deixo a lista de tarefas visível e permito breves pausas de movimentação',
+     'Redireciono a atenção com empatia ("vamos guardar esse assunto para depois") e antecipo as transições da aula. Jamais diagnostico, rotulo ou exponho a criança',
+     'Oriento a família de forma acolhedora sobre como otimizar o ambiente em casa: lugar silencioso, fones de ouvido e zero celulares por perto',
+     'Para alunos com defasagem em informática, eu uso o zoom, demonstro os passos lentamente, fragmento os comandos e oriento os pais a ajudarem exclusivamente com a organização da tela (e não com as tarefas)',
+     'Em casos de lentidão na máquina, recomendo fechar processos paralelos e reduzo a qualidade gráfica nas configurações do Roblox Studio. Se a máquina não rodar o curso, transfiro o caso para o meu Team Leader'
    ])}
   `},
   {t:'', html:`

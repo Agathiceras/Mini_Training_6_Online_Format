@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Miniszkolenie",
     heroTitle:"Lekcje <span class=\"h-pill\">online</span>, które naprawdę działają",
     heroIntro:"Otrzymujesz to szkolenie, ponieważ masz uczniów, którzy poprosili o zwrot pieniędzy, bo nie odpowiada im format online. Pokażemy ci, co możesz w takiej sytuacji zrobić jako nauczyciel i jak radzić sobie z problemami tej natury.",
-    heroWork:"Przejdź przez 4 krótkie moduły. Aby odblokować kolejny, w sprawdzianie każdego modułu potrzebujesz co najmniej 70%. Całość zajmie około 20–25 minut.",
+    heroWork:"Ukończ 4 krótkie moduły. Aby odblokować kolejny moduł, musisz uzyskać co najmniej 70% w teście sprawdzającym po każdym module. Całkowity czas: około 30–35 minut.",
     startBtn:"🚀 Rozpocznij szkolenie",
     pathLabel:'Twoja ścieżka nauki',
     devTitle:'Dev: odblokuj wszystkie moduły do przeglądu',
@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>Co już zostało wypróbowane:</strong> [np. krótkie rundy, zadanie w parach, udział najpierw przez czat]<br>
    <strong>Co mogłoby pomóc — moja rekomendacja, wasza decyzja:</strong> [np. mniejsza grupa, rozmowa motywacyjna, inny kurs]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Zgłoś sprawę</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Zgłoś sprawę" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Z rodziną:</strong> rozmawiaj o nauce, nigdy nie o organizacji zajęć. <em>„Dzień dobry, [imię rodzica], widzę, że [imię ucznia] czasem ma trudność z utrzymaniem energii na lekcjach online. By z tym pomóc, wprowadzam krótkie rundy pracy i daję więcej możliwości dostosowania tego, jak pracujemy, a sprawę przekazuję też mojemu zespołowi, żebyśmy mogli jak najlepiej wesprzeć [imię ucznia]”.</em> Żadnych obietnic dotyczących grup czy formatów.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Z rodziną:</strong> rozmawiaj o nauce, nigdy nie o organizacji zajęć. Żadnych obietnic dotyczących grup czy formatów.</p>`)}
   `}
  ],
  ix:{
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Moduł 2', emoji:'🎬', color:'var(--coral)',
  title:'Zbuduj lekcję online, która się podoba',
- desc:'Techniki, które utrzymują uwagę i sprawiają, że ekran przypomina wspólną salę: mocny początek, praca w krótkich rundach, interakcja, więź, bezpośrednie pytania i sukces na koniec.',
- obj:'Nauczyć się prowadzenia lekcji online, które utrzymują uwagę, dają każdemu uczniowi komfortowy sposób udziału, łączą uczniów ze sobą i kończą się sukcesem, w sposób dopasowany do wieku grupy.',
+ desc:'Techniki pomagające utrzymać uwagę uczniów i sprawić, by ekran stał się wspólną przestrzenią, a także sposoby wspierania uczniów z trudnościami z koncentracją, w rozpraszającym środowisku domowym, z podstawowymi umiejętnościami obsługi komputera lub korzystających z wolnych komputerów.',
+ obj:'Prowadzenie lekcji online, która przyciąga uwagę uczniów, zapewnia każdemu wygodny sposób uczestnictwa, zachęca do nawiązywania relacji między uczestnikami i kończy się sukcesem — z uwzględnieniem wieku grupy. Nauczysz się również wspierać uczniów z trudnościami z koncentracją, w rozpraszającym środowisku domowym, z podstawowymi umiejętnościami obsługi komputera lub korzystających z wolnych komputerów.',
  sections:[
   {t:'🧠 Cztery rzeczy, które ma każda motywująca lekcja', html:`
    <div class="card"><p>Online nic nie utrzyma uwagi za ciebie: nie ma fizycznej sali, nie ma kolegów obok, a każdy rozpraszacz jest na jedno kliknięcie. Badania nad motywacją dają prostą listę kontrolną — <strong>model ARCS</strong> Johna Kellera (1987). Przed każdą lekcją zadaj sobie pytanie, czy ma ona wszystkie cztery elementy:</p></div>
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Pewność siebie (Confidence).</strong> Małe kroki, jasny następny krok i wsparcie, gdy utkną — żeby uwierzyli, że dadzą radę.`},
      {ic:'🏆', html:`<strong>Satysfakcja (Satisfaction).</strong> Konkretna pochwała i gotowa rzecz do pokazania na koniec.`}
    ])}
-   ${bigStat('≈ 10 min', `<p>Często cytowana praktyczna reguła z badań nad uczeniem się (spopularyzowana przez książkę Johna Mediny <em>Brain Rules</em>): uwaga zaczyna odpływać po około <strong>dziesięciu minutach</strong>. Zaplanuj zmianę aktywności mniej więcej w tym momencie — a z najmłodszymi rób jeszcze krótsze rundy.</p>`)}
+   ${bigStat('≈ 10 min', `<p>Uwaga zaczyna odpływać po około <strong>dziesięciu minutach</strong>. Zaplanuj zmianę aktywności mniej więcej w tym momencie — a z najmłodszymi rób jeszcze krótsze rundy.</p>`)}
   `},
   {t:'🎬 Lekcja minuta po minucie', html:`
    ${timeline([
@@ -312,6 +312,49 @@ const CONTENT = {
      ['Wywoływanie najcichszego ucznia z trudnym pytaniem bez uprzedzenia','Ostre poprawianie przy grupie','Pytanie wciąż tych samych szybkich uczniów','Zadawanie trudnego pytania bez ostrzeżenia — spróbuj: <em>„To jest podchwytliwe, ale czy ktoś chce spróbować?”</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Dlaczego to działa:</strong> uczniowie biorą udział, gdy czują się bezpiecznie. Przygotowanie ich, zaczynanie od łatwych pytań i sprawiedliwość zamieniają pytanie z ryzyka w zaproszenie.</p>`)}
+  `},
+  {t:'🧠 Uczniowie z trudnościami z koncentracją, ADHD lub lękiem', html:`
+   <div class="card"><p>Dla niektórych uczniów stwierdzenie „nie potrafię uczyć się online” tak naprawdę oznacza <em>„nie potrafię utrzymać uwagi przed ekranem przez tak długi czas”</em>. ADHD, autyzm lub lęk mogą dodatkowo to utrudniać. Rodzina mogła Ci o tym nie powiedzieć albo dziecko nigdy nie zostało poddane odpowiedniej ocenie. <strong>Nie potrzebujesz diagnozy, aby dostosować sposób prowadzenia lekcji</strong>, i nigdy nie próbuj samodzielnie stawiać diagnozy. Potrzebujesz natomiast lekcji podzielonej na małe zadania, z jasną strukturą i możliwością ruchu.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Mikrozadania z widocznym efektem końcowym.</strong> <em>„Na razie zajmij się tylko tłem i daj mi znać, kiedy będzie gotowe”.</em> Każde ukończone małe zadanie to prawdziwy sukces.`},
+     {ic:'1️⃣', html:`<strong>Krótkie instrukcje obejmujące tylko jeden krok.</strong> Przed każdą aktywnością przypomnij uczniowi, jaki jest jej cel.`},
+     {ic:'✅', html:`<strong>Widoczna lista zadań</strong> na ekranie lub na czacie: co zostało już zrobione i co należy zrobić dalej. Pomaga uczniowi odnaleźć się w zadaniu, gdy traci koncentrację.`},
+     {ic:'⏲️', html:`<strong>Stoper jako element zabawy,</strong> na przykład: <em>„Zobaczmy, czy uda Ci się zdążyć przed końcem czasu!”</em>, jeśli uczeń lubi takie wyzwania. Jeśli presja wywołuje frustrację, pokazuj stoper wyłącznie jako wizualną wskazówkę.`},
+     {ic:'🤸', html:`<strong>Ruch zamiast wymagania, by uczeń siedział nieruchomo.</strong> <em>„Chcesz wstać na 10 sekund, a potem będziemy kontynuować?”.</em> Krótkie przerwy na ruch pomagają odzyskać koncentrację skuteczniej niż proszenie ucznia, żeby siedział spokojnie.`},
+     {ic:'↩️', html:`<strong>Delikatnie kieruj uwagę z powrotem na zadanie.</strong> Kiedy uczeń zaczyna mówić na inny temat, możesz powiedzieć: <em>„Bardzo podoba mi się ten pomysł! Zostawmy go na później”.</em> Następnie wskaż konkretny kolejny krok zamiast mówić „skup się”.`},
+     {ic:'🔁', html:`<strong>Zachowuj tę samą strukturę i zapowiadaj zmiany z wyprzedzeniem.</strong> <em>„Za 5 minut przejdziemy do…”.</em> Przewidywalność pomaga zmniejszyć lęk, szczególnie u uczniów w spektrum autyzmu.`},
+     {ic:'👀', html:`<strong>Przerwy od ekranu, aby odpocząć oczom.</strong> Krótkie spojrzenie w inną stronę między kolejnymi aktywnościami może pomóc uczniom, którym długie przebywanie przed ekranem sprawia dyskomfort.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>Gdy emocje wymykają się spod kontroli</strong> — pojawia się frustracja, płacz lub uczeń przestaje uczestniczyć w lekcji — obniż głos i zwolnij tempo. Nazwij to, co uczeń może odczuwać, bez oceniania (<em>„Widzę, że teraz jest Ci trudno”</em>), zaproponuj konkretne działanie zamiast mówić „uspokój się” i wróć do zadania, z którym wcześniej sobie poradził. Możesz wrócić do materiału dopiero wtedy, gdy uczeń się uspokoi.</p>`)}
+  `},
+  {t:'🏠 Środowisko domowe — współpracuj z rodziną', html:`
+   <div class="card"><p>Podczas lekcji online dom dziecka staje się jego salą lekcyjną. Telefon na biurku, włączony telewizor w tle lub rodzeństwo bawiące się obok mogą utrudnić nawet najlepiej przygotowaną lekcję. Nie masz kontroli nad tym, co dzieje się w domu, ale możesz <strong>poprosić rodzinę o pomoc</strong> w uprzejmy i konkretny sposób.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'To samo spokojne miejsce', desc:'Korzystanie z tego samego miejsca podczas każdej lekcji, z dala od telewizora i najbardziej ruchliwych pomieszczeń.', note:'Rutyna pomaga utrzymać koncentrację.'},
+     {ic:'🎧', title:'Słuchawki', desc:'Ograniczają hałas w tle i ułatwiają słuchanie tutora.', note:'Wystarczą zwykłe, proste słuchawki.'},
+     {ic:'📱', title:'Telefon poza zasięgiem', desc:'Podczas lekcji telefon powinien znajdować się poza zasięgiem ucznia, a pozostałe aplikacje i karty przeglądarki powinny być zamknięte.', note:'Telefon dostępny na jedno kliknięcie to wciąż zbyt blisko.'},
+     {ic:'👋', title:'Rodzic w pobliżu — przynajmniej na początku', desc:'W przypadku najmłodszych uczniów warto, aby ktoś był w pobliżu przez pierwsze minuty lekcji i pomógł im się przygotować.', note:'Rodzic pomaga w przygotowaniu, a nie w wykonywaniu zadań.'}
+   ],2)}
+   ${co('co-idea','👪',`<p><strong>Dziel się obserwacjami, a nie ocenami.</strong> Stwierdzenie <em>„Dzisiaj zauważyłem/zauważyłam, że w drugiej części lekcji znacznie lepiej się koncentrował, po krótkiej przerwie”</em> zachęca do rozmowy. Natomiast <em>„On nigdy nie uważa”</em> ją zamyka.</p>`)}
+  `},
+  {t:'⌨️ Podstawowe umiejętności obsługi komputera i wolne komputery', html:`
+   <div class="card"><p>Lekcje online wymagają od dziecka jednoczesnego korzystania z komputera i śledzenia omawianego materiału. Uczeń, który dopiero uczy się pisać na klawiaturze, przeciągać elementy, kopiować i wklejać lub przełączać się między oknami, albo korzysta z wolnego komputera, może spędzić całą lekcję na zmaganiu się ze sprzętem zamiast na nauce. W rezultacie rodzina może dojść do wniosku, że <em>„lekcje online nie są dla niego”</em>.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Sygnały, na które warto zwrócić uwagę', sub:'Na pierwszych lekcjach',
+      see:`Szuka na klawiaturze każdego klawisza przed jego naciśnięciem · Nie potrafi przeciągać elementów, klikać prawym przyciskiem myszy, kopiować ani wklejać · Gubi się podczas przełączania między oknami lub kartami · Ma trudności z udostępnianiem ekranu · Rozumie zadanie, ale nie potrafi go ukończyć, ponieważ nie wie, <em>jak</em> je wykonać.`,
+      tip:`Poproś ucznia o udostępnienie ekranu i obserwuj, <em>jak</em> pracuje. Często to, co wygląda na brak zainteresowania, jest w rzeczywistości trudnością w obsłudze komputera.`},
+     {ic:'🧑‍🏫', title:'Co robić podczas lekcji',
+      do:`<ul><li><strong>Pokazuj kolejne kroki powoli, pozostaw widoczny kursor</strong> i objaśniaj każde kliknięcie. Podczas udostępniania ekranu powiększ widok.</li><li><strong>Wydawaj jedno polecenie na raz, a następnie sprawdzaj postępy:</strong> <em>„Pokaż mi swój ekran — na którym etapie jesteś?”.</em></li><li><strong>Poświęć dwie minuty na krótką rozgrzewkę z podstawowych umiejętności:</strong> kopiowanie i wklejanie, przeciąganie elementów, zapisywanie plików i przełączanie się między oknami.</li><li><strong>Udostępnij na czacie skróty klawiszowe:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S i Alt+Tab (na komputerach Mac używaj Cmd, jeśli jest to odpowiednie).</li><li><strong>Doceniaj również postępy w obsłudze komputera:</strong> <em>„Udało Ci się samodzielnie udostępnić ekran!”.</em></li></ul>`,
+      avoid:`Przejmowania kontroli nad ekranem ucznia lub wykonywania zadania za niego.`},
+     {ic:'👪', title:'Zaangażuj rodziców w przygotowanie do lekcji',
+      do:`Poproś rodzinę, aby przed lekcją sprawdziła, czy Chrome jest zainstalowany i zaktualizowany, czy wymagane programy do kursu są zainstalowane, czy dane logowania są zapisane oraz czy link do lekcji jest łatwy do znalezienia. W przypadku najmłodszych uczniów obecność rodzica w pobliżu przez pierwsze minuty może ułatwić przygotowanie.`},
+     {ic:'🐢', title:'Gdy komputer działa wolno',
+      do:`<ul><li><strong>Poproś o zamknięcie pozostałych programów i kart</strong> przed lekcją, korzystaj z Google Chrome i poproś rodzinę, aby podczas zajęć nikt inny w domu nie obciążał mocno połączenia Wi-Fi.</li><li><strong>Blender działa wolno?</strong> Wiki zawiera poradniki dotyczące konfiguracji Blendera w celu poprawy jego wydajności. Wykorzystaj je, aby pomóc uczniowi odpowiednio skonfigurować program. Kurs zawiera również poradnik dotyczący wydajności w pierwszych lekcjach.</li><li><strong>Uczeń w ogóle nie może uruchomić programu wymaganego na kursie?</strong> Zadbaj o to, aby lekcja nadal była wartościowa: przeprowadź demonstrację, udostępniając swój ekran, i zadawaj pytania, na które uczeń może odpowiadać ustnie. Następnie poinformuj swojego Team Leadera. Działy Teaching i Sales zdecydują, w jaki sposób uczeń będzie kontynuować naukę.</li></ul>`,
+      avoid:`Proszenia rodziny o zakup nowego komputera lub obiecywania zmiany kursu.`},
+     {ic:'📝', title:'Gdy problem wykracza poza to, co możesz rozwiązać podczas lekcji grupowej',
+      do:`Dodaj komentarz w BO, opisując, co zaobserwowałeś/zaobserwowałaś i jakie rozwiązania zostały wypróbowane. Poinformuj również swojego Team Leadera. Możesz poprosić o dodatkową lekcję, podczas której uczeń będzie mógł poćwiczyć podstawowe umiejętności, ale ostateczną decyzję podejmuje Team Leader.`,
+      avoid:`Samodzielnego oferowania rodzinie dodatkowej lekcji lub zmiany formatu zajęć.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +366,11 @@ const CONTENT = {
    {type:'choice', prompt:`Jak przekazywać instrukcje na lekcji online?`, opts:[`Wszystkie kroki naraz, żeby nikt nie musiał czekać`,`Jedna instrukcja naraz, a potem sprawdzenie: „Co zrobisz najpierw?”`,`Raz, szybko, i od razu dalej`], correct:1, fb:`Spiętrzone instrukcje gubią się online. Jeden krok plus pytanie sprawdzające pozwalają wcześnie wychwycić niezrozumienie.`},
    {type:'choice', prompt:`Nieśmiały trzynastolatek nigdy nie odpowiada na głos. W jaki sposób do niego dotrzeć?`, opts:[`Wywoływać go po imieniu na każdej lekcji, aż się odezwie`,`Pozwolić mu najpierw brać udział przez czat i doceniać jego wkład`,`Poprosić go przy wszystkich o włączenie kamery`], correct:1, fb:`Daj mu komfortowy sposób udziału — najpierw czat. Kamera może przyjść później, kiedy zechce.`},
    {type:'sort', prompt:'Czy ten nawyk pomaga, czy szkodzi lekcji online?', card:`Wywoływanie najcichszego ucznia z najtrudniejszym pytaniem bez uprzedzenia.`, zones:[{label:'💎 Pomaga', fb:'Nie do końca — stawia ucznia pod ścianą i sprawia, że na kolejne pytanie trudniej mu będzie odpowiedzieć.'},{label:'🗑️ Szkodzi', fb:'Zgadza się — zacznij od łatwego pytania, przygotuj uczniów i zadbaj, by wybór był sprawiedliwy.'}], correctZone:1},
-   {type:'choice', prompt:`Który początek najlepiej sprawdzi się u siedmiolatka?`, opts:[`„Dzisiaj nauczymy się o zmiennych.”`,`„Dzisiaj pewien robot stracił głos, a do końca lekcji spróbujemy mu go przywrócić. Kto pisze się na takie wyzwanie?”`,`„Otwórz lekcję i zacznij ćwiczenie 1.”`], correct:1, fb:`Historia z misją przyciąga uwagę i daje powód do udziału. Przeskakiwanie od razu do treści marnuje minuty największej uwagi.`}
+   {type:'choice', prompt:`Który początek najlepiej sprawdzi się u siedmiolatka?`, opts:[`„Dzisiaj nauczymy się o zmiennych.”`,`„Dzisiaj pewien robot stracił głos, a do końca lekcji spróbujemy mu go przywrócić. Kto pisze się na takie wyzwanie?”`,`„Otwórz lekcję i zacznij ćwiczenie 1.”`], correct:1, fb:`Historia z misją przyciąga uwagę i daje powód do udziału. Przeskakiwanie od razu do treści marnuje minuty największej uwagi.`},
+   {type:'choice', prompt:`Uczeń z ADHD ciągle zmienia temat i zaczyna opowiadać o programie telewizyjnym. Co powiesz?`, opts:[`„Przestań o tym mówić, jesteśmy na lekcji”.`,`„Bardzo podoba mi się ten pomysł! Zostawmy go na później. A teraz zajmij się tylko tłem i daj mi znać, kiedy będzie gotowe”.`,`Nic — ignorujesz go i kontynuujesz wyjaśnianie materiału pozostałym uczniom.`], correct:1, fb:`Delikatnie skieruj uwagę ucznia z powrotem na zadanie, a następnie daj mu jedno małe, konkretne zadanie z widocznym efektem końcowym. Samo powiedzenie „przestań” nie daje mu wskazówki, co powinien zrobić zamiast tego.`},
+   {type:'sort', prompt:'Czy to pomaga, czy przeszkadza?', card:`Piszesz do rodziny, sugerując przygotowanie spokojnego miejsca, korzystanie ze słuchawek i trzymanie telefonu poza zasięgiem ucznia podczas lekcji. Pytasz również, co pomaga dziecku się skoncentrować.`, zones:[{label:'💎 Pomaga', fb:'Zgadza się! Podczas lekcji online dom staje się salą lekcyjną. Konkretne, życzliwe sugestie oraz pytanie o to, co sprawdza się w domu, pomagają zaangażować rodzinę we współpracę.'},{label:'🗑️ Przeszkadza', fb:'Niezupełnie. Wiadomość jest życzliwa, zawiera konkretne sugestie i pyta o doświadczenia rodziny. Właśnie tak należy z nią współpracować.'}], correctZone:0},
+   {type:'choice', prompt:`7-letni uczeń nie potrafi znaleźć odpowiednich klawiszy ani kopiować i wklejać, a rodzina mówi, że „lekcje online nie są dla niego”. Co robisz w pierwszej kolejności?`, opts:[`Mówisz rodzinie, że uczeń jest za młody na lekcje online.`,`Przejmujesz kontrolę nad jego ekranem, aby mógł nadążyć za grupą.`,`Powoli pokazujesz kolejne kroki, utrzymując widoczny kursor, dodajesz krótką rozgrzewkę z podstawowych umiejętności i prosisz rodzica o pomoc w przygotowaniu do lekcji.`], correct:2, fb:`Podstawowych umiejętności obsługi komputera można się nauczyć. Powolne pokazywanie kolejnych kroków i zaangażowanie rodzica w przygotowanie do lekcji, a nie w wykonywanie zadań, pomagają budować pewność siebie ucznia z każdą kolejną lekcją.`},
+   {type:'sort', prompt:'Czy to pomaga, czy przeszkadza?', card:`Blender działa bardzo wolno na komputerze ucznia, więc mówisz rodzinie, że musi kupić lepszy komputer.`, zones:[{label:'💎 Pomaga', fb:'Niezupełnie. Nigdy nie proś rodziny o zakup nowego sprzętu. Zamknij pozostałe programy, skorzystaj z poradników dotyczących wydajności Blendera dostępnych na wiki i poinformuj swojego Team Leadera, jeśli program nadal nie działa prawidłowo.'},{label:'🗑️ Przeszkadza', fb:'Zgadza się! Najpierw pomóż uczniowi skorzystać z poradników dotyczących wydajności Blendera dostępnych na wiki. Jeśli komputer nie jest w stanie uruchomić programu wymaganego na kursie, Twój Team Leader zajmie się dalszymi krokami.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +398,12 @@ const CONTENT = {
      'Zadaję bezpośrednie pytania bez presji: najpierw łatwe, sprawiedliwy sposób wyboru i pozytywna reakcja na każdą odpowiedź',
      'Łączę uczniów ze sobą krótkimi momentami w parach lub małych grupach',
      'Niechęć ucznia do formatu online zgłaszam w BO tego samego dnia: co powiedział, co widzę, czego już próbuję',
-     'Nigdy nie obiecuję zmiany formatu ani grupy — rekomenduję w BO i mówię „sprawdzę z moim zespołem”'
+     'Nigdy nie obiecuję zmiany formatu ani grupy — rekomenduję w BO i mówię „sprawdzę z moim zespołem”',
+     'Podczas pracy z uczniami mającymi trudności z koncentracją, ADHD lub lękiem stosuję mikrozadania z widocznymi efektami końcowymi, instrukcje obejmujące jeden krok, widoczne listy zadań i krótkie przerwy na ruch',
+     'Delikatnie kieruję uwagę ucznia z powrotem na zadanie („zostawmy ten pomysł na później”) i zapowiadam zmiany, zanim nastąpią. Nigdy nie przypisuję dziecku etykiet ani nie próbuję stawiać diagnozy',
+     'Uprzejmie i konkretnie proszę rodzinę o pomoc w przygotowaniu odpowiedniego środowiska domowego: spokojnego miejsca, słuchawek i telefonu znajdującego się poza zasięgiem ucznia',
+     'Gdy uczeń dopiero uczy się obsługi komputera, powoli pokazuję kolejne kroki, utrzymując widoczny kursor, wydaję jedno polecenie na raz i proszę rodzica o pomoc w przygotowaniu do lekcji, a nie w wykonywaniu zadań',
+     'Jeśli komputer działa wolno, pomagam zamknąć pozostałe programy i korzystam z poradników dotyczących wydajności Blendera dostępnych na wiki. Jeśli komputer nie jest w stanie uruchomić programu wymaganego na kursie, informuję swojego Team Leadera'
    ])}
   `},
   {t:'', html:`

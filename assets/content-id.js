@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-Training",
     heroTitle:"Membuat Pelajaran <span class=\"h-pill\">Online</span> Terasa Menyenangkan",
     heroIntro:"Kamu menerima pelatihan ini karena ada siswamu yang mengajukan refund karena tidak menyukai format online. Di sini kami akan menunjukkan apa yang bisa kamu lakukan sebagai tutor dan cara menangani situasi seperti ini.",
-    heroWork:"Selesaikan 4 modul singkat. Setiap cek modul butuh nilai 70%+ untuk membuka modul berikutnya. Total sekitar 20–25 menit.",
+    heroWork:"Selesaikan 4 modul singkat. Untuk membuka modul berikutnya, Anda harus mendapatkan nilai minimal 70% pada evaluasi setiap modul. Total waktu yang dibutuhkan sekitar 30–35 menit.",
     startBtn:"🚀 Mulai Pelatihan",
     pathLabel:'Jalur belajarmu',
     devTitle:'Dev: buka semua modul untuk ditinjau',
@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>Yang sudah saya coba:</strong> [mis. ronde singkat, tugas berpasangan, partisipasi lewat chat terlebih dahulu]<br>
    <strong>Yang bisa membantu — rekomendasi saya, keputusan Anda:</strong> [mis. grup yang lebih kecil, percakapan motivasi, kursus lain]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Laporkan kasus</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Laporkan kasus" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Dengan keluarga:</strong> fokus pada proses belajarnya, bukan soal pindah grup atau format. <em>“Halo Bapak/Ibu [nama orang tua], saya perhatikan [siswa] kadang kesulitan untuk tetap bersemangat di pelajaran online. Saya sudah mulai membagi kegiatan di kelas menjadi sesi-sesi singkat dan memberinya kesempatan untuk memilih, serta sudah menyampaikan hal ini kepada tim saya agar kami bisa mendukungnya dengan cara terbaik.”</em> Jangan menjanjikan apa pun soal grup atau format.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Dengan keluarga:</strong> fokus pada proses belajarnya, bukan soal pindah grup atau format. Jangan menjanjikan apa pun soal grup atau format.</p>`)}
   `}
  ],
  ix:{
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Modul 2', emoji:'🎬', color:'var(--coral)',
  title:'Bangun Pelajaran Online yang Mereka Nikmati',
- desc:'Teknik-teknik yang menjaga perhatian dan membuat layar terasa seperti ruang bersama: pembukaan yang kuat, bekerja dalam ronde-ronde singkat, interaksi, keterhubungan, pertanyaan langsung, dan keberhasilan di akhir.',
- obj:'Menjalankan pelajaran online yang menjaga perhatian, memberi setiap siswa cara yang nyaman untuk ikut serta, menghubungkan teman sekelas, dan diakhiri dengan keberhasilan — disesuaikan dengan usia grupnya.',
+ desc:'Teknik untuk menjaga perhatian siswa dan membuat layar terasa seperti ruang belajar bersama, serta strategi untuk mendukung siswa yang mengalami kesulitan fokus, memiliki lingkungan rumah yang penuh distraksi, belum menguasai keterampilan dasar komputer, atau menggunakan komputer yang lambat.',
+ obj:'Mengajar kelas online yang mampu menjaga perhatian siswa, memberikan kesempatan kepada setiap siswa untuk berpartisipasi dengan nyaman, membangun interaksi antar teman, dan mengakhiri kelas dengan sebuah pencapaian dengan menyesuaikan kegiatan berdasarkan usia kelompok. Selain itu, Anda akan belajar mendukung siswa yang mengalami kesulitan fokus, memiliki lingkungan rumah yang penuh gangguan, belum menguasai keterampilan dasar komputer, atau menggunakan komputer yang lambat.',
  sections:[
   {t:'Empat hal yang membuat pelajaran terasa memotivasi', html:`
    <div class="card"><p>Di kelas online, tidak ada yang membantumu menjaga perhatian: tidak ada ruang fisik, tidak ada teman sekelas di samping mereka, dan setiap gangguan hanya berjarak satu klik. Penelitian tentang motivasi memberikan checklist sederhana — <strong>model ARCS</strong> dari John Keller (1987). Tanyakan pada dirimu sendiri, sebelum setiap pelajaran, apakah keempatnya sudah ada:</p></div>
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Confidence (Kepercayaan diri).</strong> Langkah-langkah kecil, langkah berikutnya yang jelas, dan dukungan saat mereka buntu — supaya mereka yakin bisa melakukannya.`},
      {ic:'🏆', html:`<strong>Satisfaction (Kepuasan).</strong> Pujian yang spesifik dan hasil jadi yang bisa ditunjukkan di akhir.`}
    ])}
-   ${bigStat('≈ 10 mnt', `<p>Patokan yang banyak dikutip dari penelitian tentang belajar (dipopulerkan oleh buku <em>Brain Rules</em> karya John Medina): perhatian mulai buyar setelah sekitar <strong>sepuluh menit</strong>. Rencanakan pergantian aktivitas di sekitar waktu itu — dan buat rondenya lebih singkat lagi untuk siswa yang paling kecil.</p>`)}
+   ${bigStat('≈ 10 mnt', `<p>Perhatian mulai buyar setelah sekitar <strong>sepuluh menit</strong>. Rencanakan pergantian aktivitas di sekitar waktu itu — dan buat rondenya lebih singkat lagi untuk siswa yang paling kecil.</p>`)}
   `},
   {t:'🎬 Pelajarannya, menit demi menit', html:`
    ${timeline([
@@ -312,6 +312,49 @@ const CONTENT = {
      ['Tiba-tiba menunjuk siswa yang paling pendiam dengan pertanyaan sulit','Mengoreksi dengan keras di depan grup','Hanya bertanya kepada siswa yang sama-sama cepat setiap kali','Melontarkan pertanyaan sulit tanpa peringatan — coba: <em>“Yang ini agak susah, tapi ada yang mau mencoba?”</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Mengapa ini berhasil:</strong> siswa ikut serta saat mereka merasa aman. Menyiapkan mereka, memulai dari yang mudah, dan menjaga keadilan mengubah pertanyaan dari sebuah risiko menjadi sebuah ajakan.</p>`)}
+  `},
+  {t:'🧠 Siswa dengan kesulitan fokus, ADHD, atau kecemasan', html:`
+   <div class="card"><p>Bagi sebagian siswa, kalimat "Saya tidak bisa belajar online" sebenarnya berarti <em>"Saya tidak bisa fokus di depan layar selama itu"</em>. ADHD, autisme, atau kecemasan dapat membuat hal ini semakin sulit. Keluarga mungkin belum memberitahu Anda tentang kondisi tersebut, atau anak mungkin belum pernah menjalani pemeriksaan. <strong>Anda tidak memerlukan diagnosis untuk menyesuaikan cara mengajar</strong>, dan Anda juga tidak boleh mendiagnosis siswa. Yang Anda perlukan adalah kelas yang dibagi menjadi beberapa aktivitas kecil, memiliki struktur yang jelas, dan memberikan kesempatan bagi siswa untuk bergerak.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Tugas-tugas kecil dengan hasil yang terlihat.</strong> <em>"Untuk sekarang, kerjakan bagian latar belakangnya saja. Beri tahu saya kalau sudah selesai."</em> Setiap tugas kecil yang berhasil diselesaikan merupakan pencapaian nyata.`},
+     {ic:'1️⃣', html:`<strong>Instruksi singkat, diberikan satu per satu.</strong> Ulangi tujuan sebelum memulai setiap aktivitas.`},
+     {ic:'✅', html:`<strong>Daftar tugas yang terlihat</strong> di layar atau chat: apa yang sudah selesai dan apa yang harus dilakukan selanjutnya. Daftar ini membantu siswa mengingat langkah berikutnya ketika perhatiannya mulai teralihkan.`},
+     {ic:'⏲️', html:`<strong>Jika siswa menyukainya, jadikan timer bagian dari permainan,</strong> misalnya: <em>"Ayo, coba selesaikan sebelum waktunya habis!"</em> Jika tekanan waktu membuat siswa frustrasi, tampilkan timer hanya sebagai panduan visual.`},
+     {ic:'🤸', html:`<strong>Berikan kesempatan untuk bergerak, bukan meminta siswa duduk diam.</strong> <em>"Mau berdiri dulu 10 detik, lalu kita lanjut lagi?"</em> Istirahat singkat untuk bergerak dapat membantu mengembalikan fokus lebih baik daripada meminta siswa untuk tetap tenang dan tidak bergerak.`},
+     {ic:'↩️', html:`<strong>Arahkan kembali perhatian siswa dengan lembut.</strong> Ketika siswa mulai membicarakan hal lain, Anda bisa mengatakan: <em>"Wah, ide yang bagus! Kita simpan dulu untuk nanti."</em> Kemudian, berikan langkah selanjutnya yang jelas dan konkret, bukan sekadar mengatakan "fokus".`},
+     {ic:'🔁', html:`<strong>Pertahankan struktur yang sama dan beri tahu siswa sebelum ada perubahan.</strong> <em>"5 menit lagi, kita akan beralih ke..."</em> Rutinitas yang dapat diprediksi membantu mengurangi kecemasan, terutama pada siswa autistik.`},
+     {ic:'👀', html:`<strong>Berikan jeda untuk mengistirahatkan mata.</strong> Mengalihkan pandangan dari layar sejenak di antara aktivitas dapat membantu siswa yang merasa tidak nyaman jika terlalu lama menatap layar.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>Ketika situasi mulai sulit dikendalikan</strong> — misalnya siswa frustrasi, menangis, atau berhenti berpartisipasi — turunkan volume suara dan perlambat tempo mengajar. Akui perasaan siswa tanpa menghakimi (<em>"Saya tahu ini terasa sulit buatmu sekarang"</em>), berikan langkah konkret alih-alih hanya mengatakan "tenanglah", lalu kembali ke langkah terakhir yang berhasil dilakukan siswa. Materi pelajaran bisa menunggu sampai siswa merasa lebih tenang.</p>`)}
+  `},
+  {t:'🏠 Lingkungan rumah: bekerja sama dengan keluarga', html:`
+   <div class="card"><p>Dalam kelas online, rumah anak menjadi ruang kelasnya. Ponsel di atas meja, TV yang menyala di latar belakang, atau saudara yang bermain di dekatnya dapat mengganggu kelas, bahkan yang sudah dipersiapkan dengan baik. Anda tidak dapat mengendalikan lingkungan rumah, tetapi Anda bisa <strong>meminta bantuan keluarga</strong> dengan ramah sambil memberikan saran yang jelas.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'Gunakan tempat tenang yang sama', desc:'Gunakan tempat yang sama untuk setiap kelas, jauh dari TV dan area rumah yang paling ramai.', note:'Rutinitas membantu siswa menjaga fokus.'},
+     {ic:'🎧', title:'Headphone', desc:'Mengurangi suara bising dari sekitar dan membantu siswa mendengar tutor dengan lebih jelas.', note:'Headphone sederhana pun sudah cukup.'},
+     {ic:'📱', title:'Jauhkan ponsel dari jangkauan', desc:'Ponsel harus berada di luar jangkauan siswa selama kelas berlangsung, dan aplikasi serta tab lain harus ditutup.', note:'Kalau ponsel masih mudah diraih, artinya masih terlalu dekat.'},
+     {ic:'👋', title:'Orang tua mendampingi — terutama di awal', desc:'Untuk siswa yang masih sangat kecil, sebaiknya ada orang dewasa di dekatnya selama beberapa menit pertama untuk membantu persiapan.', note:'Bantuan hanya untuk persiapan, bukan untuk mengerjakan tugas.'}
+   ],2)}
+   ${co('co-idea','👪',`<p><strong>Bagikan pengamatan, bukan penilaian.</strong> Mengatakan <em>"Hari ini saya perhatikan dia jauh lebih fokus di paruh kedua kelas, setelah istirahat singkat"</em> dapat membuka percakapan. Sebaliknya, mengatakan <em>"Dia tidak pernah memperhatikan"</em> justru menutup percakapan.</p>`)}
+  `},
+  {t:'⌨️ Keterampilan dasar komputer dan komputer yang lambat', html:`
+   <div class="card"><p>Kelas online mengharuskan anak menggunakan komputer sekaligus mengikuti materi pelajaran. Siswa yang masih belajar mengetik, menyeret dan melepas elemen (drag and drop), menyalin dan menempel, atau berpindah antarjendela — atau yang menggunakan komputer lambat — bisa menghabiskan seluruh waktu kelas untuk mengatasi masalah komputer, bukan untuk belajar. Akibatnya, keluarga mungkin menyimpulkan bahwa <em>"kelas online tidak cocok untuknya"</em>.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Tanda-tanda yang perlu diperhatikan', sub:'Di pelajaran-pelajaran pertama',
+      see:`Mencari-cari setiap tombol di keyboard sebelum menekannya · Tidak bisa menyeret dan melepas elemen, mengklik kanan, menyalin, atau menempel · Bingung saat berpindah antarjendela atau tab · Kesulitan membagikan layar · Memahami tugasnya, tetapi tidak pernah selesai karena kesulitan mengoperasikan komputer.`,
+      tip:`Minta siswa membagikan layarnya dan amati <em>cara</em> kerjanya. Yang tampak seperti kurang minat sering kali sebenarnya adalah kesulitan menggunakan komputer.`},
+     {ic:'🧑‍🏫', title:'Apa yang harus dilakukan selama kelas',
+      do:`<ul><li><strong>Tunjukkan setiap langkah secara perlahan, pastikan kursor Anda terlihat</strong> saat menjelaskan setiap klik, dan perbesar tampilan saat membagikan layar.</li><li><strong>Berikan instruksi satu per satu, lalu cek:</strong> <em>"Coba tunjukkan layarmu. Sekarang kamu sudah sampai mana?"</em></li><li><strong>Luangkan dua menit untuk latihan keterampilan dasar:</strong> menyalin dan menempel, menyeret elemen, menyimpan file, dan berpindah antarjendela.</li><li><strong>Bagikan pintasan keyboard melalui chat:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S, dan Alt+Tab (di Mac, gunakan Cmd sebagai pengganti Ctrl/Alt).</li><li><strong>Apresiasi juga keberhasilan siswa dalam menggunakan komputer:</strong> <em>"Kamu berhasil membagikan layar sendiri!"</em></li></ul>`,
+      avoid:`Mengambil alih kendali layar siswa atau mengerjakan tugas untuk mereka.`},
+     {ic:'👪', title:'Libatkan orang tua dalam persiapan',
+      do:`Sebelum kelas, minta keluarga memeriksa apakah Chrome sudah terinstal dan diperbarui, program yang diperlukan untuk kursus sudah terinstal, informasi login sudah tersimpan, dan tautan kelas mudah ditemukan. Untuk siswa yang masih sangat kecil, kehadiran orang tua di dekat mereka selama beberapa menit pertama dapat membantu proses persiapan.`},
+     {ic:'🐢', title:'Ketika komputer berjalan lambat',
+      do:`<ul><li><strong>Minta siswa atau keluarga menutup program dan tab lain</strong> sebelum kelas serta menggunakan Google Chrome. Minta juga anggota keluarga lain untuk tidak memakai Wi-Fi secara berlebihan selama kelas berlangsung.</li><li><strong>Blender berjalan lambat?</strong> Gunakan panduan performa Blender di wiki untuk membantu siswa mengatur programnya. Panduan performa juga tersedia di beberapa pelajaran pertama kursus.</li><li><strong>Siswa sama sekali tidak bisa menjalankan program kursus?</strong> Usahakan agar kelas tetap bermanfaat: lakukan demonstrasi dengan membagikan layar Anda dan ajukan pertanyaan yang bisa dijawab siswa secara lisan. Setelah itu, beri tahu Team Leader Anda. Departemen Teaching dan Sales akan menentukan bagaimana siswa dapat melanjutkan kursus.</li></ul>`,
+      avoid:`Meminta keluarga membeli komputer baru atau menjanjikan pergantian kursus.`},
+     {ic:'📝', title:'Ketika masalahnya tidak bisa diatasi dalam kelas kelompok',
+      do:`Tinggalkan komentar di BO tentang apa yang Anda amati dan solusi apa saja yang sudah dicoba, lalu beri tahu Team Leader Anda. Anda dapat mengajukan permintaan kelas tambahan agar siswa bisa berlatih keterampilan dasar, tetapi keputusan akhirnya tetap berada di tangan Team Leader Anda.`,
+      avoid:`Menawarkan kelas tambahan atau format kelas yang berbeda secara langsung kepada keluarga.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +366,11 @@ const CONTENT = {
    {type:'choice', prompt:`Bagaimana cara memberikan instruksi di pelajaran online?`, opts:[`Semua langkah sekaligus, supaya tidak ada yang perlu menunggu`,`Satu instruksi dalam satu waktu, lalu cek: “Apa yang akan kamu lakukan pertama kali?”`,`Sampaikan sekali, dengan cepat, lalu lanjut`], correct:1, fb:`Instruksi yang bertumpuk mudah hilang di kelas online. Satu langkah ditambah pertanyaan cek bisa menangkap kebingungan sejak awal.`},
    {type:'choice', prompt:`Seorang anak pemalu berusia 13 tahun tidak pernah menjawab dengan bersuara. Apa yang paling membantu?`, opts:[`Memanggil namanya di setiap pelajaran sampai dia mau bicara`,`Membiarkannya ikut serta lewat chat terlebih dahulu, dan memuji kontribusinya`,`Memintanya menyalakan kamera di depan semua orang`], correct:1, fb:`Beri dia cara yang nyaman untuk ikut serta — chat terlebih dahulu. Kameranya bisa nanti, kalau dia mau.`},
    {type:'sort', prompt:'Apakah kebiasaan ini membantu atau merugikan pelajaran online?', card:`Tiba-tiba menunjuk siswa yang paling pendiam dengan pertanyaan yang paling sulit.`, zones:[{label:'💎 Membantu', fb:'Belum tepat — ini membuat siswa merasa disorot dan membuat pertanyaan berikutnya lebih sulit dijawab.'},{label:'🗑️ Merugikan', fb:'Benar — mulai dari yang mudah, siapkan mereka, dan buat cara memilihnya terasa adil.'}], correctZone:1},
-   {type:'choice', prompt:`Pembukaan mana yang paling cocok untuk anak berusia 7 tahun?`, opts:[`“Hari ini kita akan belajar tentang variabel.”`,`“Hari ini ada robot yang kehilangan suaranya — di akhir pelajaran, kalian yang akan memberinya suara. Siapa yang ikut?”`,`“Buka pelajarannya dan mulai latihan 1.”`], correct:1, fb:`Cerita dengan sebuah misi menarik perhatian dan memberi alasan untuk ikut serta. Langsung masuk ke materi menyia-nyiakan menit-menit saat perhatian sedang paling tinggi.`}
+   {type:'choice', prompt:`Pembukaan mana yang paling cocok untuk anak berusia 7 tahun?`, opts:[`“Hari ini kita akan belajar tentang variabel.”`,`“Hari ini ada robot yang kehilangan suaranya — di akhir pelajaran, kalian yang akan memberinya suara. Siapa yang ikut?”`,`“Buka pelajarannya dan mulai latihan 1.”`], correct:1, fb:`Cerita dengan sebuah misi menarik perhatian dan memberi alasan untuk ikut serta. Langsung masuk ke materi menyia-nyiakan menit-menit saat perhatian sedang paling tinggi.`},
+   {type:'choice', prompt:`Seorang siswa dengan ADHD terus mengalihkan pembicaraan untuk membahas acara TV. Apa yang akan Anda katakan?`, opts:[`"Berhenti membicarakan itu, kita sedang belajar."`,`"Wah, ide yang bagus! Kita simpan dulu untuk nanti. Sekarang, cukup kerjakan bagian latar belakangnya dan beri tahu saya kalau sudah selesai."`,`Tidak menanggapinya dan terus menjelaskan materi kepada siswa lain.`], correct:1, fb:`Arahkan kembali perhatian siswa dengan lembut, lalu berikan satu tugas kecil dan konkret dengan hasil yang terlihat. Mengatakan "berhenti" tidak memberi tahu siswa apa yang harus dilakukan sebagai gantinya.`},
+   {type:'sort', prompt:'Apakah tindakan ini membantu atau justru menghambat?', card:`Anda mengirim pesan kepada keluarga berisi saran untuk menggunakan tempat yang tenang, memakai headphone, dan menjauhkan ponsel dari jangkauan siswa selama kelas. Anda juga bertanya apa yang biasanya membantu anak mereka berkonsentrasi.`, zones:[{label:'💎 Membantu', fb:'Benar! Dalam kelas online, rumah menjadi ruang kelas. Saran yang konkret dan disampaikan dengan ramah, disertai pertanyaan tentang apa yang biasanya berhasil di rumah, menjadikan keluarga mitra dalam proses belajar.'},{label:'🗑️ Menghambat', fb:'Tidak tepat. Pesan tersebut disampaikan dengan ramah, berisi saran konkret, dan meminta keluarga berbagi pengalaman. Inilah cara yang tepat untuk bekerja sama dengan keluarga.'}], correctZone:0},
+   {type:'choice', prompt:`Seorang siswa berusia 7 tahun kesulitan menemukan tombol di keyboard dan belum bisa menyalin-tempel. Keluarganya mengatakan bahwa "kelas online tidak cocok untuknya". Apa yang pertama kali Anda lakukan?`, opts:[`Memberi tahu keluarga bahwa anak tersebut terlalu kecil untuk mengikuti kelas online.`,`Mengambil alih kendali layarnya agar dia tidak tertinggal dari kelompok.`,`Menunjukkan langkah-langkah secara perlahan dengan kursor yang terlihat, menambahkan latihan singkat untuk keterampilan dasar, dan meminta orang tua membantu proses persiapan.`], correct:2, fb:`Keterampilan dasar komputer dapat dilatih. Menunjukkan langkah-langkah secara perlahan dan melibatkan orang tua dalam persiapan, bukan dalam mengerjakan tugas, membantu siswa makin percaya diri dari kelas ke kelas.`},
+   {type:'sort', prompt:'Apakah tindakan ini membantu atau justru menghambat?', card:`Blender berjalan sangat lambat di komputer seorang siswa, jadi Anda memberi tahu keluarganya bahwa mereka perlu membeli komputer yang lebih baik.`, zones:[{label:'💎 Membantu', fb:'Tidak tepat. Jangan pernah meminta keluarga membeli peralatan baru. Bantu siswa menutup program lain dan menggunakan panduan performa Blender di wiki, lalu beri tahu Team Leader Anda jika program masih tidak dapat berjalan dengan baik.'},{label:'🗑️ Menghambat', fb:'Benar! Pertama, bantu siswa menggunakan panduan performa Blender yang tersedia di wiki. Jika komputer tidak mampu menjalankan program kursus, Team Leader Anda akan menangani langkah selanjutnya.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +398,12 @@ const CONTENT = {
      'Saya mengajukan pertanyaan langsung tanpa tekanan: yang mudah dulu, cara memilih yang adil, dan umpan balik positif untuk jawaban apa pun',
      'Saya menghubungkan teman sekelas lewat momen singkat berpasangan atau dalam kelompok kecil',
      'Saya melaporkan ketidaksukaan siswa terhadap format online di BO di hari yang sama: apa yang dia katakan, apa yang saya lihat, apa yang sudah saya coba',
-     'Saya tidak pernah menjanjikan perubahan format atau grup — saya merekomendasikan di BO dan bilang “aku akan cek ke timku”'
+     'Saya tidak pernah menjanjikan perubahan format atau grup — saya merekomendasikan di BO dan bilang “aku akan cek ke timku”',
+     'Saat mengajar siswa dengan kesulitan fokus, ADHD, atau kecemasan, saya menggunakan tugas-tugas kecil dengan hasil yang terlihat, instruksi yang diberikan satu per satu, daftar tugas yang terlihat, dan jeda singkat untuk bergerak',
+     'Saya mengarahkan kembali perhatian siswa dengan lembut ("kita simpan ide itu untuk nanti") dan memberi tahu mereka sebelum ada perubahan. Saya tidak pernah melabeli atau mencoba mendiagnosis anak',
+     'Saya meminta bantuan keluarga dengan cara yang ramah dan konkret untuk menciptakan lingkungan belajar yang lebih baik di rumah: tempat yang tenang, headphone, dan ponsel yang berada di luar jangkauan siswa',
+     'Ketika seorang siswa masih belajar menggunakan komputer, saya menunjukkan langkah-langkah secara perlahan dengan kursor yang terlihat, memberikan instruksi satu per satu, dan meminta orang tua membantu persiapan, bukan mengerjakan tugas',
+     'Jika komputer berjalan lambat, saya membantu siswa menutup program lain dan menggunakan panduan performa Blender yang tersedia di wiki. Jika komputer tidak mampu menjalankan program kursus, saya memberi tahu Team Leader saya'
    ])}
   `},
   {t:'', html:`

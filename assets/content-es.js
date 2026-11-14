@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-entrenamiento",
     heroTitle:"Que las clases <span class=\"h-pill\">en línea</span> se sientan bien",
     heroIntro:"Has recibido este entrenamiento porque tienes estudiantes que han solicitado un reembolso porque no les gusta el formato en línea. Aquí te mostraremos qué puedes hacer como tutor y cómo manejar estas situaciones.",
-    heroWork:"Completa 4 módulos cortos. Cada comprobación de módulo requiere un 70 % o más para desbloquear el siguiente. En total, unos 20–25 minutos.",
+    heroWork:"Completa los 4 módulos breves. Necesitas obtener al menos un 70 % en la evaluación de cada módulo para desbloquear el siguiente. Duración total aproximada: 30–35 minutos.",
     startBtn:"🚀 Comenzar el entrenamiento",
     pathLabel:'Tu ruta de aprendizaje',
     devTitle:'Dev: desbloquear todos los módulos para revisión',
@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>Lo que ya probé:</strong> [p. ej. rondas cortas, tarea en parejas, participación primero por el chat]<br>
    <strong>Lo que podría ayudar — mi recomendación, su decisión:</strong> [p. ej. un grupo más pequeño, una conversación motivacional, otro curso]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Reportar un caso</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Reportar un caso" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Con la familia:</strong> habla del aprendizaje, nunca de la organización. <em>«Hola, [nombre del padre o la madre], he notado que a [estudiante] a veces le cuesta mantener la energía en las clases en línea. He empezado a hacer rondas cortas de construcción y a dejar que elija, y lo he compartido con mi equipo para poder apoyarle de la mejor manera.»</em> Sin promesas sobre grupos ni formatos.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Con la familia:</strong> habla del aprendizaje, nunca de la organización. Sin promesas sobre grupos ni formatos.</p>`)}
   `}
  ],
  ix:{
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Módulo 2', emoji:'🎬', color:'var(--coral)',
  title:'Construye una clase en línea que disfruten',
- desc:'Técnicas que mantienen la atención y hacen que la pantalla se sienta como un aula compartida: empezar con fuerza, trabajar en rondas cortas, interacción, conexión, preguntas directas y un logro al final.',
- obj:'Dirigir una clase en línea que mantenga la atención, dé a cada estudiante una forma cómoda de participar, conecte a los compañeros y termine con un logro — adaptada a la edad del grupo.',
+ desc:'Técnicas para mantener la atención y hacer que la pantalla se sienta como un espacio compartido, además de estrategias de apoyo para estudiantes con dificultades de atención, entornos domésticos con distracciones, habilidades informáticas básicas y computadoras lentas.',
+ obj:'Dirigir una clase en línea que mantenga la atención, ofrezca a cada estudiante una forma cómoda de participar, fomente la conexión entre compañeros y termine con un logro, adaptándola a la edad del grupo. Además, aprenderás a apoyar a estudiantes con dificultades de atención, entornos domésticos con distracciones, habilidades informáticas básicas o computadoras lentas.',
  sections:[
   {t:'🧠 Cuatro cosas que tiene toda clase motivadora', html:`
    <div class="card"><p>En línea, nada mantiene la atención por ti: no hay un aula física, ni compañeros al lado, y cualquier distracción está a un clic. La investigación sobre motivación ofrece una lista sencilla — el <strong>modelo ARCS</strong> de John Keller (1987). Antes de cada clase, pregúntate si tiene las cuatro:</p></div>
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Confianza.</strong> Pasos pequeños, un siguiente paso claro y apoyo cuando se atascan — para que crean que pueden hacerlo.`},
      {ic:'🏆', html:`<strong>Satisfacción.</strong> Elogios concretos y algo terminado que mostrar al final.`}
    ])}
-   ${bigStat('≈ 10 min', `<p>Una regla práctica muy citada de la investigación sobre el aprendizaje (popularizada por <em>Brain Rules</em>, de John Medina): la atención empieza a dispersarse después de unos <strong>diez minutos</strong>. Planifica un cambio de actividad hacia ese momento — y haz las rondas aún más cortas con los más pequeños.</p>`)}
+   ${bigStat('≈ 10 min', `<p>La atención empieza a dispersarse después de unos <strong>diez minutos</strong>. Planifica un cambio de actividad hacia ese momento — y haz las rondas aún más cortas con los más pequeños.</p>`)}
   `},
   {t:'🎬 La clase, minuto a minuto', html:`
    ${timeline([
@@ -312,6 +312,49 @@ const CONTENT = {
      ['Preguntar de golpe al estudiante más callado la pregunta más difícil','Corregir con dureza delante del grupo','Preguntar siempre a los mismos estudiantes rápidos','Lanzar una pregunta difícil sin avisar — prueba con: <em>«Esta es complicada, pero ¿alguien quiere intentarlo?»</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Por qué funciona:</strong> los estudiantes participan cuando se sienten seguros. Prepararlos, empezar por algo fácil y ser justo convierte una pregunta de un riesgo en una invitación.</p>`)}
+  `},
+  {t:'🧠 Estudiantes con dificultades de atención, TDAH o ansiedad', html:`
+   <div class="card"><p>Para algunos estudiantes, decir «no puedo estudiar en línea» en realidad significa <em>«no puedo mantener la atención en una pantalla durante tanto tiempo»</em>. El TDAH, el autismo o la ansiedad pueden hacer que esto sea más difícil. Es posible que la familia no te lo haya comentado o que el niño nunca haya recibido una evaluación. <strong>No necesitas un diagnóstico para adaptar tus clases</strong> y nunca debes intentar diagnosticar a un estudiante. Lo que necesitas es una clase dividida en pequeñas actividades, con una estructura clara y espacio para moverse.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Microtareas con un resultado visible.</strong> <em>«Por ahora, solo haz el fondo y avísame cuando esté listo».</em> Cada pequeña tarea completada representa un logro real.`},
+     {ic:'1️⃣', html:`<strong>Instrucciones breves y de un solo paso.</strong> Repite el objetivo antes de comenzar cada actividad.`},
+     {ic:'✅', html:`<strong>Una lista de tareas visible</strong> en la pantalla o en el chat: qué se ha completado y qué sigue. Esto ayuda a reemplazar la memoria cuando el estudiante pierde la concentración.`},
+     {ic:'⏲️', html:`<strong>Un temporizador como parte de un juego,</strong> por ejemplo: <em>«¡Veamos si puedes ganarle al reloj!»</em>, si al estudiante le gusta. Si la presión le genera frustración, muéstralo únicamente como una referencia visual.`},
+     {ic:'🤸', html:`<strong>Movimiento en lugar de exigir que permanezca sentado.</strong> <em>«¿Quieres levantarte durante 10 segundos y después continuamos?».</em> Las pausas breves para moverse ayudan más a recuperar la atención que pedirle que se quede quieto.`},
+     {ic:'↩️', html:`<strong>Redirige su atención con amabilidad.</strong> Si empieza a hablar de otro tema, puedes decir: <em>«¡Me encanta esa idea! Vamos a guardarla para después».</em> Luego, dale una instrucción concreta para continuar, en lugar de decirle «concéntrate».`},
+     {ic:'🔁', html:`<strong>Mantén la misma estructura y anuncia los cambios con anticipación.</strong> <em>«En 5 minutos vamos a cambiar a…».</em> La previsibilidad ayuda a reducir la ansiedad, especialmente en estudiantes autistas.`},
+     {ic:'👀', html:`<strong>Pausas para descansar la vista.</strong> Mirar brevemente hacia otro lado entre actividades puede ayudar a los estudiantes a quienes les resulta incómodo pasar mucho tiempo frente a la pantalla.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>Cuando la situación se desborda</strong> —por frustración, llanto o porque el estudiante deja de participar—, baja el tono de voz y reduce el ritmo de la clase. Reconoce lo que siente sin juzgarlo (<em>«Veo que esto está siendo difícil en este momento»</em>), ofrécele una acción concreta en lugar de decirle «cálmate» y retoma una actividad que ya haya logrado completar. El contenido puede esperar hasta que se haya tranquilizado.</p>`)}
+  `},
+  {t:'🏠 El entorno en casa: trabaja junto con la familia', html:`
+   <div class="card"><p>En las clases en línea, el hogar del niño se convierte en su salón de clases. Un celular sobre el escritorio, un televisor encendido de fondo o un hermano jugando a su lado pueden dificultar incluso la mejor clase. No puedes controlar lo que ocurre en casa, pero sí puedes <strong>pedirle ayuda a la familia</strong> de manera amable y con recomendaciones concretas.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'Un mismo lugar tranquilo', desc:'Utilizar el mismo espacio para cada clase, lejos del televisor y de las zonas más concurridas de la casa.', note:'La rutina ayuda a mantener la atención.'},
+     {ic:'🎧', title:'Audífonos', desc:'Reducen el ruido de fondo y permiten escuchar mejor al tutor.', note:'Cualquier audífono sencillo funciona.'},
+     {ic:'📱', title:'Celular fuera del alcance', desc:'Debe estar fuera del alcance durante la clase, y las demás aplicaciones y pestañas deben permanecer cerradas.', note:'Tenerlo a un clic de distancia sigue siendo demasiado cerca.'},
+     {ic:'👋', title:'Un adulto cerca, al menos al principio', desc:'En el caso de los estudiantes más pequeños, es recomendable que alguien esté cerca durante los primeros minutos para ayudarlos con la configuración.', note:'Para preparar todo, no para hacer las actividades.'}
+   ],2)}
+   ${co('co-idea','👪',`<p><strong>Comparte observaciones, no juicios.</strong> Decir <em>«Hoy noté que logró concentrarse mucho mejor durante la segunda mitad de la clase, después de una pausa breve»</em> abre la conversación. En cambio, decir <em>«Nunca presta atención»</em> la cierra.</p>`)}
+  `},
+  {t:'⌨️ Habilidades informáticas básicas y computadoras lentas', html:`
+   <div class="card"><p>Las clases en línea requieren que los niños manejen la computadora y sigan el contenido al mismo tiempo. Un estudiante que todavía está aprendiendo a escribir en el teclado, arrastrar elementos, copiar y pegar o cambiar entre ventanas, o que utiliza una computadora lenta, puede pasar toda la clase intentando resolver problemas técnicos en lugar de aprender. Como resultado, la familia puede llegar a la conclusión de que <em>«las clases en línea no son para él»</em>.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Señales a las que debes prestar atención', sub:'En las primeras clases',
+      see:`Busca cada tecla en el teclado antes de presionarla · No sabe arrastrar elementos, hacer clic derecho, copiar o pegar · Se pierde al cambiar entre ventanas o pestañas · Tiene dificultades para compartir su pantalla · Entiende la actividad, pero no logra terminarla porque no sabe <em>cómo</em> realizarla.`,
+      tip:`Pídele que comparta su pantalla y observa <em>cómo</em> trabaja. A menudo, lo que parece falta de interés en realidad es una dificultad para manejar la computadora.`},
+     {ic:'🧑‍🏫', title:'Qué hacer durante la clase',
+      do:`<ul><li><strong>Muestra los pasos lentamente, mantén el cursor visible</strong> mientras explicas cada clic y aumenta el zoom cuando compartas tu pantalla.</li><li><strong>Da una instrucción a la vez y luego verifica:</strong> <em>«Muéstrame tu pantalla, ¿en qué parte estás ahora?».</em></li><li><strong>Dedica dos minutos a practicar habilidades básicas:</strong> copiar y pegar, arrastrar elementos, guardar archivos y cambiar entre ventanas.</li><li><strong>Comparte atajos de teclado en el chat:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S y Alt+Tab (en Mac, usa Cmd cuando corresponda).</li><li><strong>Celebra también los logros relacionados con el uso de la computadora:</strong> <em>«¡Compartiste tu pantalla sin ayuda!».</em></li></ul>`,
+      avoid:`Tomar el control de su pantalla o hacer la actividad por él.`},
+     {ic:'👪', title:'Involucra a los padres en la preparación',
+      do:`Pide a la familia que verifique antes de la clase que Chrome esté instalado y actualizado, que los programas necesarios para el curso estén instalados, que los datos de acceso estén guardados y que el enlace de la clase sea fácil de encontrar. En el caso de los estudiantes más pequeños, contar con un adulto cerca durante los primeros minutos puede facilitar la preparación.`},
+     {ic:'🐢', title:'Cuando la computadora es lenta',
+      do:`<ul><li><strong>Pide que cierren los demás programas y pestañas</strong> antes de la clase, utiliza Google Chrome y solicita que, durante la sesión, nadie más en casa use la conexión Wi-Fi para actividades que consuman mucho ancho de banda.</li><li><strong>¿Blender funciona lentamente?</strong> La wiki incluye guías para configurar Blender y mejorar su rendimiento. Utilízalas para ayudar al estudiante a configurarlo. El curso también incluye una guía de rendimiento en sus primeras clases.</li><li><strong>¿No puede ejecutar el programa del curso?</strong> Busca la manera de que la clase siga siendo útil: realiza una demostración compartiendo tu pantalla y haz preguntas para que el estudiante responda verbalmente. Luego, informa a tu Team Leader. Los departamentos de Teaching y Sales decidirán cómo puede continuar el estudiante.</li></ul>`,
+      avoid:`Pedirle a la familia que compre una computadora nueva o prometer un cambio de curso.`},
+     {ic:'📝', title:'Cuando el problema supera lo que puedes resolver durante la clase grupal',
+      do:`Deja un comentario en BO explicando lo que observaste y las soluciones que intentaste. También informa a tu Team Leader. Puedes solicitar una clase adicional para practicar las habilidades básicas, pero la decisión final la toma tu Team Leader.`,
+      avoid:`Ofrecer directamente a la familia una clase adicional o un cambio de formato.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +366,11 @@ const CONTENT = {
    {type:'choice', prompt:`¿Cómo das las instrucciones en una clase en línea?`, opts:[`Todos los pasos a la vez, para que nadie tenga que esperar`,`Una instrucción a la vez, y luego la compruebas: «¿Qué vas a hacer primero?»`,`Lo dices una vez, rápido, y sigues adelante`], correct:1, fb:`Las instrucciones acumuladas se pierden en línea. Un paso más una pregunta de comprobación detecta la confusión a tiempo.`},
    {type:'choice', prompt:`Un estudiante tímido de 13 años nunca responde en voz alta. ¿Qué ayuda más?`, opts:[`Llamarlo por su nombre en cada clase hasta que hable`,`Dejar que participe primero por el chat, y elogiar sus aportaciones`,`Pedirle que encienda la cámara delante de todos`], correct:1, fb:`Dale una forma cómoda de participar — primero el chat. La cámara puede venir después, cuando él quiera.`},
    {type:'sort', prompt:'¿Este hábito ayuda o perjudica a una clase en línea?', card:`Preguntar de golpe al estudiante más callado la pregunta más difícil.`, zones:[{label:'💎 Ayuda', fb:'No exactamente — lo deja expuesto y hace que la siguiente pregunta le cueste aún más.'},{label:'🗑️ Perjudica', fb:'Correcto — empieza por algo fácil, prepáralo y haz que la elección se sienta justa.'}], correctZone:1},
-   {type:'choice', prompt:`¿Qué inicio funciona mejor con un niño de 7 años?`, opts:[`«Hoy vamos a aprender qué son las variables.»`,`«Hoy un robot perdió la voz — al final de la clase se la habrás devuelto. ¿Te apuntas?»`,`«Abre la clase y empieza el ejercicio 1.»`], correct:1, fb:`Una historia con una misión capta la atención y da un motivo para participar. Ir directamente al contenido desperdicia los minutos de mayor atención.`}
+   {type:'choice', prompt:`¿Qué inicio funciona mejor con un niño de 7 años?`, opts:[`«Hoy vamos a aprender qué son las variables.»`,`«Hoy un robot perdió la voz — al final de la clase se la habrás devuelto. ¿Te apuntas?»`,`«Abre la clase y empieza el ejercicio 1.»`], correct:1, fb:`Una historia con una misión capta la atención y da un motivo para participar. Ir directamente al contenido desperdicia los minutos de mayor atención.`},
+   {type:'choice', prompt:`Un estudiante con TDAH se distrae constantemente y cambia de tema para hablar de un programa de televisión. ¿Qué le dices?`, opts:[`«Deja de hablar de eso, estamos en clase».`,`«¡Me encanta esa idea! Vamos a guardarla para después. Ahora, solo haz el fondo y avísame cuando esté listo».`,`No dices nada: lo ignoras y continúas explicándoles a los demás.`], correct:1, fb:`Redirige su atención con amabilidad y luego dale una tarea pequeña y concreta cuyo resultado pueda ver. Decirle «basta» no le indica qué puede hacer en su lugar.`},
+   {type:'sort', prompt:'¿Esto ayuda o perjudica?', card:`Le escribes a la familia para sugerirle que el estudiante tenga un lugar tranquilo, use audífonos y mantenga el celular fuera de su alcance durante las clases. Además, les preguntas qué ayuda a su hijo a concentrarse.`, zones:[{label:'💎 Ayuda', fb:'¡Correcto! En las clases en línea, el hogar se convierte en el salón de clases. Las recomendaciones concretas y amables, junto con una pregunta sobre lo que funciona en casa, ayudan a convertir a la familia en una aliada.'},{label:'🗑️ Perjudica', fb:'No exactamente. El mensaje es amable, ofrece recomendaciones concretas y pregunta por la experiencia de la familia. Esa es precisamente la manera adecuada de trabajar junto con ella.'}], correctZone:0},
+   {type:'choice', prompt:`Un estudiante de 7 años no sabe encontrar las teclas ni copiar y pegar, y su familia dice que «las clases en línea no son para él». ¿Qué haces primero?`, opts:[`Le dices a la familia que es demasiado pequeño para las clases en línea.`,`Tomas el control de su pantalla para que pueda seguir el ritmo del grupo.`,`Le muestras los pasos lentamente, mantienes el cursor visible, agregas una breve práctica de habilidades básicas y pides a uno de sus padres que lo ayude con la preparación.`], correct:2, fb:`Las habilidades informáticas básicas se pueden desarrollar con la práctica. Mostrar los pasos lentamente e involucrar a los padres en la preparación, no en la realización de las actividades, ayuda a desarrollar la confianza del estudiante clase tras clase.`},
+   {type:'sort', prompt:'¿Esto ayuda o perjudica?', card:`Blender funciona muy lentamente en la computadora de un estudiante, así que le dices a la familia que necesita comprar una mejor.`, zones:[{label:'💎 Ayuda', fb:'No exactamente. Nunca debes pedirle a una familia que compre equipo nuevo. Primero, cierra los demás programas y utiliza las guías de rendimiento de Blender disponibles en la wiki. Si el programa sigue sin funcionar, informa a tu Team Leader.'},{label:'🗑️ Perjudica', fb:'¡Correcto! Primero, ayuda al estudiante a utilizar las guías de rendimiento de Blender disponibles en la wiki. Si la computadora no puede ejecutar el programa del curso, tu Team Leader se encargará de gestionar la situación.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +398,12 @@ const CONTENT = {
      'Hago preguntas directas sin presión: primero fáciles, una forma justa de elegir y una respuesta positiva a cualquier aportación',
      'Conecto a los compañeros con momentos cortos en parejas o en grupos pequeños',
      'Reporto en BO el mismo día que a un estudiante no le gusta el formato en línea: lo que dijo, lo que vi y lo que probé',
-     'Nunca prometo un cambio de formato o de grupo — lo recomiendo en BO y digo «voy a consultarlo con mi equipo»'
+     'Nunca prometo un cambio de formato o de grupo — lo recomiendo en BO y digo «voy a consultarlo con mi equipo»',
+     'Cuando trabajo con estudiantes con dificultades de atención, TDAH o ansiedad, utilizo microtareas con resultados visibles, instrucciones de un solo paso, listas de tareas visibles y pausas breves para moverse',
+     'Redirijo su atención con amabilidad («vamos a guardar esa idea para después») y anuncio los cambios antes de realizarlos. Nunca etiqueto ni diagnostico a un niño',
+     'Pido ayuda a la familia de manera amable y concreta para mejorar el entorno en casa: un lugar tranquilo, audífonos y el celular fuera del alcance',
+     'Cuando un estudiante todavía está aprendiendo a utilizar la computadora, le muestro los pasos lentamente con el cursor visible, doy una instrucción a la vez y pido a sus padres que lo ayuden con la preparación, no con las actividades',
+     'Si la computadora es lenta, ayudo a cerrar los demás programas y utilizo las guías de rendimiento de Blender disponibles en la wiki. Si no puede ejecutar el programa del curso, informo a mi Team Leader'
    ])}
   `},
   {t:'', html:`

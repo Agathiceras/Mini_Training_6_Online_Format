@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>What I have already tried:</strong> [e.g. short rounds, pair task, chat-first participation]<br>
    <strong>What could help — my recommendation, your decision:</strong> [e.g. a smaller group, a motivational conversation, another course]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Report a case</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Report a case" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>With the family:</strong> talk about the learning, never the arrangement. <em>"Hi [parent's name], I've noticed [student] sometimes finds it hard to stay energised in online lessons. I've started doing short building rounds and letting them choose, and I've shared it with my team so we can support them in the best way."</em> No promises about groups or formats.</p>`)}
+   ${co('co-idea','💬',`<p><strong>With the family:</strong> talk about the learning, never the arrangement. No promises about groups or formats.</p>`)}
   `}
  ],
  ix:{
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Confidence.</strong> Small steps, a clear next step, and support when they get stuck — so they believe they can do it.`},
      {ic:'🏆', html:`<strong>Satisfaction.</strong> Specific praise and a finished thing to show at the end.`}
    ])}
-   ${bigStat('≈ 10 min', `<p>A widely quoted rule of thumb from learning research (popularised by John Medina's <em>Brain Rules</em>): attention starts to drift after about <strong>ten minutes</strong>. Plan a change of activity around then — and keep rounds even shorter with the youngest.</p>`)}
+   ${bigStat('≈ 10 min', `<p>Attention starts to drift after about <strong>ten minutes</strong>. Plan a change of activity around then — and keep rounds even shorter with the youngest.</p>`)}
   `},
   {t:'🎬 The lesson, minute by minute', html:`
    ${timeline([
@@ -335,8 +335,6 @@ const CONTENT = {
      {ic:'📱', title:'Phone away', desc:'Out of reach during the lesson, and other apps and tabs closed.', note:'One click away is too close.'},
      {ic:'👋', title:'A parent nearby — at first', desc:'For the youngest, someone close by in the first minutes to help with the setup.', note:'For the setup — not for the tasks.'}
    ],2)}
-   <div class="card" style="background:var(--surface2)"><h4>📨 A message to the family — copy and adapt</h4>
-   <p style="font-size:13.5px;line-height:1.75"><em>"Hi [parent's name]! [Student] has great ideas in our lessons, and I'd love to help them stay focused for the whole hour. A few small things at home can make a big difference: the same quiet spot for each lesson, headphones if you have them, and the phone out of reach. I'm also working in short rounds in class so the time feels lighter. What usually helps [student] concentrate at home?"</em></p></div>
    ${co('co-idea','👪',`<p><strong>Share observations, not judgments.</strong> <em>"Today I noticed he concentrated much better in the second half, after a short break"</em> opens a conversation. <em>"He never pays attention"</em> closes it.</p>`)}
   `},
   {t:'⌨️ Weak computer skills — and slow computers', html:`
@@ -349,8 +347,7 @@ const CONTENT = {
       do:`<ul><li><strong>Model slowly, with your cursor visible,</strong> narrating each click, and zoom in when you share.</li><li><strong>One step, then check:</strong> <em>"Show me your screen — where are you now?"</em></li><li><strong>A two-minute skills warm-up:</strong> copy and paste, drag, save, switch windows.</li><li><strong>Shortcuts in the chat:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S, Alt+Tab (Cmd on a Mac).</li><li><strong>Celebrate computer wins too:</strong> <em>"You shared your screen on your own!"</em></li></ul>`,
       avoid:`Taking control of their screen or doing the task for them.`},
      {ic:'👪', title:'Involve the parent in the setup',
-      do:`Ask the family to check before the lesson: Chrome installed and up to date, the course tools installed if the course needs them, the login saved, and the lesson link easy to find. With the youngest, a parent nearby in the first minutes helps with the setup.`,
-      say:`<em>"Hi [parent's name]! To make the start of each lesson smoother, could you check that [Chrome / the course program] is ready and the login is saved? It helps if you're nearby for the first few minutes — the tasks themselves are [student]'s to do."</em>`},
+      do:`Ask the family to check before the lesson: Chrome installed and up to date, the course tools installed if the course needs them, the login saved, and the lesson link easy to find. With the youngest, a parent nearby in the first minutes helps with the setup.`},
      {ic:'🐢', title:'When the computer is slow',
       do:`<ul><li><strong>Close other programs and tabs</strong> before the lesson, use Google Chrome, and ask that nobody else at home uses the Wi-Fi heavily during the lesson.</li><li><strong>Blender running slowly?</strong> The wiki has guides to configure Blender for better performance — use them to help the student set it up. The course also includes a performance guide in its first lessons.</li><li><strong>Can't run the course tool at all?</strong> Keep the lesson useful — your demo on a shared screen, verbal answers — and tell your Team Leader: Teaching and Sales decide how the student continues.</li></ul>`,
       avoid:`Asking the family to buy a new computer, or promising a course change.`},

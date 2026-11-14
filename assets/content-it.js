@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-training",
     heroTitle:"Lezioni <span class=\"h-pill\">online</span> che piacciono davvero",
     heroIntro:"Ricevi questa formazione perché alcuni dei tuoi studenti hanno chiesto un rimborso, dato che il formato online non li convince. Qui vedremo cosa puoi fare come tutor e come gestire queste situazioni.",
-    heroWork:"Completa 4 brevi moduli. Per sbloccare il modulo successivo devi ottenere almeno il 70% nella verifica di ciascun modulo. Circa 20–25 minuti in tutto.",
+    heroWork:"Completa i 4 brevi moduli. Per sbloccare il modulo successivo, è necessario ottenere almeno il 70% nel test di verifica di ciascun modulo. Durata totale: circa 30–35 minuti.",
     startBtn:"🚀 Inizia la formazione",
     pathLabel:'Il tuo percorso di apprendimento',
     devTitle:'Dev: sblocca tutti i moduli per la revisione',
@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>Cosa ho già provato:</strong> [es. blocchi brevi, attività in coppia, partecipazione prima in chat]<br>
    <strong>Cosa potrebbe aiutare — la mia proposta, la vostra decisione:</strong> [es. un gruppo più piccolo, una conversazione motivazionale, un altro corso]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Segnala un caso</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Segnala un caso" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Con la famiglia:</strong> parla dell’apprendimento, mai dell’organizzazione. <em>«Buongiorno [nome del genitore], ho notato che a volte [nome dello studente] fa fatica a mantenere l’energia durante le lezioni online. Ho iniziato a proporre brevi momenti di costruzione e a lasciargli scegliere, e ne ho parlato con il mio team per poterlo supportare al meglio.»</em> Nessuna promessa su gruppi o formati.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Con la famiglia:</strong> parla dell’apprendimento, mai dell’organizzazione. Nessuna promessa su gruppi o formati.</p>`)}
   `}
  ],
  ix:{
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Modulo 2', emoji:'🎬', color:'var(--coral)',
  title:'Costruisci una lezione online che piaccia ai tuoi studenti',
- desc:'Tecniche per mantenere l’attenzione e far sembrare lo schermo una stanza condivisa: un inizio forte, blocchi brevi, interazione, legami tra compagni, domande dirette e un successo finale.',
- obj:'Condurre una lezione online che mantenga l’attenzione, dia a ogni studente un modo comodo di partecipare, crei legami tra i compagni e si chiuda con un successo, adattandola all’età del gruppo.',
+ desc:'Tecniche per mantenere alta l’attenzione e trasformare lo schermo in uno spazio condiviso, oltre a strategie per supportare gli studenti con difficoltà di attenzione, ambienti domestici ricchi di distrazioni, competenze informatiche di base limitate e computer lenti.',
+ obj:'Condurre una lezione online che mantenga alta l’attenzione, offra a ogni studente un modo comodo per partecipare, favorisca la connessione tra compagni e si concluda con un successo, adattando la lezione all’età del gruppo. Imparerai inoltre a supportare gli studenti con difficoltà di attenzione, ambienti domestici distraenti, competenze informatiche di base limitate o computer lenti.',
  sections:[
   {t:'🧠 I quattro ingredienti di ogni lezione motivante', html:`
    <div class="card"><p>Online, niente tiene l’attenzione al posto tuo: non c’è un’aula fisica, non ci sono compagni accanto, e ogni distrazione è a un clic di distanza. La ricerca sulla motivazione offre una checklist semplice: il <strong>modello ARCS</strong> di John Keller (1987). Prima di ogni lezione, chiediti se li contiene tutti e quattro:</p></div>
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Fiducia.</strong> Piccoli passi, un passo successivo chiaro e supporto quando si bloccano, così credono di potercela fare.`},
      {ic:'🏆', html:`<strong>Soddisfazione.</strong> Lodi specifiche e qualcosa di finito da mostrare alla fine.`}
    ])}
-   ${bigStat('≈ 10 min', `<p>Una regola pratica molto citata nella ricerca sull’apprendimento (resa popolare da John Medina nel libro <em>Brain Rules</em>): l’attenzione inizia a calare dopo circa <strong>dieci minuti</strong>. Prevedi un cambio di attività più o meno a quel punto, e con i più piccoli tieni i blocchi ancora più brevi.</p>`)}
+   ${bigStat('≈ 10 min', `<p>L’attenzione inizia a calare dopo circa <strong>dieci minuti</strong>. Prevedi un cambio di attività più o meno a quel punto, e con i più piccoli tieni i blocchi ancora più brevi.</p>`)}
   `},
   {t:'🎬 La lezione, minuto per minuto', html:`
    ${timeline([
@@ -312,6 +312,49 @@ const CONTENT = {
      ['Interpellare a sorpresa lo studente più silenzioso con una domanda difficile','Correggere in modo brusco davanti al gruppo','Chiedere sempre agli stessi studenti più veloci','Fare una domanda difficile senza preavviso. Prova invece: <em>«Questa è difficile, ma qualcuno vuole provarci?»</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Perché funziona:</strong> gli studenti partecipano quando si sentono al sicuro. Prepararli, iniziare con domande facili e scegliere in modo equo trasforma una domanda da rischio a invito.</p>`)}
+  `},
+  {t:'🧠 Studenti con difficoltà di attenzione, ADHD o ansia', html:`
+   <div class="card"><p>Per alcuni studenti, dire «non riesco a seguire le lezioni online» significa in realtà <em>«non riesco a mantenere l’attenzione davanti a uno schermo per così tanto tempo»</em>. L’ADHD, l’autismo o l’ansia possono rendere tutto più difficile. La famiglia potrebbe non avertelo comunicato oppure il bambino potrebbe non essere mai stato sottoposto a una valutazione. <strong>Non hai bisogno di una diagnosi per adattare le tue lezioni</strong> e non devi mai cercare di formulare una diagnosi. Ciò di cui hai bisogno è una lezione suddivisa in piccole attività, con una struttura chiara e la possibilità di muoversi.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Micro-attività con un risultato visibile.</strong> <em>«Per ora, occupati solo dello sfondo e dimmi quando è pronto».</em> Ogni piccola attività completata rappresenta un vero successo.`},
+     {ic:'1️⃣', html:`<strong>Istruzioni brevi e composte da un solo passaggio.</strong> Ripeti l’obiettivo prima di ogni attività.`},
+     {ic:'✅', html:`<strong>Una lista di controllo visibile</strong> sullo schermo o nella chat: cosa è stato completato e cosa bisogna fare dopo. Aiuta lo studente a orientarsi quando perde la concentrazione.`},
+     {ic:'⏲️', html:`<strong>Un timer come parte di un gioco,</strong> ad esempio: <em>«Vediamo se riesci a battere il tempo!»</em>, se allo studente piace. Se la pressione lo frustra, mostralo solo come riferimento visivo.`},
+     {ic:'🤸', html:`<strong>Movimento invece di chiedere allo studente di stare fermo.</strong> <em>«Vuoi alzarti per 10 secondi e poi continuiamo?».</em> Le brevi pause per muoversi aiutano a recuperare l’attenzione più di una richiesta di stare tranquilli.`},
+     {ic:'↩️', html:`<strong>Riporta gentilmente l’attenzione sull’attività.</strong> Quando lo studente inizia a parlare di altro, puoi dire: <em>«Mi piace molto questa idea! Mettiamola da parte per dopo».</em> Poi proponi un passaggio concreto da seguire, invece di dire «concentrati».`},
+     {ic:'🔁', html:`<strong>Mantieni la stessa struttura e annuncia i cambiamenti in anticipo.</strong> <em>«Tra 5 minuti passeremo a…».</em> La prevedibilità aiuta a ridurre l’ansia, soprattutto negli studenti autistici.`},
+     {ic:'👀', html:`<strong>Pause per riposare gli occhi.</strong> Distogliere brevemente lo sguardo dallo schermo tra un’attività e l’altra può aiutare gli studenti che provano disagio a trascorrere molto tempo davanti al computer.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>Quando la situazione diventa difficile da gestire</strong> — per frustrazione, pianto o perché lo studente smette di partecipare — abbassa il tono della voce e rallenta il ritmo della lezione. Riconosci quello che sta provando senza giudicarlo (<em>«Vedo che in questo momento è difficile»</em>), proponi un’azione concreta invece di dire «calmati» e riprendi un passaggio che era già riuscito a completare. Il contenuto può aspettare finché lo studente non si sarà tranquillizzato.</p>`)}
+  `},
+  {t:'🏠 L’ambiente domestico: collabora con la famiglia', html:`
+   <div class="card"><p>Durante le lezioni online, la casa del bambino diventa la sua aula. Un telefono sulla scrivania, la TV accesa in sottofondo o un fratello che gioca accanto a lui possono compromettere anche la lezione migliore. Non puoi controllare l’ambiente domestico, ma puoi <strong>chiedere alla famiglia di collaborare</strong>, con gentilezza e suggerimenti concreti.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'Un unico posto tranquillo', desc:'Utilizzare lo stesso spazio per ogni lezione, lontano dalla TV e dalle zone più frequentate della casa.', note:'La routine aiuta a mantenere l’attenzione.'},
+     {ic:'🎧', title:'Cuffie', desc:'Riducono i rumori di sottofondo e permettono allo studente di sentire meglio il tutor.', note:'Va bene qualsiasi semplice paio di cuffie.'},
+     {ic:'📱', title:'Telefono fuori dalla portata', desc:'Il telefono deve rimanere fuori dalla portata dello studente durante la lezione, mentre le altre applicazioni e schede del browser devono essere chiuse.', note:'Averlo a portata di un clic è comunque troppo vicino.'},
+     {ic:'👋', title:'Un genitore nelle vicinanze, almeno all’inizio', desc:'Per i bambini più piccoli, è utile che un adulto rimanga vicino durante i primi minuti per aiutarli con la preparazione.', note:'Per la preparazione, non per lo svolgimento delle attività.'}
+   ],2)}
+   ${co('co-idea','👪',`<p><strong>Condividi osservazioni, non giudizi.</strong> Dire <em>«Oggi ho notato che nella seconda parte della lezione è riuscito a concentrarsi molto meglio, dopo una breve pausa»</em> apre il dialogo. Dire <em>«Non presta mai attenzione»</em>, invece, lo chiude.</p>`)}
+  `},
+  {t:'⌨️ Competenze informatiche di base limitate e computer lenti', html:`
+   <div class="card"><p>Le lezioni online richiedono ai bambini di utilizzare il computer e seguire i contenuti contemporaneamente. Uno studente che sta ancora imparando a digitare, trascinare elementi, copiare e incollare o passare da una finestra all’altra, oppure che utilizza un computer lento, può trascorrere tutta la lezione cercando di gestire il dispositivo invece di imparare. Di conseguenza, la famiglia potrebbe concludere che <em>«le lezioni online non fanno per lui»</em>.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Segnali da osservare', sub:'Nelle prime lezioni',
+      see:`Cerca ogni tasto sulla tastiera prima di premerlo · Non riesce a trascinare elementi, fare clic con il tasto destro, copiare o incollare · Si perde quando passa da una finestra o scheda all’altra · Ha difficoltà a condividere lo schermo · Capisce l’attività, ma non riesce a completarla perché non sa <em>come</em> eseguirla.`,
+      tip:`Chiedi allo studente di condividere lo schermo e osserva <em>come</em> lavora. Spesso quello che sembra disinteresse è in realtà una difficoltà nell’utilizzo del computer.`},
+     {ic:'🧑‍🏫', title:'Cosa fare durante la lezione',
+      do:`<ul><li><strong>Mostra i passaggi lentamente, mantieni visibile il cursore</strong> mentre spieghi ogni clic e aumenta lo zoom quando condividi lo schermo.</li><li><strong>Dai un’istruzione alla volta e poi verifica:</strong> <em>«Mostrami il tuo schermo: a che punto sei arrivato?».</em></li><li><strong>Dedica due minuti a esercitarti con le competenze di base:</strong> copiare e incollare, trascinare elementi, salvare file e passare da una finestra all’altra.</li><li><strong>Condividi nella chat le scorciatoie da tastiera:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S e Alt+Tab (su Mac, usa Cmd quando necessario).</li><li><strong>Festeggia anche i progressi nell’uso del computer:</strong> <em>«Hai condiviso lo schermo da solo!».</em></li></ul>`,
+      avoid:`Prendere il controllo dello schermo dello studente o svolgere l’attività al suo posto.`},
+     {ic:'👪', title:'Coinvolgi i genitori nella preparazione',
+      do:`Chiedi alla famiglia di verificare prima della lezione che Chrome sia installato e aggiornato, che i programmi necessari per il corso siano installati, che i dati di accesso siano salvati e che il link della lezione sia facile da trovare. Per i bambini più piccoli, avere un genitore nelle vicinanze durante i primi minuti può facilitare la preparazione.`},
+     {ic:'🐢', title:'Quando il computer è lento',
+      do:`<ul><li><strong>Chiedi di chiudere gli altri programmi e le schede</strong> prima della lezione, utilizza Google Chrome e chiedi alla famiglia di evitare che altre persone utilizzino la connessione Wi-Fi per attività che consumano molta banda durante la lezione.</li><li><strong>Blender funziona lentamente?</strong> La wiki contiene guide per configurare Blender e migliorarne le prestazioni. Utilizzale per aiutare lo studente a configurare il programma. Il corso include anche una guida alle prestazioni nelle prime lezioni.</li><li><strong>Lo studente non riesce proprio a eseguire il programma del corso?</strong> Cerca di mantenere la lezione utile: fai una dimostrazione condividendo il tuo schermo e proponi domande a cui lo studente possa rispondere verbalmente. Poi informa il tuo Team Leader. Saranno i dipartimenti Teaching e Sales a decidere come lo studente potrà proseguire.</li></ul>`,
+      avoid:`Chiedere alla famiglia di acquistare un nuovo computer o promettere un cambio di corso.`},
+     {ic:'📝', title:'Quando il problema supera ciò che puoi risolvere durante la lezione di gruppo',
+      do:`Lascia un commento in BO spiegando cosa hai osservato e quali soluzioni hai provato. Informa anche il tuo Team Leader. Puoi richiedere una lezione aggiuntiva per esercitarsi con le competenze di base, ma la decisione finale spetta al tuo Team Leader.`,
+      avoid:`Offrire direttamente alla famiglia una lezione aggiuntiva o un formato diverso.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +366,11 @@ const CONTENT = {
    {type:'choice', prompt:`Come dai le istruzioni in una lezione online?`, opts:[`Tutti i passaggi insieme, così nessuno deve aspettare`,`Un’istruzione alla volta, poi verifica: «Cosa farai per prima cosa?»`,`Le dici una volta, velocemente, e vai avanti`], correct:1, fb:`Online, le istruzioni accumulate si perdono. Un passaggio alla volta più una domanda di verifica fanno emergere subito la confusione.`},
    {type:'choice', prompt:`Uno studente timido di 13 anni non risponde mai a voce. Cosa aiuta di più?`, opts:[`Chiamarlo per nome a ogni lezione finché non parla`,`Lasciarlo partecipare prima tramite la chat, e apprezzare i suoi contributi`,`Chiedergli di accendere la videocamera davanti a tutti`], correct:1, fb:`Dagli un modo comodo per partecipare: prima la chat. La videocamera può arrivare dopo, quando vorrà lui.`},
    {type:'sort', prompt:'Questa abitudine aiuta o danneggia una lezione online?', card:`Interpellare a sorpresa lo studente più silenzioso con la domanda più difficile.`, zones:[{label:'💎 Aiuta', fb:'Non proprio — mette lo studente in difficoltà e rende più difficile rispondere alla domanda successiva.'},{label:'🗑️ Danneggia', fb:'Esatto — inizia con domande facili, preparalo e fai in modo che la scelta sembri equa.'}], correctZone:1},
-   {type:'choice', prompt:`Quale apertura funziona meglio con un bambino di 7 anni?`, opts:[`«Oggi impariamo cosa sono le variabili.»`,`«Oggi un robot ha perso la voce: alla fine della lezione gliel’avrete ridata. Chi ci sta?»`,`«Aprite la lezione e iniziate l’esercizio 1.»`], correct:1, fb:`Una storia con una missione cattura l’attenzione e dà un motivo per partecipare. Partire subito con i contenuti spreca i minuti in cui l’attenzione è massima.`}
+   {type:'choice', prompt:`Quale apertura funziona meglio con un bambino di 7 anni?`, opts:[`«Oggi impariamo cosa sono le variabili.»`,`«Oggi un robot ha perso la voce: alla fine della lezione gliel’avrete ridata. Chi ci sta?»`,`«Aprite la lezione e iniziate l’esercizio 1.»`], correct:1, fb:`Una storia con una missione cattura l’attenzione e dà un motivo per partecipare. Partire subito con i contenuti spreca i minuti in cui l’attenzione è massima.`},
+   {type:'choice', prompt:`Uno studente con ADHD continua a cambiare argomento per parlare di un programma TV. Cosa gli dici?`, opts:[`«Smettila di parlare di questo, siamo a lezione».`,`«Mi piace molto questa idea! Mettiamola da parte per dopo. Adesso occupati solo dello sfondo e dimmi quando è pronto».`,`Non dici nulla: lo ignori e continui a spiegare agli altri studenti.`], correct:1, fb:`Riporta gentilmente l’attenzione sull’attività e poi assegna un compito piccolo e concreto, con un risultato visibile. Dire «smettila» non offre allo studente un’indicazione su cosa fare al posto di quello.`},
+   {type:'sort', prompt:'Questo aiuta o ostacola?', card:`Scrivi alla famiglia suggerendo un posto tranquillo, l’uso delle cuffie e di tenere il telefono fuori dalla portata dello studente durante le lezioni. Inoltre, chiedi cosa aiuta il bambino a concentrarsi.`, zones:[{label:'💎 Aiuta', fb:'Esatto! Durante le lezioni online, la casa diventa l’aula. Suggerimenti concreti e gentili, accompagnati da una domanda su cosa funziona per la famiglia, aiutano a trasformarla in una tua alleata.'},{label:'🗑️ Ostacola', fb:'Non proprio. Il messaggio è gentile, propone suggerimenti concreti e chiede alla famiglia di condividere la propria esperienza. È proprio così che bisogna collaborare con la famiglia.'}], correctZone:0},
+   {type:'choice', prompt:`Uno studente di 7 anni non riesce a trovare i tasti sulla tastiera né a copiare e incollare, e la famiglia dice che «le lezioni online non fanno per lui». Cosa fai per prima cosa?`, opts:[`Dici alla famiglia che è troppo piccolo per seguire lezioni online.`,`Prendi il controllo del suo schermo affinché riesca a stare al passo con il gruppo.`,`Mostri i passaggi lentamente, mantenendo visibile il cursore, aggiungi una breve esercitazione sulle competenze di base e chiedi al genitore di aiutare con la preparazione.`], correct:2, fb:`Le competenze informatiche di base possono essere sviluppate con la pratica. Mostrare i passaggi lentamente e coinvolgere i genitori nella preparazione, ma non nello svolgimento delle attività, aiuta lo studente a sviluppare sicurezza lezione dopo lezione.`},
+   {type:'sort', prompt:'Questo aiuta o ostacola?', card:`Blender funziona molto lentamente sul computer di uno studente, quindi dici alla famiglia che deve comprarne uno migliore.`, zones:[{label:'💎 Aiuta', fb:'Non proprio. Non chiedere mai a una famiglia di acquistare nuove apparecchiature. Chiudi gli altri programmi, utilizza le guide alle prestazioni di Blender disponibili nella wiki e informa il tuo Team Leader se il programma continua a non funzionare.'},{label:'🗑️ Ostacola', fb:'Esatto! Per prima cosa, aiuta lo studente a utilizzare le guide alle prestazioni di Blender disponibili nella wiki. Se il computer non riesce a eseguire il programma del corso, sarà il tuo Team Leader a occuparsi della situazione.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +398,12 @@ const CONTENT = {
      'Faccio domande dirette senza pressione: faccio prima quelle facili, uso un metodo equo per scegliere chi risponde e un riscontro positivo per ogni risposta',
      'Creo legami tra i compagni con brevi momenti in coppia o in piccoli gruppi',
      'Segnalo in BO il giorno stesso che a uno studente non piace il formato online: cosa ha detto, cosa ho osservato, cosa ho provato a fare',
-     'Non prometto mai un cambio di formato o di gruppo: lo propongo in BO e dico «Ne parlo con il mio team»'
+     'Non prometto mai un cambio di formato o di gruppo: lo propongo in BO e dico «Ne parlo con il mio team»',
+     'Quando lavoro con studenti che hanno difficoltà di attenzione, ADHD o ansia, utilizzo micro-attività con risultati visibili, istruzioni composte da un solo passaggio, liste di controllo visibili e brevi pause per muoversi',
+     'Riporto gentilmente l’attenzione sull’attività («mettiamo da parte questa idea per dopo») e annuncio i cambiamenti prima che avvengano. Non etichetto né cerco mai di diagnosticare un bambino',
+     'Chiedo alla famiglia, con gentilezza e in modo concreto, di aiutarmi a migliorare l’ambiente domestico: un posto tranquillo, le cuffie e il telefono fuori dalla portata dello studente',
+     'Quando uno studente sta ancora imparando a utilizzare il computer, mostro i passaggi lentamente mantenendo visibile il cursore, do un’istruzione alla volta e chiedo ai genitori di aiutarlo con la preparazione, non con lo svolgimento delle attività',
+     'Se il computer è lento, aiuto a chiudere gli altri programmi e utilizzo le guide alle prestazioni di Blender disponibili nella wiki. Se il computer non riesce a eseguire il programma del corso, informo il mio Team Leader'
    ])}
   `},
   {t:'', html:`

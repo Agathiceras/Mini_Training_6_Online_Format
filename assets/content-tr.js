@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini Eğitim",
     heroTitle:"<span class=\"h-pill\">Çevrim İçi</span> Dersleri Keyifli Hâle Getirmek",
     heroIntro:"Bu eğitimi, çevrim içi formatı sevmedikleri için iade talep eden öğrencileriniz olduğu için alıyorsunuz. Burada, bir eğitmen olarak neler yapabileceğinizi ve bu tür durumları nasıl yöneteceğinizi göstereceğiz.",
-    heroWork:"4 kısa modülü tamamlayın. Bir sonraki modülün kilidini açmak için her modül kontrolünde en az %70 almanız gerekir. Toplam süre yaklaşık 20–25 dakikadır.",
+    heroWork:"4 kısa modülü tamamlayın. Bir sonraki modülün kilidini açmak için her modülün değerlendirmesinden en az %70 almanız gerekir. Toplam süre yaklaşık 30–35 dakikadır.",
     startBtn:"🚀 Eğitimi Başlat",
     pathLabel:'Öğrenme Yolunuz',
     devTitle:'Geliştirici: inceleme için tüm modüllerin kilidini aç',
@@ -212,7 +212,7 @@ const CONTENT = {
    <strong>Zaten denediklerim:</strong> [örn. kısa turlar, ikili görev, önce sohbetle katılım]<br>
    <strong>Neler yardımcı olabilir — önerim benden, karar sizden:</strong> [örn. daha küçük bir grup, bir motivasyon görüşmesi, başka bir kurs]</p></div>
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Bir durumu bildirin</span><iframe src="Simulacion_BO_Evaluate.html" title="BO — Bir durumu bildirin" loading="lazy"></iframe></div></div>
-   ${co('co-idea','💬',`<p><strong>Aileyle:</strong> düzenlemeden değil, öğrenme sürecinden bahsedin. <em>“Merhaba [velinin adı], [öğrenci]’nin çevrim içi derslerde enerjisini korumakta bazen zorlandığını fark ettim. Kısa yapım turları yapmaya ve seçim yapmasına izin vermeye başladım; ona en iyi şekilde destek olabilmemiz için durumu ekibimle de paylaştım.”</em> Grup veya format hakkında hiçbir vaatte bulunmayın.</p>`)}
+   ${co('co-idea','💬',`<p><strong>Aileyle:</strong> düzenlemeden değil, öğrenme sürecinden bahsedin. Grup veya format hakkında hiçbir vaatte bulunmayın.</p>`)}
   `}
  ],
  ix:{
@@ -230,8 +230,8 @@ const CONTENT = {
 },
 {id:'engage', numLabel:'Modül 2', emoji:'🎬', color:'var(--coral)',
  title:'Keyif Alacakları Bir Çevrim İçi Ders Kurun',
- desc:'Dikkati canlı tutan ve ekranı ortak bir sınıf gibi hissettiren teknikler: güçlü bir açılış, kısa turlar hâlinde çalışmak, etkileşim, bağ kurma, doğrudan sorular ve sonda bir başarı.',
- obj:'Dikkati canlı tutan, her öğrenciye katılmak için rahat bir yol sunan, sınıf arkadaşlarını birbirine bağlayan ve bir başarıyla biten — grubun yaşına göre uyarlanmış — bir çevrim içi ders yürütmek.',
+ desc:'Öğrencilerin dikkatini canlı tutmaya ve ekranı ortak bir çalışma alanına dönüştürmeye yönelik teknikler. Ayrıca dikkat güçlüğü yaşayan, ev ortamında dikkat dağıtıcı unsurlarla karşılaşan, temel bilgisayar becerileri yeterince gelişmemiş veya yavaş bilgisayar kullanan öğrencilere destek olma yöntemleri.',
+ obj:'Öğrencilerin dikkatini canlı tutan, her öğrencinin rahatça katılım sağlayabileceği bir ortam sunan, sınıf arkadaşları arasındaki etkileşimi güçlendiren ve başarı hissiyle sona eren online dersler yürütmek. Dersleri grubun yaşına göre uyarlamak ve dikkat güçlüğü yaşayan, ev ortamında dikkat dağıtıcı unsurlarla karşılaşan, temel bilgisayar becerileri yeterince gelişmemiş veya yavaş bilgisayar kullanan öğrencilere destek olmak.',
  sections:[
   {t:'🧠 Motive eden her dersin sahip olduğu dört şey', html:`
    <div class="card"><p>Çevrim içi ortamda dikkati sizin yerinize tutan hiçbir şey yoktur: fiziksel bir sınıf yok, yanlarında oturan sınıf arkadaşları yok ve her dikkat dağıtıcı bir tık uzaklıkta. Motivasyon araştırmaları basit bir kontrol listesi sunar — John Keller’ın <strong>ARCS modeli</strong> (1987). Her dersten önce kendinize, dersinizin bu dördüne de sahip olup olmadığını sorun:</p></div>
@@ -241,7 +241,7 @@ const CONTENT = {
      {ic:'💪', html:`<strong>Güven (Confidence).</strong> Küçük adımlar, net bir sonraki adım ve takıldıklarında destek — böylece yapabileceklerine inanırlar.`},
      {ic:'🏆', html:`<strong>Doyum (Satisfaction).</strong> Somut övgü ve sonunda gösterecekleri tamamlanmış bir çalışma.`}
    ])}
-   ${bigStat('≈ 10 dk', `<p>Öğrenme araştırmalarından sık alıntılanan bir pratik kural (John Medina’nın <em>Brain Rules</em> kitabıyla yaygınlaşan): dikkat yaklaşık <strong>on dakika</strong> sonra dağılmaya başlar. Etkinlik değişikliğini bu süre civarında planlayın — en küçüklerle turları daha da kısa tutun.</p>`)}
+   ${bigStat('≈ 10 dk', `<p>Dikkat yaklaşık <strong>on dakika</strong> sonra dağılmaya başlar. Etkinlik değişikliğini bu süre civarında planlayın — en küçüklerle turları daha da kısa tutun.</p>`)}
   `},
   {t:'🎬 Dakika dakika ders', html:`
    ${timeline([
@@ -312,6 +312,49 @@ const CONTENT = {
      ['En sessiz öğrenciye habersizce zor bir soru sormak','Grubun önünde sert bir şekilde düzeltmek','Her seferinde yalnızca aynı hızlı öğrencilere sormak','Zor bir soruyu uyarmadan sormak — bunun yerine şunu deneyin: <em>“Bu biraz zor, ama denemek isteyen var mı?”</em>']
    )}
    ${co('co-star','🌱',`<p><strong>Bu neden işe yarar:</strong> öğrenciler kendilerini güvende hissettiklerinde katılır. Onları hazırlamak, kolay bir soruyla başlamak ve süreci adil tutmak, bir soruyu riskten çıkarıp bir davete dönüştürür.</p>`)}
+  `},
+  {t:'🧠 Dikkat güçlüğü, DEHB veya kaygı yaşayan öğrenciler', html:`
+   <div class="card"><p>Bazı öğrenciler için "Online ders yapamıyorum" demek aslında <em>"Bu kadar uzun süre ekrana odaklanamıyorum"</em> anlamına gelir. DEHB, otizm veya kaygı bu durumu daha da zorlaştırabilir. Aile size bu konuda bilgi vermemiş olabilir ya da çocuk henüz herhangi bir değerlendirmeden geçmemiş olabilir. <strong>Derslerinizi uyarlamak için tanıya ihtiyacınız yoktur</strong> ve hiçbir zaman kendiniz tanı koymaya çalışmamalısınız. İhtiyacınız olan şey, küçük parçalara bölünmüş, net bir yapıya sahip ve hareket etmeye imkân tanıyan bir derstir.</p></div>
+   ${iconGrid([
+     {ic:'🎯', html:`<strong>Sonucu görülebilen küçük görevler.</strong> <em>"Şimdilik sadece arka planı yap. Hazır olduğunda bana haber ver."</em> Tamamlanan her küçük görev gerçek bir başarıdır.`},
+     {ic:'1️⃣', html:`<strong>Kısa ve tek adımlı yönergeler.</strong> Her etkinliğe başlamadan önce hedefi tekrar edin.`},
+     {ic:'✅', html:`<strong>Ekranda veya sohbette görülebilen bir kontrol listesi:</strong> Neler tamamlandı, sırada ne var? Öğrencinin dikkati dağıldığında ne yapacağını hatırlamasına yardımcı olur.`},
+     {ic:'⏲️', html:`<strong>Bir oyun gibi zamanlayıcı kullanın:</strong> Öğrenci bundan hoşlanıyorsa <em>"Bakalım zamana karşı kazanabilecek misin!"</em> diyebilirsiniz. Zaman baskısı öğrenciyi strese sokuyorsa zamanlayıcıyı yalnızca görsel bir referans olarak gösterin.`},
+     {ic:'🤸', html:`<strong>Hareketsiz oturmasını istemek yerine hareket etmesine izin verin.</strong> <em>"10 saniyeliğine ayağa kalkmak ister misin? Sonra devam ederiz."</em> Kısa hareket molaları, öğrenciden sakin olmasını veya hareketsiz oturmasını istemekten daha etkili olabilir.`},
+     {ic:'↩️', html:`<strong>Dikkatini nazikçe yeniden derse yönlendirin.</strong> Konu dışına çıktığında şöyle diyebilirsiniz: <em>"Bu fikri çok beğendim! Bunu daha sonra konuşmak üzere bir kenara bırakalım."</em> Ardından "Odaklan" demek yerine, devam edebilmesi için somut bir sonraki adım verin.`},
+     {ic:'🔁', html:`<strong>Aynı ders yapısını koruyun ve değişiklikleri önceden bildirin.</strong> <em>"5 dakika sonra … etkinliğine geçeceğiz."</em> Önceden bilgi vermek, özellikle otizmli öğrencilerde kaygıyı azaltmaya yardımcı olur.`},
+     {ic:'👀', html:`<strong>Gözleri dinlendirmek için ekran molaları verin.</strong> Etkinlikler arasında kısa süreliğine ekrandan başka bir yere bakmak, uzun süre ekrana bakmaktan rahatsız olan öğrencilere yardımcı olabilir.`}
+   ])}
+   ${co('co-cute','🫂',`<p><strong>Durum kontrolden çıktığında</strong> — öğrenci hayal kırıklığı yaşadığında, ağladığında veya derse katılmayı bıraktığında — sesinizi alçaltın ve dersin temposunu yavaşlatın. Öğrenciyi yargılamadan hislerini ifade edin (<em>"Şu anda bunun senin için zor olduğunu görebiliyorum"</em>). "Sakin ol" demek yerine yapabileceği somut bir şey önerin ve daha önce başarabildiği bir adıma geri dönün. Öğrenci sakinleşene kadar ders içeriğine devam etmek zorunda değilsiniz.</p>`)}
+  `},
+  {t:'🏠 Ev ortamı: Aileyle iş birliği yapın', html:`
+   <div class="card"><p>Online derslerde çocuğun evi aynı zamanda sınıfıdır. Masanın üzerindeki bir telefon, arka planda açık bir televizyon veya yanında oyun oynayan bir kardeş, en iyi hazırlanmış dersi bile zorlaştırabilir. Ev ortamını kontrol edemezsiniz ancak <strong>aileden nazik ve somut önerilerle destek isteyebilirsiniz</strong>.</p></div>
+   ${patternCards([
+     {ic:'🪑', title:'Her zaman aynı, sessiz bir alan', desc:'Her ders için televizyonun ve evin en hareketli bölümlerinin uzağında, aynı alanı kullanmak.', note:'Rutin oluşturmak dikkati toplamaya yardımcı olur.'},
+     {ic:'🎧', title:'Kulaklık', desc:'Arka plan gürültüsünü azaltır ve öğrencinin öğretmeni daha iyi duymasını sağlar.', note:'Basit bir kulaklık yeterlidir.'},
+     {ic:'📱', title:'Telefonu ulaşamayacağı bir yerde tutmak', desc:'Ders sırasında telefon öğrencinin ulaşamayacağı bir yerde olmalı, diğer uygulamalar ve tarayıcı sekmeleri kapatılmalıdır.', note:'Telefonun yalnızca bir tık uzağında olması bile dikkat dağıtması için yeterlidir.'},
+     {ic:'👋', title:'Başlangıçta bir ebeveynin yakınlarda bulunması', desc:'Küçük yaştaki öğrenciler için ilk birkaç dakika boyunca kurulum konusunda yardımcı olabilecek bir yetişkinin yakınlarda bulunması faydalıdır.', note:'Yardım yalnızca hazırlık aşaması içindir, görevleri yapmak için değil.'}
+   ],2)}
+   ${co('co-idea','👪',`<p><strong>Yargılamak yerine gözlemlerinizi paylaşın.</strong> <em>"Bugün kısa bir moladan sonra dersin ikinci yarısında çok daha iyi odaklandığını fark ettim"</em> demek iletişimi başlatır. <em>"Hiç dikkatini vermiyor"</em> demek ise iletişimi zorlaştırır.</p>`)}
+  `},
+  {t:'⌨️ Temel bilgisayar becerileri ve yavaş bilgisayarlar', html:`
+   <div class="card"><p>Online derslerde çocuklardan aynı anda hem bilgisayarı kullanmaları hem de ders içeriğini takip etmeleri beklenir. Yazı yazmayı, sürükle-bırak yapmayı, kopyalayıp yapıştırmayı veya pencereler arasında geçiş yapmayı henüz öğrenmekte olan ya da yavaş bir bilgisayar kullanan bir öğrenci, ders boyunca öğrenmek yerine bilgisayarla uğraşmak zorunda kalabilir. Bunun sonucunda aile, <em>"Online dersler ona uygun değil"</em> diye düşünebilir.</p></div>
+   ${symCards([
+     {ic:'🔍', title:'Dikkat etmeniz gereken işaretler', sub:'İlk derslerde',
+      see:`Klavyede her tuşu bulmak için uzun süre arar · Sürükle-bırak yapamaz, sağ tıklamayı, kopyalamayı veya yapıştırmayı bilmez · Pencereler ya da sekmeler arasında geçiş yaparken kaybolur · Ekranını paylaşmakta zorlanır · Etkinliği anlar ancak <em>nasıl</em> yapacağını bilmediği için tamamlayamaz.`,
+      tip:`Öğrenciden ekranını paylaşmasını isteyin ve <em>nasıl</em> çalıştığını gözlemleyin. Bazen ilgisizlik gibi görünen durum aslında bilgisayar kullanma becerilerindeki eksiklikten kaynaklanır.`},
+     {ic:'🧑‍🏫', title:'Ders sırasında ne yapmalısınız?',
+      do:`<ul><li><strong>Adımları yavaşça gösterin, her tıklamayı açıklarken imlecinizi görünür tutun</strong> ve ekranınızı paylaşırken yakınlaştırma yapın.</li><li><strong>Her seferinde tek bir yönerge verin ve ardından kontrol edin:</strong> <em>"Ekranını bana göster. Şu anda hangi adımdasın?"</em></li><li><strong>Temel becerileri geliştirmek için iki dakikalık kısa bir alıştırma yapın:</strong> kopyalama ve yapıştırma, sürükle-bırak, dosya kaydetme ve pencereler arasında geçiş yapma.</li><li><strong>Klavye kısayollarını sohbette paylaşın:</strong> Ctrl+C, Ctrl+V, Ctrl+Z, Ctrl+S ve Alt+Tab (Mac’te gerektiğinde Cmd kullanılır).</li><li><strong>Bilgisayar kullanımıyla ilgili başarıları da takdir edin:</strong> <em>"Ekranını kendi başına paylaştın!"</em></li></ul>`,
+      avoid:`Öğrencinin ekranının kontrolünü ele almaktan veya görevi onun yerine yapmaktan.`},
+     {ic:'👪', title:'Hazırlık aşamasına ebeveynleri de dahil edin',
+      do:`Aileden ders öncesinde Chrome’un yüklü ve güncel olduğunu, kurs için gerekli programların yüklendiğini, giriş bilgilerinin kaydedildiğini ve ders bağlantısının kolayca bulunabildiğini kontrol etmesini isteyin. Küçük yaştaki öğrenciler için bir ebeveynin ilk birkaç dakika yakınlarda bulunması hazırlık sürecini kolaylaştırabilir.`},
+     {ic:'🐢', title:'Bilgisayar yavaş çalıştığında',
+      do:`<ul><li><strong>Dersten önce diğer programların ve sekmelerin kapatılmasını isteyin,</strong> Google Chrome kullanın ve ders sırasında evdeki diğer kişilerin Wi-Fi bağlantısını yoğun şekilde kullanmamalarını rica edin.</li><li><strong>Blender yavaş mı çalışıyor?</strong> Wiki’de Blender’ın performansını artırmak için nasıl yapılandırılacağını anlatan kılavuzlar bulunur. Öğrencinin programı doğru şekilde ayarlamasına yardımcı olmak için bu kılavuzları kullanın. Ayrıca kursun ilk derslerinde performansla ilgili bir rehber de bulunur.</li><li><strong>Öğrenci kurs programını hiç çalıştıramıyor mu?</strong> Dersi yine de verimli hâle getirmeye çalışın: Ekranınızı paylaşarak bir demo yapın ve öğrencinin sözlü olarak yanıtlayabileceği sorular sorun. Ardından Takım Liderinize bilgi verin. Öğrencinin eğitimine nasıl devam edeceğine Eğitim ve Satış departmanları karar verir.</li></ul>`,
+      avoid:`Aileden yeni bir bilgisayar satın almasını istemekten veya kurs değişikliği sözü vermekten.`},
+     {ic:'📝', title:'Sorun grup dersi sırasında çözebileceğinizden daha kapsamlıysa',
+      do:`Gözlemlediğiniz durumu ve denediğiniz çözümleri açıklayan bir yorum bırakın. BO’ya yorum ekleyin ve Takım Liderinize de bilgi verin. Temel becerileri geliştirmek için ek bir ders talep edebilirsiniz ancak son kararı Takım Lideriniz verir.`,
+      avoid:`Aileye doğrudan ek ders veya farklı bir ders formatı teklif etmekten.`}
+   ])}
   `}
  ],
  ix:{
@@ -323,7 +366,11 @@ const CONTENT = {
    {type:'choice', prompt:`Çevrim içi bir derste talimatları nasıl verirsiniz?`, opts:[`Kimse beklemesin diye tüm adımları bir kerede`,`Her seferinde tek bir talimat, ardından kontrol: “İlk olarak ne yapacaksın?”`,`Bir kez, hızlıca söyleyip devam etmek`], correct:1, fb:`Üst üste yığılan talimatlar çevrim içi ortamda kaybolur. Tek bir adım ve bir kontrol sorusu, kafa karışıklığını erkenden yakalar.`},
    {type:'choice', prompt:`Utangaç, 13 yaşında bir öğrenci hiç sesli cevap vermiyor. En çok ne yardımcı olur?`, opts:[`Konuşana kadar her derste adıyla söz vermek`,`Önce sohbet aracılığıyla katılmasına izin vermek ve katkılarını övmek`,`Herkesin önünde kamerasını açmasını istemek`], correct:1, fb:`Ona rahat bir katılım yolu sunun — önce sohbet. Kamera daha sonra, o istediğinde gelebilir.`},
    {type:'sort', prompt:'Bu alışkanlık çevrim içi bir derse yardımcı mı olur, zarar mı verir?', card:`En sessiz öğrenciye habersizce en zor soruyu sormak.`, zones:[{label:'💎 Yardımcı olur', fb:'Tam değil — öğrenciyi köşeye sıkıştırır ve bir sonraki soruyu cevaplamasını daha da zorlaştırır.'},{label:'🗑️ Zarar verir', fb:'Doğru — kolay bir soruyla başlayın, onu hazırlayın ve seçimi adil hissettirin.'}], correctZone:1},
-   {type:'choice', prompt:`7 yaşındaki bir çocuk için hangi açılış en iyi sonucu verir?`, opts:[`“Bugün değişkenleri öğreneceğiz.”`,`“Bugün bir robot sesini kaybetti — dersin sonunda ona sen ses vermiş olacaksın. Var mısın?”`,`“Dersi aç ve 1. alıştırmaya başla.”`], correct:1, fb:`Görevi olan bir hikâye dikkat çeker ve katılmak için bir neden verir. Doğrudan içeriğe atlamak, dikkatin en yüksek olduğu dakikaları boşa harcar.`}
+   {type:'choice', prompt:`7 yaşındaki bir çocuk için hangi açılış en iyi sonucu verir?`, opts:[`“Bugün değişkenleri öğreneceğiz.”`,`“Bugün bir robot sesini kaybetti — dersin sonunda ona sen ses vermiş olacaksın. Var mısın?”`,`“Dersi aç ve 1. alıştırmaya başla.”`], correct:1, fb:`Görevi olan bir hikâye dikkat çeker ve katılmak için bir neden verir. Doğrudan içeriğe atlamak, dikkatin en yüksek olduğu dakikaları boşa harcar.`},
+   {type:'choice', prompt:`DEHB’li bir öğrenci sürekli konuyu değiştirerek bir TV programından bahsetmeye başlıyor. Ne söylersiniz?`, opts:[`"Bunun hakkında konuşmayı bırak, dersteyiz."`,`"Bu fikri çok beğendim! Bunu daha sonra konuşmak üzere bir kenara bırakalım. Şimdi sadece arka planı yap ve hazır olduğunda bana haber ver."`,`Hiçbir şey söylemezsiniz; öğrenciyi görmezden gelir ve diğer öğrencilere açıklama yapmaya devam edersiniz.`], correct:1, fb:`Öğrencinin dikkatini nazikçe yeniden derse yönlendirin ve ardından sonucunu görebileceği küçük, somut bir görev verin. Sadece "Bırak" demek, öğrenciye bunun yerine ne yapması gerektiğini göstermez.`},
+   {type:'sort', prompt:'Bu yardımcı mı, yoksa engelleyici mi?', card:`Aileye mesaj göndererek dersler sırasında sessiz bir alan kullanmalarını, kulaklık takmalarını ve telefonu öğrencinin ulaşamayacağı bir yerde tutmalarını öneriyorsunuz. Ayrıca çocuklarının dikkatini toplamasına nelerin yardımcı olduğunu soruyorsunuz.`, zones:[{label:'💎 Yardımcı', fb:'Doğru! Online derslerde ev, sınıfa dönüşür. Somut ve nazik öneriler sunmak, ayrıca aileye evde nelerin işe yaradığını sormak, aileyi iş birliğinin bir parçası hâline getirir.'},{label:'🗑️ Engelleyici', fb:'Tam olarak değil. Mesaj nazik, somut öneriler içeriyor ve ailenin deneyimini soruyor. Aileyle iş birliği yapmanın doğru yolu tam olarak budur.'}], correctZone:0},
+   {type:'choice', prompt:`7 yaşındaki bir öğrenci klavyedeki tuşları bulamıyor, kopyalayıp yapıştıramıyor ve ailesi "Online dersler ona uygun değil" diyor. İlk olarak ne yaparsınız?`, opts:[`Aileye öğrencinin online dersler için çok küçük olduğunu söylersiniz.`,`Grup dersine yetişebilmesi için öğrencinin ekranının kontrolünü ele alırsınız.`,`İmlecinizi görünür tutarak adımları yavaşça gösterir, kısa bir temel beceri alıştırması eklersiniz ve ebeveyninden hazırlık aşamasında yardımcı olmasını istersiniz.`], correct:2, fb:`Temel bilgisayar becerileri pratik yaparak geliştirilebilir. Adımları yavaşça göstermek ve ebeveynleri görevleri yapmaya değil, hazırlık aşamasına dahil etmek, öğrencinin her derste kendine daha fazla güvenmesini sağlar.`},
+   {type:'sort', prompt:'Bu yardımcı mı, yoksa engelleyici mi?', card:`Bir öğrencinin bilgisayarında Blender çok yavaş çalışıyor, bu nedenle ailesine daha iyi bir bilgisayar satın almaları gerektiğini söylüyorsunuz.`, zones:[{label:'💎 Yardımcı', fb:'Tam olarak değil. Aileden hiçbir zaman yeni ekipman satın almasını istemeyin. Diğer programları kapatın, wiki’deki Blender performans kılavuzlarını kullanın ve program hâlâ çalışmıyorsa Takım Liderinize bilgi verin.'},{label:'🗑️ Engelleyici', fb:'Doğru! Öncelikle öğrencinin wiki’deki Blender performans kılavuzlarından yararlanmasına yardımcı olun. Bilgisayar kurs programını çalıştıramıyorsa sonraki adımları Takım Lideriniz yönetecektir.'}], correctZone:1}
   ]
  }
 },
@@ -351,7 +398,12 @@ const CONTENT = {
      'Baskı yaratmadan doğrudan sorular soruyorum: önce kolay sorular, adil bir seçim yöntemi ve her cevaba olumlu geri bildirim',
      'Kısa ikili veya küçük grup anlarıyla sınıf arkadaşlarını birbirine bağlıyorum',
      'Bir öğrencinin çevrim içi formatı sevmediğini aynı gün BO’da bildiriyorum: ne söylediğini, ne gördüğümü, ne denediğimi',
-     'Format veya grup değişikliğini asla vaat etmiyorum — BO’da öneriyor ve “ekibime soracağım” diyorum'
+     'Format veya grup değişikliğini asla vaat etmiyorum — BO’da öneriyor ve “ekibime soracağım” diyorum',
+     'Dikkat güçlüğü, DEHB veya kaygı yaşayan öğrencilerle çalışırken sonucu görülebilen küçük görevler, tek adımlı yönergeler, görünür kontrol listeleri ve kısa hareket molaları kullanırım',
+     'Öğrencinin dikkatini nazikçe yeniden derse yönlendiririm ("Bu fikri daha sonra konuşmak üzere bir kenara bırakalım") ve değişiklikleri gerçekleşmeden önce haber veririm. Bir çocuğu asla etiketlemem veya teşhis etmeye çalışmam',
+     'Ev ortamını iyileştirmek için aileden nazik ve somut bir şekilde yardım isterim: sessiz bir alan, kulaklık ve öğrencinin ulaşamayacağı bir yerde duran telefon',
+     'Bir öğrenci bilgisayar kullanmayı henüz öğreniyorsa imlecimi görünür tutarak adımları yavaşça gösteririm, her seferinde tek bir yönerge veririm ve ebeveyninden etkinlikleri yapması için değil, hazırlık aşamasında yardımcı olması için destek isterim',
+     'Bilgisayar yavaşsa diğer programların kapatılmasına yardımcı olur ve wiki’deki Blender performans kılavuzlarını kullanırım. Bilgisayar kurs programını çalıştıramıyorsa Takım Liderime bilgi veririm'
    ])}
   `},
   {t:'', html:`
